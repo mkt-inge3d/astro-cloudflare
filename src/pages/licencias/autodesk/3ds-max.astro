@@ -1,0 +1,76 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="3ds Max"
+  product="3ds Max"
+  brand="Autodesk"
+  brandColor="#00aae0"
+  description="Software profesional de modelado 3D, animación y renderizado para visualización arquitectónica, diseño de productos y entretenimiento."
+  breadcrumbBrand="Autodesk"
+  breadcrumbBrandHref="/licencias/autodesk"
+  relatedProducts={[
+    { name: 'Revit', href: '/licencias/autodesk/revit' },
+    { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Fusion', href: '/licencias/autodesk/fusion' },
+  ]}
+>
+
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es 3ds Max?</h2>
+    <p>Autodesk 3ds Max es un software de modelado 3D, animación y renderizado utilizado por profesionales de visualización arquitectónica, diseño de productos, entretenimiento y desarrollo de videojuegos. Es la herramienta de referencia para crear imágenes fotorrealistas de proyectos arquitectónicos, recorridos virtuales, animaciones de productos y efectos visuales de alta calidad.</p>
+    <p>El software ofrece herramientas de modelado poligonal, spline y paramétrico, junto con un sistema de materiales y texturas altamente configurable. Incluye el motor de renderizado Arnold integrado, y es compatible con motores de terceros como V-Ray, Corona Renderer y Enscape, que son los estándares de la industria de visualización arquitectónica.</p>
+    <p>3ds Max se integra con Revit mediante la importación directa de archivos RVT y enlaces en vivo, permitiendo a los visualizadores trabajar con modelos BIM actualizados. También soporta la importación de archivos de AutoCAD, SketchUp, FBX y otros formatos, facilitando flujos de trabajo con múltiples herramientas de diseño.</p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Modelado 3D versátil</h3>
+        <p>Modelado poligonal, NURBS, spline y paramétrico con modificadores apilables para crear cualquier tipo de geometría 3D.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Renderizado con Arnold</h3>
+        <p>Motor de renderizado Arnold integrado con iluminación física, materiales PBR y renderizado progresivo para resultados fotorrealistas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Compatibilidad V-Ray y Corona</h3>
+        <p>Soporte completo para los motores de renderizado más populares en visualización arquitectónica: V-Ray, Corona Renderer y Enscape.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Animación avanzada</h3>
+        <p>Sistema de animación por keyframes, controladores de animación, cinemática inversa y herramientas de rigging para personajes y objetos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Importación de Revit y AutoCAD</h3>
+        <p>Importación directa de archivos RVT con materiales y metadatos, y enlace en vivo para mantener sincronización con el modelo BIM.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Sistema de partículas y física</h3>
+        <p>Simulación de partículas, fluidos, tela, cabello y cuerpos rígidos para efectos visuales realistas en animaciones y recorridos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>MAXScript y Python</h3>
+        <p>Lenguajes de scripting integrados para automatización de tareas, creación de herramientas personalizadas y flujos de trabajo por lotes.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Scene Explorer y Layer Manager</h3>
+        <p>Gestión avanzada de escenas complejas con jerarquías, capas, selección por criterios y organización de objetos en proyectos grandes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es 3ds Max?</h2>
+    <ul class="pp-list">
+      <li>Visualizadores arquitectónicos y artistas de render</li>
+      <li>Estudios de arquitectura que producen imágenes de presentación</li>
+      <li>Diseñadores de productos y packaging</li>
+      <li>Animadores y artistas de efectos visuales</li>
+      <li>Desarrolladores de videojuegos y contenido interactivo</li>
+      <li>Estudios de producción audiovisual y publicidad</li>
+    </ul>
+  </div>
+
+</ProductPage>

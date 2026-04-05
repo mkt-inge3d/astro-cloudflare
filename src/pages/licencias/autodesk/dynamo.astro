@@ -1,0 +1,77 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Dynamo"
+  product="Dynamo"
+  brand="Autodesk"
+  brandColor="#00aae0"
+  description="Plataforma de programación visual y diseño computacional para automatización de tareas y generación de geometría en Revit y otros productos Autodesk."
+  breadcrumbBrand="Autodesk"
+  breadcrumbBrandHref="/licencias/autodesk"
+  trainingUrl="https://www.semco.com.pe/dynamo/"
+  trainingLabel="Ver cursos de Dynamo"
+  relatedProducts={[
+    { name: 'Revit', href: '/licencias/autodesk/revit' },
+    { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
+    { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+  ]}
+>
+
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Dynamo?</h2>
+    <p>Dynamo es una plataforma de programación visual de código abierto que extiende las capacidades de Autodesk Revit y otros productos Autodesk. Mediante una interfaz de nodos conectados por cables, los profesionales pueden crear scripts visuales que automatizan tareas repetitivas, generan geometría computacional compleja y gestionan datos BIM sin necesidad de escribir código de programación tradicional.</p>
+    <p>Integrado directamente en Revit como Dynamo for Revit, permite acceder a todos los elementos y parámetros del modelo BIM para leerlos, modificarlos o crear nuevos elementos de forma masiva. Tareas que manualmente tomarían horas — como renombrar cientos de vistas, colocar elementos según una lógica específica o extraer datos a Excel — se resuelven en segundos con un script de Dynamo.</p>
+    <p>Dynamo también se utiliza como herramienta de diseño computacional para explorar formas complejas mediante algoritmos paramétricos, optimización de patrones, panelización de fachadas y generación de geometría basada en datos. Su ecosistema incluye cientos de paquetes desarrollados por la comunidad y soporte para scripts en Python y C# para funcionalidad avanzada.</p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Programación visual con nodos</h3>
+        <p>Interfaz intuitiva de nodos drag-and-drop conectados por cables que representan flujos de datos y operaciones lógicas sin escribir código.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Automatización de Revit</h3>
+        <p>Acceso completo a la API de Revit para crear, modificar y eliminar elementos, gestionar parámetros, vistas, familias y documentación de forma masiva.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Diseño computacional</h3>
+        <p>Generación de geometría paramétrica, panelización, optimización de formas y exploración de alternativas de diseño basadas en algoritmos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Gestión de datos BIM</h3>
+        <p>Lectura y escritura de parámetros en elementos Revit, exportación a Excel y bases de datos, y sincronización de información del modelo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Interoperabilidad con Excel y CSV</h3>
+        <p>Importación y exportación de datos entre hojas de cálculo y el modelo BIM para actualización masiva de parámetros y generación de reportes.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Scripts Python integrados</h3>
+        <p>Nodos de Python para funcionalidad avanzada, acceso directo a la API de Revit y creación de lógica personalizada dentro del flujo visual.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Paquetes de la comunidad</h3>
+        <p>Ecosistema extenso de paquetes desarrollados por la comunidad (Clockwork, archi-lab, BimorphNodes, Spring Nodes) para funciones especializadas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Dynamo Player</h3>
+        <p>Ejecución simplificada de scripts desde Revit sin abrir el entorno de Dynamo, permitiendo que usuarios no técnicos aprovechen la automatización.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Dynamo?</h2>
+    <ul class="pp-list">
+      <li>Coordinadores y gerentes BIM que buscan automatizar procesos</li>
+      <li>Arquitectos interesados en diseño computacional y paramétrico</li>
+      <li>Ingenieros que necesitan gestionar datos BIM de forma masiva</li>
+      <li>Modeladores Revit que desean aumentar su productividad</li>
+      <li>Profesionales AEC que quieren aprender programación visual</li>
+    </ul>
+  </div>
+
+</ProductPage>

@@ -1,0 +1,710 @@
+---
+/* ---- Data structures for mega-menu columns ---- */
+
+interface MenuItem {
+  label: string;
+  href: string;
+}
+
+interface MenuColumn {
+  heading: string;
+  items: MenuItem[];
+}
+
+interface MegaMenu {
+  label: string;
+  columns: MenuColumn[];
+  extra?: MenuItem[];
+}
+
+const licencias: MegaMenu = {
+  label: 'Licencias',
+  columns: [
+    {
+      heading: 'Autodesk AEC',
+      items: [
+        { label: 'Revit', href: '/licencias/autodesk/revit' },
+        { label: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
+        { label: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+        { label: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+        { label: 'Robot Structural', href: '/licencias/autodesk/robot-structural' },
+        { label: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
+        { label: 'Infraworks', href: '/licencias/autodesk/infraworks' },
+        { label: 'Advance Steel', href: '/licencias/autodesk/advance-steel' },
+        { label: 'Dynamo', href: '/licencias/autodesk/dynamo' },
+        { label: '3ds Max', href: '/licencias/autodesk/3ds-max' },
+      ],
+    },
+    {
+      heading: 'Autodesk Mecánica',
+      items: [
+        { label: 'Inventor', href: '/licencias/autodesk/inventor' },
+        { label: 'Fusion', href: '/licencias/autodesk/fusion' },
+        { label: 'AutoCAD Plant 3D', href: '/licencias/autodesk/autocad-plant-3d' },
+        { label: 'AutoCAD Electrical', href: '/licencias/autodesk/autocad-electrical' },
+        { label: 'Inventor Nastran', href: '/licencias/autodesk/inventor-nastran' },
+        { label: 'Inventor CAM', href: '/licencias/autodesk/inventor-cam' },
+      ],
+    },
+    {
+      heading: 'Ansys',
+      items: [
+        { label: 'CFD', href: '/licencias/ansys/cfd' },
+        { label: 'Fluent', href: '/licencias/ansys/fluent' },
+        { label: 'Rocky', href: '/licencias/ansys/rocky' },
+        { label: 'Mechanical', href: '/licencias/ansys/mechanical' },
+        { label: 'Discovery', href: '/licencias/ansys/discovery' },
+      ],
+    },
+    {
+      heading: 'Oracle',
+      items: [
+        { label: 'Primavera P6', href: '/licencias/oracle/primavera' },
+        { label: 'Unifier', href: '/licencias/oracle/unifier' },
+        { label: 'Aconex', href: '/licencias/oracle/aconex' },
+      ],
+    },
+    {
+      heading: 'LyraCode',
+      items: [
+        { label: 'Task-ing', href: '/licencias/lyracode/task-ing' },
+        { label: 'Plan-ing', href: '/licencias/lyracode/plan-ing' },
+        { label: 'ADVManager', href: '/licencias/lyracode/advmanager' },
+      ],
+    },
+  ],
+};
+
+const cursos: MegaMenu = {
+  label: 'Cursos',
+  columns: [
+    {
+      heading: 'Diseño general',
+      items: [
+        { label: 'AutoCAD', href: '/cursos/diseno/autocad' },
+        { label: '3ds Max', href: '/cursos/diseno/3ds-max' },
+        { label: 'Navisworks', href: '/cursos/diseno/navisworks' },
+        { label: 'Tinkercad', href: '/cursos/diseno/tinkercad' },
+      ],
+    },
+    {
+      heading: 'BIM AEC',
+      items: [
+        { label: 'Revit', href: '/cursos/bim-aec/revit' },
+        { label: 'Civil 3D', href: '/cursos/bim-aec/civil-3d' },
+        { label: 'Advance Steel', href: '/cursos/bim-aec/advance-steel' },
+        { label: 'Dynamo', href: '/cursos/bim-aec/dynamo' },
+        { label: 'Twinmotion', href: '/cursos/bim-aec/twinmotion' },
+        { label: 'ISO 19650', href: '/cursos/bim-aec/iso-19650' },
+        { label: 'Construction Cloud', href: '/cursos/bim-aec/construction-cloud' },
+        { label: 'Robot Structural', href: '/cursos/bim-aec/robot-structural' },
+      ],
+    },
+    {
+      heading: 'Mecánica',
+      items: [
+        { label: 'Inventor', href: '/cursos/mecanica/inventor' },
+        { label: 'Fusion', href: '/cursos/mecanica/fusion' },
+        { label: 'Inventor CAM', href: '/cursos/mecanica/inventor-cam' },
+        { label: 'AutoCAD Electrical', href: '/cursos/mecanica/autocad-electrical' },
+        { label: 'AutoCAD Plant 3D', href: '/cursos/mecanica/autocad-plant-3d' },
+      ],
+    },
+    {
+      heading: 'Simulación',
+      items: [
+        { label: 'Dinámica de Fluidos CFD', href: '/cursos/simulacion/cfd' },
+        { label: 'Ansys Rocky', href: '/cursos/simulacion/ansys-rocky' },
+      ],
+    },
+    {
+      heading: 'Gestión',
+      items: [
+        { label: 'Oracle Primavera P6', href: '/cursos/gestion/oracle-primavera' },
+        { label: 'Corporativo (in-house)', href: '/cursos/gestion/corporativo' },
+      ],
+    },
+  ],
+};
+
+const especializaciones: MegaMenu = {
+  label: 'Especializaciones',
+  columns: [
+    {
+      heading: 'Programas certificados',
+      items: [
+        { label: 'BIM en Edificaciones', href: '/especializacion/bim-edificaciones' },
+        { label: 'BIM en Plantas Industriales', href: '/especializacion/bim-plantas-industriales' },
+        { label: 'BIM en Infraestructura', href: '/especializacion/bim-infraestructura' },
+        { label: 'PIM - Prototipos Digitales', href: '/especializacion/pim-prototipos-digitales' },
+      ],
+    },
+    {
+      heading: 'Formatos',
+      items: [
+        { label: 'Presencial', href: '/especializacion/formato/presencial' },
+        { label: 'Online', href: '/especializacion/formato/online' },
+        { label: 'Híbrido', href: '/especializacion/formato/hibrido' },
+      ],
+    },
+  ],
+  extra: [
+    { label: 'Ver cronograma completo', href: '/especializacion/cronograma' },
+    { label: 'Capacitación corporativa', href: '/especializacion/corporativa' },
+  ],
+};
+
+const servicios: MegaMenu = {
+  label: 'Servicios',
+  columns: [
+    {
+      heading: 'CAD / BIM / CAE',
+      items: [
+        { label: 'Catálogos 3D', href: '/servicios/catalogos-3d' },
+        { label: 'Automatización CAD', href: '/servicios/automatizacion-cad' },
+        { label: 'Simulación CAE', href: '/servicios/simulacion-cae' },
+        { label: 'IoT / Forge', href: '/servicios/iot-forge' },
+      ],
+    },
+    {
+      heading: 'Software propio',
+      items: [
+        { label: 'LyraCode (Task-ing, Plan-ing)', href: '/servicios/lyracode' },
+        { label: 'ADVManager', href: '/servicios/advmanager' },
+      ],
+    },
+    {
+      heading: 'Soporte',
+      items: [
+        { label: 'Soporte post-venta', href: '/servicios/soporte' },
+      ],
+    },
+  ],
+};
+
+const megas: MegaMenu[] = [licencias, cursos, especializaciones, servicios];
+
+const simpleLinks = [
+  { label: 'Eventos', href: '/eventos' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Nosotros', href: '/nosotros' },
+];
+---
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <!-- Logo -->
+    <a href="/" class="navbar__logo">
+      <img src="/logo-blanco.png" alt="SemcoCAD" class="navbar__logo-img" />
+    </a>
+
+    <!-- Hamburger -->
+    <button
+      class="navbar__hamburger"
+      id="navToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Nav body -->
+    <nav class="navbar__nav" id="navMenu">
+      <ul class="navbar__list">
+        {megas.map((menu) => (
+          <li class="navbar__item navbar__item--mega">
+            <button class="navbar__link navbar__link--toggle" type="button">
+              {menu.label}
+              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="mega">
+              <div class="mega__inner">
+                <div class="mega__columns">
+                  {menu.columns.map((col) => (
+                    <div class="mega__col">
+                      <h3 class="mega__heading">{col.heading}</h3>
+                      <ul class="mega__list">
+                        {col.items.map((item) => (
+                          <li><a href={item.href} class="mega__link">{item.label}</a></li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+
+                {menu.extra && (
+                  <div class="mega__footer">
+                    {menu.extra.map((link) => (
+                      <a href={link.href} class="mega__footer-link">{link.label} &rarr;</a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </li>
+        ))}
+
+        {simpleLinks.map((link) => (
+          <li class="navbar__item">
+            <a href={link.href} class="navbar__link">{link.label}</a>
+          </li>
+        ))}
+      </ul>
+
+      <!-- CTA -->
+    </nav>
+  </div>
+</header>
+
+<!-- Minimal inline JS for mobile toggle & accordion -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    const navbar = document.getElementById('navbar');
+
+    if (!toggle || !menu || !navbar) return;
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navbar.classList.toggle('navbar--open');
+    });
+
+    /* Accordion toggles on mobile for mega-menu parents */
+    const megaToggles = menu.querySelectorAll<HTMLButtonElement>('.navbar__link--toggle');
+    megaToggles.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        /* Only do accordion behaviour at mobile widths */
+        if (window.innerWidth >= 1024) return;
+        const parent = btn.closest('.navbar__item--mega');
+        if (!parent) return;
+        const isOpen = parent.classList.contains('is-open');
+
+        /* Close all siblings first */
+        menu.querySelectorAll('.navbar__item--mega.is-open').forEach((el) => {
+          if (el !== parent) el.classList.remove('is-open');
+        });
+
+        parent.classList.toggle('is-open', !isOpen);
+      });
+    });
+
+    /* Close mobile nav when clicking a mega link */
+    menu.querySelectorAll('.mega__link, .mega__footer-link').forEach((a) => {
+      a.addEventListener('click', () => {
+        if (window.innerWidth < 1024) {
+          navbar.classList.remove('navbar--open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
+</script>
+
+<style is:inline>
+  /* ============================================
+     NAVBAR
+  ============================================ */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #05080d;
+    height: 64px;
+  }
+
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 24px;
+  }
+
+  /* ---- Logo ---- */
+  .navbar__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .navbar__logo-img {
+    height: 36px;
+    width: auto;
+    transition: opacity var(--transition);
+  }
+
+  .navbar__logo:hover .navbar__logo-img {
+    opacity: 1;
+  }
+
+  /* ---- Hamburger ---- */
+  .navbar__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 10;
+  }
+
+  .navbar__hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Hamburger → X when open */
+  .navbar--open .navbar__hamburger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .navbar--open .navbar__hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar--open .navbar__hamburger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ---- Nav container ---- */
+  .navbar__nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+  }
+
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    height: 100%;
+  }
+
+  /* ---- Nav items ---- */
+  .navbar__item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 14px;
+    height: 100%;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color var(--transition);
+    cursor: pointer;
+    border: none;
+    background: none;
+    white-space: nowrap;
+  }
+
+  .navbar__link:hover,
+  .navbar__link:focus-visible {
+    color: var(--white);
+  }
+
+  .navbar__chevron {
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+  }
+
+  /* ---- CTA button ---- */
+  .navbar__cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 22px;
+    margin-left: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--orange);
+    border-radius: var(--radius);
+    white-space: nowrap;
+    transition:
+      background var(--transition),
+      transform var(--transition);
+  }
+
+  .navbar__cta:hover {
+    background: var(--orange-hover);
+    transform: translateY(-1px);
+  }
+
+  /* ============================================
+     MEGA-MENU (Desktop)
+  ============================================ */
+  .mega {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 680px;
+    padding-top: 8px; /* visual gap from navbar */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  .mega__inner {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    padding: 28px 32px 24px;
+    border: 1px solid var(--gray-200);
+  }
+
+  .mega__columns {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+
+  .mega__col {
+    min-width: 150px;
+    flex: 0 0 auto;
+  }
+
+  .mega__heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    position: relative;
+  }
+
+  .mega__heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 28px;
+    height: 2.5px;
+    background: var(--orange);
+    border-radius: 2px;
+  }
+
+  .mega__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .mega__link {
+    display: block;
+    padding: 5px 0;
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    transition: color var(--transition);
+  }
+
+  .mega__link:hover {
+    color: var(--orange);
+  }
+
+  .mega__footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-200);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .mega__footer-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--orange);
+    transition: color var(--transition);
+  }
+
+  .mega__footer-link:hover {
+    color: var(--orange-hover);
+  }
+
+  /* ---- Show mega on hover (desktop) ---- */
+  @media (min-width: 1024px) {
+    .navbar__item--mega:hover .mega,
+    .navbar__item--mega:focus-within .mega {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .navbar__item--mega:hover .navbar__chevron {
+      transform: rotate(180deg);
+    }
+  }
+
+  /* Keep mega visible if it's the first (Licencias) – position so it doesn't overflow left */
+  .navbar__item--mega:first-child .mega {
+    left: 0;
+    transform: none;
+  }
+
+  /* ============================================
+     MOBILE  (<1024px)
+  ============================================ */
+  @media (max-width: 1023px) {
+    .navbar {
+      height: 56px;
+    }
+
+    .navbar__hamburger {
+      display: flex;
+    }
+
+    .navbar__nav {
+      position: fixed;
+      inset: 56px 0 0 0;
+      flex-direction: column;
+      align-items: stretch;
+      background: var(--navy);
+      padding: 16px 20px 32px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar--open .navbar__nav {
+      transform: translateX(0);
+    }
+
+    .navbar__list {
+      flex-direction: column;
+      align-items: stretch;
+      height: auto;
+      gap: 0;
+    }
+
+    .navbar__item {
+      height: auto;
+      flex-direction: column;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .navbar__link {
+      padding: 14px 0;
+      font-size: 0.95rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    /* ---- Mega as accordion ---- */
+    .mega {
+      position: static;
+      transform: none;
+      min-width: 0;
+      width: 100%;
+      padding-top: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease;
+    }
+
+    .mega__inner {
+      background: var(--navy-light);
+      border: none;
+      border-radius: 8px;
+      padding: 16px 18px;
+      box-shadow: none;
+      margin-bottom: 8px;
+    }
+
+    .mega__columns {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .mega__heading {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.7rem;
+    }
+
+    .mega__heading::after {
+      background: var(--orange);
+    }
+
+    .mega__link {
+      color: rgba(255, 255, 255, 0.75);
+      padding: 6px 0;
+    }
+
+    .mega__link:hover {
+      color: var(--orange);
+    }
+
+    .mega__footer {
+      border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .mega__footer-link {
+      color: var(--orange);
+    }
+
+    /* Open accordion */
+    .navbar__item--mega.is-open .mega {
+      max-height: 2000px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .navbar__item--mega.is-open .navbar__chevron {
+      transform: rotate(180deg);
+    }
+
+    /* CTA full-width on mobile */
+    .navbar__cta {
+      margin: 20px 0 0;
+      text-align: center;
+      justify-content: center;
+      padding: 14px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+    }
+  }
+
+  /* ============================================
+     Tweaks for medium screens (1024–1200)
+  ============================================ */
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .navbar__link {
+      padding: 0 10px;
+      font-size: 0.8rem;
+    }
+
+    .navbar__cta {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  }
+</style>

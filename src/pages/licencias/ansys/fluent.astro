@@ -1,0 +1,81 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Ansys Fluent"
+  product="Ansys Fluent"
+  brand="Ansys"
+  brandColor="#ffb74d"
+  description="El solver CFD más potente y versátil del mercado, capaz de resolver problemas de multifísica, combustión, aeroacústica, turbulencia y flujos multifase con precisión industrial."
+  breadcrumbBrand="Ansys"
+  breadcrumbBrandHref="/licencias/ansys"
+  trainingUrl="/cursos/ansys"
+  trainingLabel="Ver cursos de Ansys Fluent"
+  relatedProducts={[
+    { name: "Ansys CFD", href: "/licencias/ansys/cfd" },
+    { name: "Ansys Rocky", href: "/licencias/ansys/rocky" },
+    { name: "Ansys Mechanical", href: "/licencias/ansys/mechanical" },
+  ]}
+>
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Ansys Fluent?</h2>
+    <p>
+      Ansys Fluent es el software de simulación de dinámica de fluidos computacional (CFD) líder en la industria, reconocido por su precisión, velocidad y amplitud de capacidades físicas. Como el solver CFD más utilizado a nivel mundial, Fluent ofrece modelos físicos avanzados para abordar desde flujos simples hasta los problemas multifísicos más desafiantes, incluyendo combustión, aeroacústica, turbomaquinaria y flujos reactivos.
+    </p>
+    <p>
+      La arquitectura de Fluent combina métodos numéricos de vanguardia con una interfaz moderna basada en tareas que guía a los usuarios a través del proceso de simulación. Su motor de mallado poliédrico integrado, Fluent Meshing, genera mallas de alta calidad de forma automática, reduciendo significativamente el tiempo de preparación del modelo. Además, su capacidad de escalado en HPC permite resolver modelos con cientos de millones de celdas de forma eficiente.
+    </p>
+    <p>
+      Fluent se distingue por su ecosistema de modelos físicos validados industrialmente, que incluyen más de 20 modelos de turbulencia, múltiples esquemas de discretización y capacidades avanzadas de modelado de flujos multifase como VOF, Euler-Euler y DPM. Esta versatilidad lo convierte en la herramienta preferida de ingenieros en sectores como aeroespacial, automotriz, energía, química y electrónica.
+    </p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Modelos de turbulencia avanzados</h3>
+        <p>Amplia biblioteca de modelos RANS, LES, DES y SAS que cubren desde flujos industriales estándar hasta simulaciones de alta fidelidad con resolución de escalas turbulentas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Combustión y reacciones químicas</h3>
+        <p>Modelos de combustión premezclada, no premezclada y parcialmente premezclada, con cinética química detallada y modelos de reducción para simulaciones eficientes.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Aeroacústica</h3>
+        <p>Predicción de ruido generado por flujo utilizando analogías acústicas de Ffowcs Williams-Hawkings y métodos de resolución directa de ondas sonoras.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Flujos multifase</h3>
+        <p>Modelos VOF para superficie libre, Euler-Euler para flujos dispersos, DPM para partículas, y modelos de población para distribución de tamaños de burbujas o gotas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Fluent Meshing</h3>
+        <p>Generación automática de mallas poliédricas de alta calidad directamente desde geometría CAD, con controles de refinamiento local y capas de prismas para capas límite.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Turbomaquinaria</h3>
+        <p>Herramientas especializadas para simular compresores, turbinas y bombas, incluyendo marcos de referencia múltiples, mezcla de planos y análisis de cavitación.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Escalabilidad HPC</h3>
+        <p>Rendimiento probado en miles de núcleos con escalado lineal, permitiendo resolver modelos de gran escala en tiempos competitivos para ciclos de diseño industriales.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Interfaz basada en tareas</h3>
+        <p>Flujo de trabajo guiado que simplifica la configuración de simulaciones complejas, reduciendo errores y acelerando la curva de aprendizaje para nuevos usuarios.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Ansys Fluent?</h2>
+    <ul class="pp-list">
+      <li>Ingenieros aeroespaciales que diseñan y optimizan aerodinámica externa, sistemas de propulsión y componentes de turbinas de gas.</li>
+      <li>Ingenieros automotrices que analizan aerodinámica vehicular, refrigeración de motores, confort de cabina y sistemas de escape.</li>
+      <li>Profesionales del sector energético que simulan calderas, intercambiadores de calor, reactores y sistemas de generación de energía renovable.</li>
+      <li>Ingenieros químicos y de procesos que modelan reactores, columnas de destilación, mezcladores y equipos de separación.</li>
+      <li>Diseñadores de electrónica que necesitan gestionar la disipación térmica en componentes, tarjetas de circuitos y centros de datos.</li>
+    </ul>
+  </div>
+</ProductPage>

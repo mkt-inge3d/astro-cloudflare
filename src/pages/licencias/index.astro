@@ -1,0 +1,164 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const brands = [
+  {
+    name: 'Autodesk — AEC',
+    products: [
+      { name: 'Revit', href: '/licencias/autodesk/revit' },
+      { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
+      { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+      { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+      { name: 'Robot Structural Analysis', href: '/licencias/autodesk/robot-structural' },
+      { name: 'Autodesk Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
+      { name: 'InfraWorks', href: '/licencias/autodesk/infraworks' },
+      { name: 'Advance Steel', href: '/licencias/autodesk/advance-steel' },
+      { name: 'Dynamo', href: '/licencias/autodesk/dynamo' },
+      { name: '3ds Max', href: '/licencias/autodesk/3ds-max' },
+    ],
+  },
+  {
+    name: 'Autodesk — Mecánica',
+    products: [
+      { name: 'Inventor', href: '/licencias/autodesk/inventor' },
+      { name: 'Fusion', href: '/licencias/autodesk/fusion' },
+      { name: 'AutoCAD Plant 3D', href: '/licencias/autodesk/autocad-plant-3d' },
+      { name: 'AutoCAD Electrical', href: '/licencias/autodesk/autocad-electrical' },
+      { name: 'Inventor Nastran', href: '/licencias/autodesk/inventor-nastran' },
+      { name: 'Inventor CAM', href: '/licencias/autodesk/inventor-cam' },
+    ],
+  },
+  {
+    name: 'Ansys',
+    products: [
+      { name: 'Ansys CFD', href: '/licencias/ansys/cfd' },
+      { name: 'Ansys Fluent', href: '/licencias/ansys/fluent' },
+      { name: 'Ansys Rocky', href: '/licencias/ansys/rocky' },
+      { name: 'Ansys Mechanical', href: '/licencias/ansys/mechanical' },
+      { name: 'Ansys Discovery', href: '/licencias/ansys/discovery' },
+    ],
+  },
+  {
+    name: 'Oracle',
+    products: [
+      { name: 'Primavera P6', href: '/licencias/oracle/primavera' },
+      { name: 'Oracle Unifier', href: '/licencias/oracle/unifier' },
+      { name: 'Oracle Aconex', href: '/licencias/oracle/aconex' },
+    ],
+  },
+  {
+    name: 'LyraCode',
+    products: [
+      { name: 'Task-ing', href: '/licencias/lyracode/task-ing' },
+      { name: 'Plan-ing', href: '/licencias/lyracode/plan-ing' },
+      { name: 'ADVManager', href: '/licencias/lyracode/advmanager' },
+    ],
+  },
+];
+---
+
+<Layout title="Licencias de Software | SemcoCAD">
+  <section class="hero">
+    <nav class="breadcrumb">
+      <a href="/">Home</a> &gt; <span>Licencias</span>
+    </nav>
+    <h1>Licencias de Software</h1>
+    <p class="subtitle">Soluciones profesionales en diseño, ingeniería, simulación y gestión de proyectos.</p>
+  </section>
+
+  <section class="brands">
+    {brands.map((brand) => (
+      <div class="brand-group">
+        <h2>{brand.name}</h2>
+        <div class="product-grid">
+          {brand.products.map((product) => (
+            <a href={product.href} class="product-card">
+              <span class="product-name">{product.name}</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 3rem 1.5rem 2.5rem;
+    text-align: center;
+  }
+
+  .breadcrumb {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .breadcrumb a {
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .brands {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  .brand-group {
+    margin-bottom: 2.5rem;
+  }
+
+  .brand-group h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--orange);
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem 1rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    transition: box-shadow var(--transition), border-color var(--transition);
+  }
+
+  .product-card:hover {
+    border-color: var(--orange);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .product-name {
+    font-weight: 500;
+  }
+
+  .arrow {
+    color: var(--orange);
+    font-size: 1.2rem;
+  }
+</style>

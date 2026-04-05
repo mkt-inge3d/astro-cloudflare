@@ -1,0 +1,208 @@
+---
+interface Props {
+  title: string;
+  product: string;
+  brand: string;
+  brandColor?: string;
+  description: string;
+  breadcrumbBrand: string;
+  breadcrumbBrandHref: string;
+  trainingUrl?: string;
+  trainingLabel?: string;
+  relatedProducts?: { name: string; href: string }[];
+}
+
+import Layout from './Layout.astro';
+
+const {
+  title,
+  product,
+  brand,
+  brandColor = '#00aae0',
+  description,
+  breadcrumbBrand,
+  breadcrumbBrandHref,
+  trainingUrl,
+  trainingLabel = 'Ver cursos disponibles',
+  relatedProducts = [],
+} = Astro.props;
+---
+
+<Layout title={`${title} | SemcoCAD`} description={description}>
+  <section class="pp-hero">
+    <div class="pp-hero-bg" style={`--brand-color: ${brandColor}`}></div>
+    <div class="pp-hero-inner">
+      <nav class="pp-breadcrumb fade-up">
+        <a href="/">Home</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/licencias">Licencias</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href={breadcrumbBrandHref}>{breadcrumbBrand}</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>{product}</span>
+      </nav>
+      <div class="pp-hero-content fade-up">
+        <span class="pp-badge" style={`background: ${brandColor}20; color: ${brandColor}; border-color: ${brandColor}30;`}>{brand}</span>
+        <h1>{product}</h1>
+        <p>{description}</p>
+        <div class="pp-hero-actions">
+          <a href="/contacto" class="pp-btn-primary">Solicitar cotización</a>
+          <a href="#caracteristicas" class="pp-btn-secondary">Ver características</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pp-layout">
+    <div class="pp-main">
+      <slot />
+    </div>
+
+    <aside class="pp-sidebar">
+      {trainingUrl && (
+        <div class="pp-sidebar-card pp-sidebar-training fade-up">
+          <div class="pp-sidebar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Capacitación en {product}</h3>
+          <p>Cursos certificados con instructores especializados. Presencial, online o híbrido.</p>
+          <a href={trainingUrl} class="pp-sidebar-btn">{trainingLabel}</a>
+        </div>
+      )}
+
+      <div class="pp-sidebar-card fade-up">
+        <div class="pp-sidebar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/></svg>
+        </div>
+        <h3>¿Necesita asesoría?</h3>
+        <p>Nuestro equipo lo ayuda a elegir la mejor solución.</p>
+        <div class="pp-sidebar-contact">
+          <a href="tel:+5112027908">(01) 202 7908</a>
+          <a href="mailto:jessica.vera@semco.com.pe">jessica.vera@semco.com.pe</a>
+        </div>
+      </div>
+
+      <div class="pp-sidebar-card fade-up">
+        <div class="pp-sidebar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Suscripción incluye</h3>
+        <ul class="pp-sidebar-list">
+          <li>Últimas actualizaciones</li>
+          <li>3 versiones anteriores</li>
+          <li>25 GB en la nube</li>
+          <li>Uso remoto / viajes</li>
+          <li>Soporte técnico</li>
+        </ul>
+      </div>
+
+      {relatedProducts.length > 0 && (
+        <div class="pp-sidebar-card fade-up">
+          <h3>Productos relacionados</h3>
+          <ul class="pp-sidebar-links">
+            {relatedProducts.map((p) => (
+              <li><a href={p.href}>{p.name}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+  <section class="pp-cta">
+    <div class="pp-cta-inner fade-up">
+      <h2>¿Listo para adquirir {product}?</h2>
+      <p>Contáctenos para obtener una cotización personalizada y asesoría gratuita.</p>
+      <div class="pp-cta-actions">
+        <a href="/contacto" class="pp-btn-primary">Solicitar cotización</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  /* Hero */
+  .pp-hero{position:relative;min-height:340px;display:flex;align-items:flex-end;overflow:hidden}
+  .pp-hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0f1923,#1a2332 50%,#1e3a5f);z-index:0}
+  .pp-hero-bg::before{content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,color-mix(in srgb,var(--brand-color) 8%,transparent) 0%,transparent 70%);border-radius:50%}
+  .pp-hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--brand-color) 40%,transparent),transparent)}
+  .pp-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:7rem 2rem 3.5rem;width:100%}
+  .pp-breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:rgba(176,190,197,.7);margin-bottom:1.5rem;flex-wrap:wrap}
+  .pp-breadcrumb a{color:rgba(176,190,197,.7);transition:color .3s}
+  .pp-breadcrumb a:hover{color:var(--orange)}
+  .pp-breadcrumb svg{opacity:.4}
+  .pp-breadcrumb span{color:var(--white)}
+  .pp-badge{display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:.4rem 1rem;border-radius:100px;border:1px solid;margin-bottom:1rem}
+  .pp-hero-content h1{font-size:2.8rem;font-weight:800;color:var(--white);margin-bottom:1rem;line-height:1.15}
+  .pp-hero-content>p{font-size:1.1rem;color:rgba(176,190,197,.85);max-width:650px;line-height:1.7;margin-bottom:2rem}
+  .pp-hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+  .pp-btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange);color:var(--white);padding:.9rem 2rem;border-radius:8px;font-weight:600;font-size:.95rem;transition:all .3s;border:2px solid var(--orange)}
+  .pp-btn-primary:hover{background:var(--orange-hover);border-color:var(--orange-hover);transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,107,53,.3)}
+  .pp-btn-secondary{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);padding:.9rem 2rem;border-radius:8px;font-weight:600;font-size:.95rem;border:2px solid rgba(255,255,255,.3);transition:all .3s}
+  .pp-btn-secondary:hover{border-color:var(--white);background:rgba(255,255,255,.08);transform:translateY(-2px)}
+
+  /* Layout */
+  .pp-layout{display:grid;grid-template-columns:1fr 320px;gap:3rem;max-width:1200px;margin:0 auto;padding:3rem 2rem 4rem;align-items:start}
+  .pp-main{min-width:0}
+
+  /* Content blocks */
+  .pp-section{margin-bottom:3rem}
+  .pp-section h2{font-size:1.6rem;font-weight:800;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid var(--gray-200);position:relative}
+  .pp-section h2::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background:var(--orange)}
+  .pp-section>p{font-size:.98rem;color:var(--gray-600);line-height:1.8;margin-bottom:1rem}
+  .pp-section strong{color:var(--navy)}
+  .pp-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+  .pp-feature{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:1.2rem;transition:all .3s}
+  .pp-feature:hover{border-color:rgba(255,107,53,.2);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.05)}
+  .pp-feature h3{font-size:.92rem;font-weight:700;margin-bottom:.3rem;display:flex;align-items:center;gap:.5rem}
+  .pp-feature h3::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0}
+  .pp-feature p{font-size:.84rem;color:var(--gray-600);line-height:1.5}
+  .pp-list{margin:1rem 0;display:grid;gap:.5rem}
+  .pp-list li{font-size:.92rem;color:var(--gray-600);line-height:1.6;padding-left:1.3rem;position:relative}
+  .pp-list li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+  .pp-integration-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1rem}
+  .pp-integration{display:flex;align-items:center;gap:.6rem;padding:.75rem 1rem;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;font-size:.88rem;font-weight:600;color:var(--navy);transition:all .3s}
+  .pp-integration:hover{border-color:rgba(255,107,53,.2);transform:translateY(-1px)}
+
+  /* Sidebar */
+  .pp-sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:1.2rem}
+  .pp-sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-sidebar-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06)}
+  .pp-sidebar-icon{width:36px;height:36px;color:var(--orange);margin-bottom:.75rem}
+  .pp-sidebar-icon svg{width:100%;height:100%}
+  .pp-sidebar-card h3{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+  .pp-sidebar-card p{font-size:.85rem;color:var(--gray-600);line-height:1.5;margin-bottom:.75rem}
+  .pp-sidebar-btn{display:block;text-align:center;background:var(--orange);color:var(--white);padding:.7rem 1.2rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s}
+  .pp-sidebar-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  .pp-sidebar-training{border-color:rgba(255,107,53,.2);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-sidebar-contact{display:flex;flex-direction:column;gap:.3rem}
+  .pp-sidebar-contact a{font-size:.85rem;color:var(--orange);font-weight:600;transition:opacity .3s}
+  .pp-sidebar-contact a:hover{opacity:.8}
+  .pp-sidebar-list{display:flex;flex-direction:column;gap:.3rem}
+  .pp-sidebar-list li{font-size:.84rem;color:var(--gray-600);padding-left:1rem;position:relative}
+  .pp-sidebar-list li::before{content:'';position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--orange)}
+  .pp-sidebar-links{display:flex;flex-direction:column;gap:.25rem}
+  .pp-sidebar-links li a{font-size:.88rem;color:var(--navy);font-weight:500;transition:color .3s;display:block;padding:.25rem 0}
+  .pp-sidebar-links li a:hover{color:var(--orange)}
+
+  /* CTA */
+  .pp-cta{background:linear-gradient(135deg,var(--orange),#e85a25 50%,#c44a1a);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
+  .pp-cta::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:rgba(255,255,255,.05);border-radius:50%}
+  .pp-cta-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}
+  .pp-cta h2{color:var(--white);font-size:1.8rem;font-weight:800;margin-bottom:.75rem}
+  .pp-cta p{color:rgba(255,255,255,.9);font-size:1rem;line-height:1.6;margin-bottom:1.5rem}
+  .pp-cta-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+  .pp-cta .pp-btn-primary{background:var(--white);color:var(--orange);border-color:var(--white)}
+  .pp-cta .pp-btn-primary:hover{background:var(--gray-50);border-color:var(--gray-50);box-shadow:0 8px 25px rgba(0,0,0,.2)}
+
+  .fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+  .fade-up.visible{opacity:1;transform:translateY(0)}
+
+  @media(max-width:1024px){.pp-layout{grid-template-columns:1fr;}.pp-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.pp-feature-grid{grid-template-columns:1fr}}
+  @media(max-width:600px){.pp-hero-content h1{font-size:1.8rem}.pp-hero-inner{padding:6rem 1.5rem 3rem}.pp-sidebar{grid-template-columns:1fr}.pp-integration-grid{grid-template-columns:1fr}}
+</style>
+
+<script is:inline>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){const p=e.target.parentElement;if(p){const s=Array.from(p.querySelectorAll('.fade-up'));const i=s.indexOf(e.target);setTimeout(()=>e.target.classList.add('visible'),i>=0?i*80:0)}else e.target.classList.add('visible');o.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.fade-up').forEach(e=>o.observe(e));
+</script>

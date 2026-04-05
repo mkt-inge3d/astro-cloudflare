@@ -1,0 +1,57 @@
+---
+import ServicePage from '../../layouts/ServicePage.astro';
+
+const programas = [
+  { name: 'BIM en Edificaciones', href: '/especializacion/bim-edificaciones', desc: 'Especialización BIM para proyectos de arquitectura e ingeniería de edificaciones. Revit, Navisworks, Dynamo.' },
+  { name: 'BIM en Plantas Industriales', href: '/especializacion/bim-plantas-industriales', desc: 'Modelado y gestión BIM para proyectos de plantas industriales. AutoCAD Plant 3D, Navisworks.' },
+  { name: 'BIM en Infraestructura', href: '/especializacion/bim-infraestructura', desc: 'BIM aplicado a infraestructura vial y civil. Civil 3D, InfraWorks, Navisworks.' },
+  { name: 'PIM - Prototipos Digitales', href: '/especializacion/pim-prototipos-digitales', desc: 'Innovación en diseño de productos con prototipos digitales. Inventor, Fusion, Inventor CAM.' },
+];
+---
+<ServicePage title="Cronograma de Especializaciones" badge="Especializaciones" headline="Cronograma de Especializaciones" description="Consulta las fechas disponibles para nuestros programas de especialización profesional en BIM y PIM." breadcrumb='<a href="/especializacion">Especializaciones</a><svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Cronograma</span>' contactPhone="(01) 202 7908 Anx. 200">
+
+  <section class="sp-section">
+    <div class="sp-section-header fade-up">
+      <span class="sp-tag">Programas disponibles</span>
+      <h2>Nuestras especializaciones</h2>
+      <p>Nuevas fechas se publican periódicamente. Contáctenos para consultar disponibilidad y próximos inicios.</p>
+    </div>
+    <div class="sp-grid-2">
+      {programas.map((p) => (
+        <a href={p.href} class="sp-card fade-up" style="display:block;text-decoration:none;color:inherit;">
+          <h3>{p.name}</h3>
+          <p>{p.desc}</p>
+          <span style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.88rem;font-weight:600;color:var(--orange);margin-top:0.5rem;">Ver programa <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="sp-section--gray">
+    <div class="sp-section-inner">
+      <div class="sp-section-header fade-up">
+        <span class="sp-tag">Formatos</span>
+        <h2>Elige tu modalidad de estudio</h2>
+        <p>Todas nuestras especializaciones están disponibles en tres formatos.</p>
+      </div>
+      <div class="sp-grid-3">
+        <a href="/especializacion/formato/presencial" class="sp-card fade-up" style="display:block;text-decoration:none;color:inherit;text-align:center;">
+          <div class="sp-card-icon" style="margin:0 auto 1rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Presencial</h3>
+          <p>En nuestras sedes de Lima con laboratorios equipados.</p>
+        </a>
+        <a href="/especializacion/formato/online" class="sp-card fade-up" style="display:block;text-decoration:none;color:inherit;text-align:center;">
+          <div class="sp-card-icon" style="margin:0 auto 1rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Online en Vivo</h3>
+          <p>Clases en tiempo real desde cualquier lugar.</p>
+        </a>
+        <a href="/especializacion/formato/hibrido" class="sp-card fade-up" style="display:block;text-decoration:none;color:inherit;text-align:center;">
+          <div class="sp-card-icon" style="margin:0 auto 1rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Híbrido</h3>
+          <p>Combina presencial y online según tu disponibilidad.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</ServicePage>

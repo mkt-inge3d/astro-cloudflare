@@ -1,0 +1,78 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="ADVManager"
+  product="ADVManager"
+  brand="LyraCode"
+  brandColor="#7c4dff"
+  description="Plataforma de gestión de licencias de software que permite monitorear el uso, optimizar la asignación, generar reportes detallados y maximizar el retorno de inversión en herramientas tecnológicas."
+  breadcrumbBrand="LyraCode"
+  breadcrumbBrandHref="/licencias/lyracode"
+  relatedProducts={[
+    { name: "Task-ing", href: "/licencias/lyracode/task-ing" },
+    { name: "Plan-ing", href: "/licencias/lyracode/plan-ing" },
+  ]}
+>
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es ADVManager?</h2>
+    <p>
+      ADVManager es una solución integral de gestión de licencias de software diseñada para organizaciones que utilizan múltiples herramientas de ingeniería y necesitan optimizar su inversión tecnológica. La plataforma proporciona visibilidad completa sobre el inventario de licencias, su utilización real, los patrones de uso por equipo y las oportunidades de optimización, permitiendo a los administradores de TI tomar decisiones basadas en datos sobre la renovación y adquisición de software.
+    </p>
+    <p>
+      En entornos de ingeniería donde las licencias de software representan una inversión significativa, ADVManager resuelve el problema común de licencias subutilizadas o insuficientes. El sistema monitorea en tiempo real qué licencias están en uso, por quién y durante cuánto tiempo, generando métricas de utilización que permiten redistribuir licencias ociosas, identificar necesidades de capacitación y justificar la adquisición de licencias adicionales con datos concretos.
+    </p>
+    <p>
+      ADVManager soporta los principales modelos de licenciamiento del mercado, incluyendo licencias flotantes, nodo-bloqueado, basadas en tokens y suscripciones en la nube. Su motor de reportes genera informes de cumplimiento, uso histórico, proyecciones de demanda y análisis de costo por usuario que resultan invaluables para auditorías de software, negociaciones con proveedores y planificación presupuestaria del departamento de TI.
+    </p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Monitoreo de uso en tiempo real</h3>
+        <p>Seguimiento continuo de la utilización de licencias con dashboards que muestran licencias activas, disponibles, en cola y denegadas en cada momento del día.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Inventario centralizado</h3>
+        <p>Registro completo de todas las licencias de software de la organización con información de proveedor, tipo de licencia, fechas de vencimiento y costos asociados.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Reportes de utilización</h3>
+        <p>Informes detallados de uso por producto, usuario, departamento y período de tiempo que revelan patrones de consumo y oportunidades de optimización de la inversión.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Alertas de vencimiento</h3>
+        <p>Notificaciones automáticas previas al vencimiento de licencias y contratos de mantenimiento, asegurando renovaciones oportunas y evitando interrupciones del servicio.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Optimización de asignación</h3>
+        <p>Recomendaciones basadas en datos para redistribuir licencias subutilizadas, recuperar licencias de usuarios inactivos y equilibrar la demanda entre equipos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte multi-vendor</h3>
+        <p>Compatibilidad con licencias de los principales proveedores de software de ingeniería incluyendo Ansys, Autodesk, Oracle, Bentley y otros fabricantes del mercado.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis de ROI</h3>
+        <p>Cálculo del retorno de inversión por licencia basado en horas de uso efectivo, costo por hora y comparación con modelos de licenciamiento alternativos disponibles.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Cumplimiento y auditoría</h3>
+        <p>Herramientas de verificación de cumplimiento que comparan licencias adquiridas con instalaciones y uso real, preparando a la organización para auditorías de software.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es ADVManager?</h2>
+    <ul class="pp-list">
+      <li>Administradores de TI que gestionan el inventario de licencias de software de ingeniería y necesitan optimizar costos sin afectar la productividad de los equipos técnicos.</li>
+      <li>Gerentes de ingeniería que requieren visibilidad sobre la disponibilidad y uso de herramientas de software para planificar la capacidad de sus equipos de trabajo.</li>
+      <li>Departamentos de compras que negocian renovaciones y nuevas adquisiciones de software y necesitan datos de uso real para fundamentar sus decisiones de inversión.</li>
+      <li>Oficinas de gestión de proyectos que asignan recursos de software a proyectos específicos y necesitan controlar los costos de licencias por proyecto.</li>
+      <li>Organizaciones que enfrentan auditorías de software y requieren evidencia de cumplimiento con los términos de licenciamiento de cada proveedor.</li>
+    </ul>
+  </div>
+</ProductPage>

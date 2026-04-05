@@ -1,0 +1,80 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="AutoCAD"
+  product="AutoCAD"
+  brand="Autodesk"
+  brandColor="#00aae0"
+  description="Software de diseño 2D y 3D líder en la industria para dibujo técnico, documentación y modelado de precisión."
+  breadcrumbBrand="Autodesk"
+  breadcrumbBrandHref="/licencias/autodesk"
+  trainingUrl="https://www.semco.com.pe/autocad/"
+  trainingLabel="Ver cursos de AutoCAD"
+  relatedProducts={[
+    { name: 'Revit', href: '/licencias/autodesk/revit' },
+    { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
+    { name: 'Inventor', href: '/licencias/autodesk/inventor' },
+    { name: 'AutoCAD Plant 3D', href: '/licencias/autodesk/autocad-plant-3d' },
+    { name: 'AutoCAD Electrical', href: '/licencias/autodesk/autocad-electrical' },
+  ]}
+>
+
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es AutoCAD?</h2>
+    <p>AutoCAD es el software de diseño asistido por computadora más utilizado en el mundo, desarrollado por Autodesk desde 1982. Permite a profesionales de arquitectura, ingeniería, construcción y manufactura crear dibujos técnicos de precisión en 2D y modelos 3D con una exactitud milimétrica. Su formato nativo DWG se ha convertido en el estándar de facto para el intercambio de planos y documentación técnica a nivel global.</p>
+    <p>Con más de cuatro décadas de desarrollo continuo, AutoCAD ofrece un conjunto completo de herramientas de dibujo, anotación y documentación que se adaptan a prácticamente cualquier disciplina de diseño. Incluye conjuntos de herramientas especializados para arquitectura, ingeniería mecánica, electricidad, cartografía, diseño de plantas y rasterización, todo integrado en una sola suscripción.</p>
+    <p>AutoCAD está disponible para escritorio (Windows y Mac) y dispositivos móviles, además de contar con AutoCAD Web App para acceso desde el navegador, permitiendo a los equipos de trabajo colaborar y revisar diseños desde cualquier lugar.</p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Dibujo 2D de precisión</h3>
+        <p>Herramientas completas de dibujo técnico con snap a objetos, rastreo polar, coordenadas y restricciones geométricas para máxima exactitud.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Modelado 3D</h3>
+        <p>Creación de sólidos, superficies y mallas 3D con operaciones booleanas, extrusión, revolución y barrido para visualización y prototipado.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Bloques dinámicos</h3>
+        <p>Bloques inteligentes con parámetros y acciones configurables que se adaptan a múltiples configuraciones sin duplicar contenido.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Anotación y acotado</h3>
+        <p>Sistema completo de cotas, textos multilínea, tablas, directrices y estilos de anotación con escalas automáticas para documentación profesional.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Referencias externas (Xrefs)</h3>
+        <p>Vinculación de archivos DWG, imágenes, PDFs y nubes de puntos como referencias para trabajo coordinado entre equipos multidisciplinarios.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Conjuntos de herramientas especializados</h3>
+        <p>Toolsets incluidos para Architecture, Mechanical, Electrical, Map 3D, MEP, Plant 3D y Raster Design con bibliotecas y funciones específicas por industria.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Automatización con LISP y scripts</h3>
+        <p>Personalización mediante AutoLISP, Visual LISP, .NET y scripts de línea de comandos para automatizar tareas repetitivas y crear flujos personalizados.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Colaboración en la nube</h3>
+        <p>Guardado en Autodesk Drive, AutoCAD Web App para edición online y aplicación móvil para revisión de planos en campo desde cualquier dispositivo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es AutoCAD?</h2>
+    <ul class="pp-list">
+      <li>Arquitectos y diseñadores de interiores</li>
+      <li>Ingenieros civiles, mecánicos y eléctricos</li>
+      <li>Dibujantes técnicos y delineantes profesionales</li>
+      <li>Topógrafos y profesionales de cartografía</li>
+      <li>Diseñadores industriales y de productos</li>
+      <li>Contratistas y profesionales de la construcción</li>
+    </ul>
+  </div>
+
+</ProductPage>

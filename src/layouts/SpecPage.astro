@@ -1,0 +1,181 @@
+---
+interface Props {
+  title: string;
+  program: string;
+  description: string;
+  duration: string;
+  certification: string;
+  semcoUrl?: string;
+}
+
+import Layout from './Layout.astro';
+
+const {
+  title,
+  program,
+  description,
+  duration,
+  certification,
+  semcoUrl,
+} = Astro.props;
+---
+
+<Layout title={`${title} | Especializaciones | SemcoCAD`} description={description}>
+  <section class="ep-hero">
+    <div class="ep-hero-bg"></div>
+    <div class="ep-hero-inner">
+      <nav class="ep-breadcrumb fade-up">
+        <a href="/">Home</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/especializacion">Especializaciones</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>{program}</span>
+      </nav>
+      <div class="ep-hero-content fade-up">
+        <span class="ep-badge">Programa de especialización</span>
+        <h1>{program}</h1>
+        <p>{description}</p>
+        <div class="ep-hero-actions">
+          <a href="/contacto" class="ep-btn-primary">Solicitar información</a>
+          <a href="#plan" class="ep-btn-secondary">Ver plan de estudios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ep-layout">
+    <div class="ep-main">
+      <slot />
+    </div>
+
+    <aside class="ep-sidebar">
+      <div class="ep-sidebar-card ep-sidebar-enroll fade-up">
+        <h3>Detalles del programa</h3>
+        <div class="ep-info-row"><span class="ep-label">Duración</span><span class="ep-value">{duration}</span></div>
+        <div class="ep-info-row"><span class="ep-label">Modalidad</span><span class="ep-value">Presencial / Online / Híbrido</span></div>
+        <div class="ep-info-row"><span class="ep-label">Certificación</span><span class="ep-value ep-cert">{certification}</span></div>
+        <a href="/contacto" class="ep-enroll-btn">Inscribirme</a>
+        {semcoUrl && <a href={semcoUrl} target="_blank" rel="noopener" class="ep-ext-link">Ver en semco.com.pe</a>}
+      </div>
+
+      <div class="ep-sidebar-card fade-up">
+        <div class="ep-sidebar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/></svg></div>
+        <h3>Contacto</h3>
+        <div class="ep-contact"><a href="tel:+5112027908">(01) 202 7908 Anx. 200</a><a href="mailto:informes@semco.com.pe">informes@semco.com.pe</a></div>
+      </div>
+
+      <div class="ep-sidebar-card fade-up">
+        <h3>Formatos de estudio</h3>
+        <ul class="ep-formats">
+          <li><a href="/especializacion/formato/presencial">Presencial</a> - Sedes en Lima</li>
+          <li><a href="/especializacion/formato/online">Online en vivo</a> - Desde cualquier lugar</li>
+          <li><a href="/especializacion/formato/hibrido">Híbrido</a> - Combina ambos</li>
+        </ul>
+      </div>
+
+      <div class="ep-sidebar-card fade-up">
+        <h3>Otras especializaciones</h3>
+        <ul class="ep-other">
+          <li><a href="/especializacion/bim-edificaciones">BIM en Edificaciones</a></li>
+          <li><a href="/especializacion/bim-plantas-industriales">BIM en Plantas Industriales</a></li>
+          <li><a href="/especializacion/bim-infraestructura">BIM en Infraestructura</a></li>
+          <li><a href="/especializacion/pim-prototipos-digitales">PIM - Prototipos Digitales</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <section class="ep-cta">
+    <div class="ep-cta-inner fade-up">
+      <h2>Inicia tu especialización hoy</h2>
+      <p>Consulta próximas fechas y asegura tu cupo en el programa.</p>
+      <a href="/contacto" class="ep-cta-btn">Solicitar información</a>
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  .ep-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;overflow:hidden}
+  .ep-hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0f1923,#1a2332 50%,#1e3a5f);z-index:0}
+  .ep-hero-bg::before{content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,53,.08) 0%,transparent 70%);border-radius:50%}
+  .ep-hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,107,53,.3),transparent)}
+  .ep-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:7rem 2rem 3.5rem;width:100%}
+  .ep-breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:rgba(176,190,197,.7);margin-bottom:1.5rem;flex-wrap:wrap}
+  .ep-breadcrumb a{color:rgba(176,190,197,.7);transition:color .3s}.ep-breadcrumb a:hover{color:var(--orange)}
+  .ep-breadcrumb svg{opacity:.4}.ep-breadcrumb span{color:var(--white)}
+  .ep-badge{display:inline-block;background:rgba(255,107,53,.12);color:var(--orange);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,107,53,.2);margin-bottom:1rem}
+  .ep-hero-content h1{font-size:2.5rem;font-weight:800;color:var(--white);margin-bottom:1rem;line-height:1.15}
+  .ep-hero-content>p{font-size:1.1rem;color:rgba(176,190,197,.85);max-width:650px;line-height:1.7;margin-bottom:2rem}
+  .ep-hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+  .ep-btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange);color:var(--white);padding:.9rem 2rem;border-radius:8px;font-weight:600;font-size:.95rem;transition:all .3s;border:2px solid var(--orange)}
+  .ep-btn-primary:hover{background:var(--orange-hover);border-color:var(--orange-hover);transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,107,53,.3)}
+  .ep-btn-secondary{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);padding:.9rem 2rem;border-radius:8px;font-weight:600;font-size:.95rem;border:2px solid rgba(255,255,255,.3);transition:all .3s}
+  .ep-btn-secondary:hover{border-color:var(--white);background:rgba(255,255,255,.08);transform:translateY(-2px)}
+
+  .ep-layout{display:grid;grid-template-columns:1fr 320px;gap:3rem;max-width:1200px;margin:0 auto;padding:3rem 2rem 4rem;align-items:start}
+  .ep-main{min-width:0}
+
+  .ep-section{margin-bottom:2.5rem}
+  .ep-section h2{font-size:1.5rem;font-weight:800;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid var(--gray-200);position:relative}
+  .ep-section h2::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background:var(--orange)}
+  .ep-section>p{font-size:.96rem;color:var(--gray-600);line-height:1.8;margin-bottom:1rem}
+  .ep-section strong{color:var(--navy)}
+  .ep-modules{display:grid;gap:.75rem;margin:1rem 0;counter-reset:mod}
+  .ep-modules li{font-size:.92rem;color:var(--gray-800);line-height:1.5;padding:1rem 1rem 1rem 3.5rem;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;position:relative;counter-increment:mod;transition:all .3s}
+  .ep-modules li:hover{border-color:rgba(255,107,53,.2);box-shadow:0 4px 12px rgba(0,0,0,.04)}
+  .ep-modules li::before{content:counter(mod,decimal-leading-zero);position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-size:1.1rem;font-weight:800;color:var(--orange);opacity:.5}
+  .ep-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:1rem 0}
+  .ep-tool{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:.8rem 1rem;text-align:center;font-size:.88rem;font-weight:600;color:var(--navy);transition:all .3s}
+  .ep-tool:hover{border-color:rgba(255,107,53,.2);transform:translateY(-2px)}
+  .ep-reqs{display:grid;gap:.4rem;margin:1rem 0}
+  .ep-reqs li{font-size:.9rem;color:var(--gray-600);line-height:1.6;padding-left:1.3rem;position:relative}
+  .ep-reqs li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+  .ep-benefits{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+  .ep-benefit{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:1.2rem;transition:all .3s}
+  .ep-benefit:hover{border-color:rgba(255,107,53,.2);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.05)}
+  .ep-benefit h3{font-size:.92rem;font-weight:700;margin-bottom:.3rem;display:flex;align-items:center;gap:.5rem}
+  .ep-benefit h3::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0}
+  .ep-benefit p{font-size:.84rem;color:var(--gray-600);line-height:1.5}
+
+  .ep-sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:1.2rem}
+  .ep-sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .ep-sidebar-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06)}
+  .ep-sidebar-enroll{border-color:rgba(255,107,53,.2);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .ep-sidebar-icon{width:32px;height:32px;color:var(--orange);margin-bottom:.6rem}
+  .ep-sidebar-icon svg{width:100%;height:100%}
+  .ep-sidebar-card h3{font-size:1rem;font-weight:700;margin-bottom:.75rem}
+  .ep-info-row{margin-bottom:.75rem}
+  .ep-label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray-600);margin-bottom:.15rem}
+  .ep-value{font-weight:600;font-size:.88rem;color:var(--navy);display:block}
+  .ep-cert{font-weight:500;font-size:.84rem;line-height:1.4}
+  .ep-enroll-btn{display:block;text-align:center;background:var(--orange);color:var(--white);padding:.75rem;border-radius:8px;font-weight:600;font-size:.92rem;transition:all .3s;margin-top:.5rem}
+  .ep-enroll-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  .ep-ext-link{display:block;text-align:center;font-size:.82rem;color:var(--orange);font-weight:600;margin-top:.5rem}
+  .ep-contact{display:flex;flex-direction:column;gap:.3rem}
+  .ep-contact a{font-size:.85rem;color:var(--orange);font-weight:600}
+  .ep-formats{display:flex;flex-direction:column;gap:.4rem}
+  .ep-formats li{font-size:.84rem;color:var(--gray-600);line-height:1.5}
+  .ep-formats li a{color:var(--orange);font-weight:600}
+  .ep-other{display:flex;flex-direction:column;gap:.25rem}
+  .ep-other li a{font-size:.88rem;color:var(--navy);font-weight:500;transition:color .3s;display:block;padding:.25rem 0}
+  .ep-other li a:hover{color:var(--orange)}
+
+  .ep-cta{background:linear-gradient(135deg,var(--orange),#e85a25 50%,#c44a1a);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
+  .ep-cta::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:rgba(255,255,255,.05);border-radius:50%}
+  .ep-cta-inner{position:relative;z-index:1;max-width:550px;margin:0 auto}
+  .ep-cta h2{color:var(--white);font-size:1.8rem;font-weight:800;margin-bottom:.75rem}
+  .ep-cta p{color:rgba(255,255,255,.9);font-size:1rem;line-height:1.6;margin-bottom:1.5rem}
+  .ep-cta-btn{display:inline-block;background:var(--white);color:var(--orange);padding:.9rem 2.5rem;border-radius:8px;font-weight:600;font-size:.95rem;transition:all .3s;border:2px solid var(--white)}
+  .ep-cta-btn:hover{background:var(--gray-50);transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.2)}
+
+  .fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+  .fade-up.visible{opacity:1;transform:translateY(0)}
+
+  @media(max-width:1024px){.ep-layout{grid-template-columns:1fr}.ep-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.ep-tools{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.ep-hero-content h1{font-size:1.8rem}.ep-hero-inner{padding:6rem 1.5rem 3rem}.ep-sidebar{grid-template-columns:1fr}.ep-benefits,.ep-tools{grid-template-columns:1fr}}
+</style>
+
+<script is:inline>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){const p=e.target.parentElement;if(p){const s=Array.from(p.querySelectorAll('.fade-up'));const i=s.indexOf(e.target);setTimeout(()=>e.target.classList.add('visible'),i>=0?i*80:0)}else e.target.classList.add('visible');o.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.fade-up').forEach(e=>o.observe(e));
+</script>

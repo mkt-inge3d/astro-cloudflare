@@ -1,0 +1,216 @@
+---
+interface Props {
+  title: string;
+  course: string;
+  category: string;
+  categoryHref: string;
+  description: string;
+  modality?: string;
+  duration?: string;
+  semcoUrl?: string;
+  licenseUrl?: string;
+  licenseLabel?: string;
+}
+
+import Layout from './Layout.astro';
+
+const {
+  title,
+  course,
+  category,
+  categoryHref,
+  description,
+  modality = 'Presencial / Online / Híbrido',
+  duration = 'Consultar próximas fechas',
+  semcoUrl,
+  licenseUrl,
+  licenseLabel,
+} = Astro.props;
+---
+
+<Layout title={`${title} | Cursos | SemcoCAD`} description={description}>
+  <section class="cp-hero">
+    <div class="cp-hero-bg"></div>
+    <div class="cp-hero-inner">
+      <nav class="cp-breadcrumb fade-up">
+        <a href="/">Home</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/cursos">Cursos</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href={categoryHref}>{category}</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>{course}</span>
+      </nav>
+      <div class="cp-hero-content fade-up">
+        <span class="cp-badge">Curso certificado</span>
+        <h1>Curso de {course}</h1>
+        <p>{description}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cp-layout">
+    <div class="cp-main">
+      <slot />
+    </div>
+
+    <aside class="cp-sidebar">
+      <div class="cp-sidebar-card cp-sidebar-enroll fade-up">
+        <h3>Inscríbete ahora</h3>
+        <div class="cp-info-row"><span class="cp-label">Modalidad</span><span class="cp-value">{modality}</span></div>
+        <div class="cp-info-row"><span class="cp-label">Duración</span><span class="cp-value">{duration}</span></div>
+        <div class="cp-info-row"><span class="cp-label">Certificación</span><span class="cp-value">Certificado SemcoCAD - Autodesk Training Center</span></div>
+        <a href="/contacto" class="cp-enroll-btn">Solicitar información</a>
+        {semcoUrl && <a href={semcoUrl} target="_blank" rel="noopener" class="cp-semco-link">Ver en semco.com.pe</a>}
+      </div>
+
+      {licenseUrl && (
+        <div class="cp-sidebar-card fade-up">
+          <div class="cp-sidebar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>¿Necesita la licencia?</h3>
+          <p>Adquiera {course} con soporte local y asesoría gratuita.</p>
+          <a href={licenseUrl} class="cp-license-link">{licenseLabel || `Ver licencia de ${course}`}</a>
+        </div>
+      )}
+
+      <div class="cp-sidebar-card fade-up">
+        <div class="cp-sidebar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/></svg></div>
+        <h3>Contacto</h3>
+        <div class="cp-contact-lines">
+          <a href="tel:+5112027908">(01) 202 7908 Anx. 200</a>
+          <a href="mailto:informes@semco.com.pe">informes@semco.com.pe</a>
+        </div>
+      </div>
+
+      <div class="cp-sidebar-card fade-up">
+        <h3>Modalidades disponibles</h3>
+        <ul class="cp-modality-list">
+          <li><a href="/especializacion/formato/presencial">Presencial</a> - En nuestras sedes de Lima</li>
+          <li><a href="/especializacion/formato/online">Online en vivo</a> - Desde cualquier lugar</li>
+          <li><a href="/especializacion/formato/hibrido">Híbrido</a> - Combina ambos formatos</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <section class="cp-cta">
+    <div class="cp-cta-inner fade-up">
+      <h2>¿Listo para dominar {course}?</h2>
+      <p>Inscríbete en nuestro próximo curso con certificación internacional.</p>
+      <a href="/contacto" class="cp-cta-btn">Inscribirme ahora</a>
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  .cp-hero{position:relative;min-height:320px;display:flex;align-items:flex-end;overflow:hidden}
+  .cp-hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0f1923,#1a2332 50%,#1e3a5f);z-index:0}
+  .cp-hero-bg::before{content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,53,.08) 0%,transparent 70%);border-radius:50%}
+  .cp-hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,107,53,.3),transparent)}
+  .cp-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:7rem 2rem 3rem;width:100%}
+  .cp-breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:rgba(176,190,197,.7);margin-bottom:1.5rem;flex-wrap:wrap}
+  .cp-breadcrumb a{color:rgba(176,190,197,.7);transition:color .3s}.cp-breadcrumb a:hover{color:var(--orange)}
+  .cp-breadcrumb svg{opacity:.4}.cp-breadcrumb span{color:var(--white)}
+  .cp-badge{display:inline-block;background:rgba(255,107,53,.12);color:var(--orange);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,107,53,.2);margin-bottom:1rem}
+  .cp-hero-content h1{font-size:2.5rem;font-weight:800;color:var(--white);margin-bottom:1rem;line-height:1.15}
+  .cp-hero-content>p{font-size:1.1rem;color:rgba(176,190,197,.85);max-width:650px;line-height:1.7}
+
+  .cp-layout{display:grid;grid-template-columns:1fr 320px;gap:3rem;max-width:1200px;margin:0 auto;padding:3rem 2rem 4rem;align-items:start}
+  .cp-main{min-width:0}
+
+  .cp-section{margin-bottom:2.5rem}
+  .cp-section h2{font-size:1.5rem;font-weight:800;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid var(--gray-200);position:relative}
+  .cp-section h2::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background:var(--orange)}
+  .cp-section>p{font-size:.96rem;color:var(--gray-600);line-height:1.8;margin-bottom:1rem}
+  .cp-section strong{color:var(--navy)}
+
+  .cp-topics{display:grid;gap:.5rem;margin:1rem 0}
+  .cp-topics li{font-size:.92rem;color:var(--gray-600);line-height:1.6;padding:.6rem 1rem .6rem 2.2rem;position:relative;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;transition:all .3s}
+  .cp-topics li:hover{border-color:rgba(255,107,53,.2);transform:translateX(4px)}
+  .cp-topics li::before{content:'';position:absolute;left:.8rem;top:50%;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:var(--orange)}
+
+  .cp-modules{display:grid;gap:.75rem;margin:1rem 0;counter-reset:mod}
+  .cp-modules li{font-size:.92rem;color:var(--gray-800);line-height:1.5;padding:1rem 1rem 1rem 3.5rem;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;position:relative;counter-increment:mod;transition:all .3s}
+  .cp-modules li:hover{border-color:rgba(255,107,53,.2);box-shadow:0 4px 12px rgba(0,0,0,.04)}
+  .cp-modules li::before{content:counter(mod,decimal-leading-zero);position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-size:1.1rem;font-weight:800;color:var(--orange);opacity:.5}
+
+  .cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+  .cp-grid-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:1.2rem;transition:all .3s}
+  .cp-grid-card:hover{border-color:rgba(255,107,53,.2);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.05)}
+  .cp-grid-card h3{font-size:.92rem;font-weight:700;margin-bottom:.3rem;display:flex;align-items:center;gap:.5rem}
+  .cp-grid-card h3::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0}
+  .cp-grid-card p{font-size:.84rem;color:var(--gray-600);line-height:1.5}
+
+  .cp-reqs{display:grid;gap:.4rem;margin:1rem 0}
+  .cp-reqs li{font-size:.9rem;color:var(--gray-600);line-height:1.6;padding-left:1.3rem;position:relative}
+  .cp-reqs li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+
+  /* Learning path / Levels */
+  .cp-path{position:relative;margin:1.5rem 0;padding-left:2rem}
+  .cp-path::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--orange),rgba(255,107,53,.15))}
+  .cp-level{position:relative;margin-bottom:1.5rem;padding:1.5rem;background:var(--white);border:1px solid var(--gray-200);border-radius:12px;transition:all .4s}
+  .cp-level:hover{border-color:rgba(255,107,53,.3);box-shadow:0 8px 25px rgba(0,0,0,.06);transform:translateX(4px)}
+  .cp-level::before{content:'';position:absolute;left:-2rem;top:1.8rem;width:22px;height:22px;border-radius:50%;background:var(--orange);border:3px solid var(--white);box-shadow:0 0 0 2px var(--orange);z-index:1}
+  .cp-level-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;flex-wrap:wrap}
+  .cp-level-badge{background:var(--orange);color:var(--white);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;padding:.25rem .75rem;border-radius:100px}
+  .cp-level-hours{font-size:.78rem;font-weight:600;color:var(--gray-600);background:var(--gray-100);padding:.25rem .6rem;border-radius:100px}
+  .cp-level h3{font-size:1.1rem;font-weight:700;margin-bottom:.5rem;color:var(--navy)}
+  .cp-level p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:.75rem}
+  .cp-level-topics{display:flex;flex-wrap:wrap;gap:.4rem}
+  .cp-level-topic{font-size:.78rem;color:var(--navy);background:var(--gray-50);border:1px solid var(--gray-200);padding:.25rem .6rem;border-radius:6px}
+  .cp-level-cert{display:flex;align-items:center;gap:.5rem;margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--gray-200);font-size:.82rem;color:var(--orange);font-weight:600}
+  .cp-level-cert svg{width:16px;height:16px;flex-shrink:0}
+  .cp-path-total{margin-top:1rem;padding:1rem 1.5rem;background:linear-gradient(135deg,rgba(255,107,53,.05),rgba(255,107,53,.02));border:1px solid rgba(255,107,53,.15);border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+  .cp-path-total strong{font-size:.95rem;color:var(--navy)}
+  .cp-path-total span{font-size:.85rem;color:var(--orange);font-weight:700}
+
+  /* Brochure button */
+  .cp-brochure{display:inline-flex;align-items:center;gap:.6rem;background:var(--navy);color:var(--white);padding:.8rem 1.5rem;border-radius:8px;font-weight:600;font-size:.9rem;transition:all .3s;margin-top:1rem}
+  .cp-brochure:hover{background:var(--navy-light);transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,35,50,.2)}
+  .cp-brochure svg{width:18px;height:18px}
+
+  /* Sidebar */
+  .cp-sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:1.2rem}
+  .cp-sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .cp-sidebar-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06)}
+  .cp-sidebar-enroll{border-color:rgba(255,107,53,.2);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .cp-sidebar-icon{width:32px;height:32px;color:var(--orange);margin-bottom:.6rem}
+  .cp-sidebar-icon svg{width:100%;height:100%}
+  .cp-sidebar-card h3{font-size:1rem;font-weight:700;margin-bottom:.75rem}
+  .cp-sidebar-card p{font-size:.85rem;color:var(--gray-600);line-height:1.5;margin-bottom:.5rem}
+  .cp-info-row{margin-bottom:.75rem}
+  .cp-label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray-600);margin-bottom:.15rem}
+  .cp-value{font-weight:600;font-size:.88rem;color:var(--navy);display:block}
+  .cp-enroll-btn{display:block;text-align:center;background:var(--orange);color:var(--white);padding:.75rem;border-radius:8px;font-weight:600;font-size:.92rem;transition:all .3s;margin-top:.5rem}
+  .cp-enroll-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  .cp-semco-link{display:block;text-align:center;font-size:.82rem;color:var(--orange);font-weight:600;margin-top:.5rem;transition:opacity .3s}
+  .cp-semco-link:hover{opacity:.8}
+  .cp-license-link{display:block;font-size:.88rem;color:var(--orange);font-weight:600;transition:opacity .3s}
+  .cp-license-link:hover{opacity:.8}
+  .cp-contact-lines{display:flex;flex-direction:column;gap:.3rem}
+  .cp-contact-lines a{font-size:.85rem;color:var(--orange);font-weight:600;transition:opacity .3s}
+  .cp-contact-lines a:hover{opacity:.8}
+  .cp-modality-list{display:flex;flex-direction:column;gap:.4rem}
+  .cp-modality-list li{font-size:.84rem;color:var(--gray-600);line-height:1.5}
+  .cp-modality-list li a{color:var(--orange);font-weight:600}
+
+  /* CTA */
+  .cp-cta{background:linear-gradient(135deg,var(--orange),#e85a25 50%,#c44a1a);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
+  .cp-cta::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:rgba(255,255,255,.05);border-radius:50%}
+  .cp-cta-inner{position:relative;z-index:1;max-width:550px;margin:0 auto}
+  .cp-cta h2{color:var(--white);font-size:1.8rem;font-weight:800;margin-bottom:.75rem}
+  .cp-cta p{color:rgba(255,255,255,.9);font-size:1rem;line-height:1.6;margin-bottom:1.5rem}
+  .cp-cta-btn{display:inline-block;background:var(--white);color:var(--orange);padding:.9rem 2.5rem;border-radius:8px;font-weight:600;font-size:.95rem;transition:all .3s;border:2px solid var(--white)}
+  .cp-cta-btn:hover{background:var(--gray-50);transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.2)}
+
+  .fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+  .fade-up.visible{opacity:1;transform:translateY(0)}
+
+  @media(max-width:1024px){.cp-layout{grid-template-columns:1fr}.cp-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}}
+  @media(max-width:600px){.cp-hero-content h1{font-size:1.8rem}.cp-hero-inner{padding:6rem 1.5rem 2.5rem}.cp-sidebar{grid-template-columns:1fr}.cp-grid{grid-template-columns:1fr}}
+</style>
+
+<script is:inline>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){const p=e.target.parentElement;if(p){const s=Array.from(p.querySelectorAll('.fade-up'));const i=s.indexOf(e.target);setTimeout(()=>e.target.classList.add('visible'),i>=0?i*80:0)}else e.target.classList.add('visible');o.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.fade-up').forEach(e=>o.observe(e));
+</script>

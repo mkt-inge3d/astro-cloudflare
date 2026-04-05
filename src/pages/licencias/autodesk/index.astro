@@ -1,0 +1,1040 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const aecProducts = [
+  { name: 'AutoCAD', logo: '/logos/autocad-full.png', href: '/licencias/autodesk/autocad', desc: 'Software de diseño 2D y 3D líder en la industria.' },
+  { name: 'Revit', logo: '/logos/revit-full.png', href: '/licencias/autodesk/revit', desc: 'Modelado BIM para arquitectura, estructura e instalaciones.' },
+  { name: 'Civil 3D', logo: '/logos/civil-3d.png', href: '/licencias/autodesk/civil-3d', desc: 'Diseño y documentación de ingeniería civil.' },
+  { name: 'Navisworks', logo: '/logos/navisworks.png', href: '/licencias/autodesk/navisworks', desc: 'Coordinación, revisión y simulación de modelos.' },
+  { name: 'Robot Structural', logo: '/logos/revit-full.png', href: '/licencias/autodesk/robot-structural', desc: 'Análisis y diseño estructural avanzado.' },
+  { name: 'Advance Steel', logo: '/logos/advance-steel.png', href: '/licencias/autodesk/advance-steel', desc: 'Modelado y detallado de estructuras metálicas.' },
+  { name: 'InfraWorks', logo: '/logos/infraworks.png', href: '/licencias/autodesk/infraworks', desc: 'Diseño conceptual de infraestructura.' },
+  { name: 'Construction Cloud', logo: '/logos/autocad-full.png', href: '/licencias/autodesk/construction-cloud', desc: 'Plataforma de gestión de construcción en la nube.' },
+  { name: '3ds Max', logo: '/logos/3ds-max.png', href: '/licencias/autodesk/3ds-max', desc: 'Modelado, animación y renderizado 3D.' },
+];
+
+const mfgProducts = [
+  { name: 'Inventor', logo: '/logos/inventor-full.png', href: '/licencias/autodesk/inventor', desc: 'Diseño mecánico 3D y simulación de productos.' },
+  { name: 'AutoCAD Plant 3D', logo: '/logos/plant-3d.png', href: '/licencias/autodesk/autocad-plant-3d', desc: 'Diseño de plantas industriales y tuberías.' },
+  { name: 'AutoCAD Electrical', logo: '/logos/autocad-electrical.png', href: '/licencias/autodesk/autocad-electrical', desc: 'Diseño de sistemas de control eléctrico.' },
+  { name: 'Fusion', logo: '/logos/inventor-full.png', href: '/licencias/autodesk/fusion', desc: 'CAD/CAM/CAE unificado en la nube.' },
+  { name: 'Inventor Nastran', logo: '/logos/inventor-full.png', href: '/licencias/autodesk/inventor-nastran', desc: 'Simulación FEA integrada en Inventor.' },
+  { name: 'Inventor CAM', logo: '/logos/inventor-full.png', href: '/licencias/autodesk/inventor-cam', desc: 'Manufactura asistida por computadora.' },
+];
+---
+
+<Layout title="Licencias Individuales Autodesk | SemcoCAD" description="Adquiere licencias individuales de software Autodesk: AutoCAD, Revit, Civil 3D, Inventor y más. Suscripciones anuales y trianuales con soporte local.">
+
+  <!-- Hero -->
+  <section class="ad-hero">
+    <div class="ad-hero-bg"></div>
+    <div class="ad-hero-inner">
+      <nav class="breadcrumb fade-up">
+        <a href="/">Home</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/licencias">Licencias</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Autodesk</span>
+      </nav>
+      <div class="ad-hero-content fade-up">
+        <span class="ad-badge">Autodesk Gold Partner</span>
+        <h1>Licencias Individuales Autodesk</h1>
+        <p>Cualquiera sea su sector o industria, las soluciones de software Autodesk que brindamos le permitirán potenciar sus proyectos de diseño, ingeniería y construcción.</p>
+        <div class="ad-hero-actions">
+          <a href="/contacto" class="btn-primary">Solicitar cotización</a>
+          <a href="#productos" class="btn-secondary">Ver productos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro / Subscription model -->
+  <section class="ad-intro">
+    <div class="ad-intro-inner">
+      <div class="ad-intro-text fade-up">
+        <h2>¿Qué es una suscripción Autodesk?</h2>
+        <p>Las suscripciones Autodesk se activan mediante un plan de suscripción, el cual proporciona el acceso al software contratado a usuarios designados por un periodo de tiempo. Es la única forma vigente para acceder al software Autodesk.</p>
+        <p>Puedes adquirir suscripciones de <strong>1 año o 3 años</strong>, con flexibilidad de renovación. Los planes de 3 años ofrecen un precio fijo garantizado durante todo el periodo.</p>
+      </div>
+      <div class="ad-intro-includes fade-up">
+        <h3>Tu suscripción incluye</h3>
+        <div class="includes-grid">
+          <div class="include-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <div>
+              <strong>Actualizaciones</strong>
+              <span>Últimas versiones siempre disponibles</span>
+            </div>
+          </div>
+          <div class="include-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <div>
+              <strong>3 versiones previas</strong>
+              <span>Acceso a las 3 versiones anteriores</span>
+            </div>
+          </div>
+          <div class="include-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div>
+              <strong>25 GB en la nube</strong>
+              <span>Almacenamiento en Autodesk Drive</span>
+            </div>
+          </div>
+          <div class="include-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div>
+              <strong>Uso remoto</strong>
+              <span>Trabaja desde casa o en viaje</span>
+            </div>
+          </div>
+          <div class="include-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <div>
+              <strong>Administración fácil</strong>
+              <span>Gestión centralizada de usuarios</span>
+            </div>
+          </div>
+          <div class="include-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <strong>Precio fijo 3 años</strong>
+              <span>Bloquea tu tarifa con plan trianual</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products AEC -->
+  <section class="ad-products" id="productos">
+    <div class="ad-products-inner">
+      <div class="section-header fade-up">
+        <span class="ad-section-tag">Productos</span>
+        <h2>Arquitectura, Ingeniería y Construcción</h2>
+        <p>Software especializado para proyectos AEC de cualquier escala.</p>
+      </div>
+      <div class="products-grid">
+        {aecProducts.map((product) => (
+          <a href={product.href} class="product-card fade-up">
+            <div class="product-card-logo">
+              <img src={product.logo} alt={product.name} loading="lazy" />
+            </div>
+            <div class="product-card-info">
+              <h3>{product.name}</h3>
+              <p>{product.desc}</p>
+            </div>
+            <span class="product-card-arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Products MFG -->
+  <section class="ad-products ad-products--alt">
+    <div class="ad-products-inner">
+      <div class="section-header fade-up">
+        <span class="ad-section-tag">Productos</span>
+        <h2>Manufactura y Diseño Industrial</h2>
+        <p>Soluciones para el desarrollo de productos y automatización industrial.</p>
+      </div>
+      <div class="products-grid">
+        {mfgProducts.map((product) => (
+          <a href={product.href} class="product-card fade-up">
+            <div class="product-card-logo">
+              <img src={product.logo} alt={product.name} loading="lazy" />
+            </div>
+            <div class="product-card-info">
+              <h3>{product.name}</h3>
+              <p>{product.desc}</p>
+            </div>
+            <span class="product-card-arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription plans -->
+  <section class="ad-plans">
+    <div class="ad-plans-inner">
+      <div class="section-header fade-up">
+        <span class="ad-section-tag">Planes</span>
+        <h2>¿Cómo adquirir tu suscripción?</h2>
+        <p>Elige el plan que mejor se adapte a las necesidades de tu empresa.</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card fade-up">
+          <div class="plan-header">
+            <span class="plan-duration">1 Año</span>
+            <h3>Suscripción Anual</h3>
+          </div>
+          <ul class="plan-features">
+            <li>Acceso completo al software</li>
+            <li>Actualizaciones incluidas</li>
+            <li>25 GB almacenamiento nube</li>
+            <li>Soporte técnico Autodesk</li>
+            <li>Acceso a versiones previas</li>
+            <li>Renovación flexible</li>
+          </ul>
+          <a href="/contacto" class="plan-btn">Cotizar ahora</a>
+        </div>
+        <div class="plan-card plan-card--featured fade-up">
+          <div class="plan-popular">Recomendado</div>
+          <div class="plan-header">
+            <span class="plan-duration">3 Años</span>
+            <h3>Suscripción Trianual</h3>
+          </div>
+          <ul class="plan-features">
+            <li>Todo lo del plan anual</li>
+            <li><strong>Precio fijo garantizado</strong></li>
+            <li>Mayor ahorro por periodo</li>
+            <li>Sin incrementos de precio</li>
+            <li>Continuidad asegurada</li>
+            <li>Renovación simplificada</li>
+          </ul>
+          <a href="/contacto" class="plan-btn plan-btn--primary">Cotizar ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="ad-benefits">
+    <div class="ad-benefits-bg"></div>
+    <div class="ad-benefits-inner">
+      <div class="section-header fade-up">
+        <span class="ad-section-tag ad-section-tag--light">¿Por qué con nosotros?</span>
+        <h2>Beneficios Semco</h2>
+        <p>Al adquirir o renovar sus suscripciones con nosotros, accede a estos beneficios exclusivos.</p>
+      </div>
+      <div class="semco-grid">
+        <div class="semco-card fade-up">
+          <div class="semco-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Asesoría gratuita</h3>
+          <p>Lo ayudamos a elegir las soluciones de software específicas para su negocio.</p>
+        </div>
+        <div class="semco-card fade-up">
+          <div class="semco-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Soporte de implementación</h3>
+          <p>Acompañamiento en la instalaci��n y configuración de su software.</p>
+        </div>
+        <div class="semco-card fade-up">
+          <div class="semco-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>Soporte técnico local</h3>
+          <p>Respuesta rápida ante problemas técnicos y dudas desde Perú.</p>
+        </div>
+        <div class="semco-card fade-up">
+          <div class="semco-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Facturación local</h3>
+          <p>Obtenga beneficios tributarios por compras locales en Perú.</p>
+        </div>
+        <div class="semco-card fade-up">
+          <div class="semco-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Capacitación certificada</h3>
+          <p>Acceda a capacitaciones con certificación de valor internacional.</p>
+        </div>
+        <div class="semco-card fade-up">
+          <div class="semco-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>+38 años de experiencia</h3>
+          <p>Más de tres décadas como socio estratégico de valor agregado en el Perú.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="ad-cta">
+    <div class="ad-cta-inner fade-up">
+      <h2>¿Listo para potenciar tus proyectos?</h2>
+      <p>Contáctanos para cotizar la solución Autodesk que se ajuste mejor a las necesidades de tu empresa.</p>
+      <div class="ad-cta-actions">
+        <a href="/contacto" class="btn-primary">Solicitar cotización</a>
+        <a href="tel:+5112027908" class="btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (01) 202 7908 Anx. 108
+        </a>
+      </div>
+      <p class="ad-cta-contact">
+        <strong>Ejecutiva de licencias:</strong> Jessica Vera —
+        <a href="mailto:jessica.vera@semco.com.pe">jessica.vera@semco.com.pe</a> —
+        <a href="tel:+51989682633">989 682 633</a>
+      </p>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ===== Hero ===== */
+  .ad-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .ad-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(0, 40, 80, 0.95) 0%, rgba(26, 35, 50, 0.9) 50%, rgba(0, 100, 160, 0.8) 100%),
+      url('/servicios/autodesk.jpg') center/cover no-repeat;
+    z-index: 0;
+  }
+
+  .ad-hero-bg::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 170, 224, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .ad-hero-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 170, 224, 0.4), transparent);
+  }
+
+  .ad-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7rem 2rem 4rem;
+    width: 100%;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(176, 190, 197, 0.7);
+    margin-bottom: 2rem;
+  }
+
+  .breadcrumb a {
+    color: rgba(176, 190, 197, 0.7);
+    transition: color 0.3s ease;
+  }
+
+  .breadcrumb a:hover { color: #00aae0; }
+  .breadcrumb svg { opacity: 0.4; }
+  .breadcrumb span { color: var(--white); }
+
+  .ad-badge {
+    display: inline-block;
+    background: rgba(0, 170, 224, 0.12);
+    color: #00aae0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 170, 224, 0.2);
+    margin-bottom: 1rem;
+  }
+
+  .ad-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+
+  .ad-hero-content > p {
+    font-size: 1.15rem;
+    color: rgba(176, 190, 197, 0.85);
+    max-width: 620px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .ad-hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* ===== Buttons ===== */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--orange);
+  }
+
+  .btn-primary:hover {
+    background: var(--orange-hover);
+    border-color: var(--orange-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--white);
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--orange);
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid var(--orange);
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 107, 53, 0.08);
+    transform: translateY(-2px);
+  }
+
+  /* ===== Section common ===== */
+  .section-header {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 3rem;
+  }
+
+  .ad-section-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));
+    color: var(--orange);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.35rem 1rem;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 107, 53, 0.15);
+  }
+
+  .ad-section-tag--light {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+  }
+
+  /* ===== Intro ===== */
+  .ad-intro {
+    padding: 5rem 2rem;
+    background: var(--white);
+  }
+
+  .ad-intro-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .ad-intro-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+  }
+
+  .ad-intro-text p {
+    font-size: 1rem;
+    color: var(--gray-600);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .ad-intro-text strong {
+    color: var(--navy);
+  }
+
+  .ad-intro-includes h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--orange);
+    display: inline-block;
+  }
+
+  .includes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .include-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .include-item:hover {
+    border-color: rgba(0, 170, 224, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .include-item svg {
+    width: 22px;
+    height: 22px;
+    color: #00aae0;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .include-item strong {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--navy);
+    margin-bottom: 0.15rem;
+  }
+
+  .include-item span {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    line-height: 1.4;
+  }
+
+  /* ===== Products ===== */
+  .ad-products {
+    padding: 5rem 2rem;
+    background: var(--gray-50);
+  }
+
+  .ad-products--alt {
+    background: var(--white);
+  }
+
+  .ad-products-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ad-products--alt .product-card {
+    background: var(--gray-50);
+  }
+
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00aae0, var(--orange));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+
+  .product-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .product-card-logo {
+    height: 36px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-card-logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .product-card-info h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+  }
+
+  .product-card-info p {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .product-card-arrow {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--orange);
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+
+  .product-card:hover .product-card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* ===== Plans ===== */
+  .ad-plans {
+    padding: 5rem 2rem;
+    background: var(--gray-50);
+  }
+
+  .ad-plans-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .plans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .plan-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+
+  .plan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  }
+
+  .plan-card--featured {
+    border-color: var(--orange);
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.1);
+  }
+
+  .plan-popular {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--orange);
+    color: var(--white);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0.3rem 1.2rem;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
+  .plan-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .plan-duration {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .plan-card--featured .plan-duration {
+    color: var(--orange);
+  }
+
+  .plan-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-600);
+  }
+
+  .plan-features {
+    margin-bottom: 2rem;
+  }
+
+  .plan-features li {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .plan-features li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #00aae0;
+    flex-shrink: 0;
+  }
+
+  .plan-features li strong {
+    color: var(--navy);
+  }
+
+  .plan-btn {
+    display: block;
+    text-align: center;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: all 0.3s ease;
+    background: var(--gray-50);
+    color: var(--navy);
+    border: 1px solid var(--gray-200);
+  }
+
+  .plan-btn:hover {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+    transform: translateY(-2px);
+  }
+
+  .plan-btn--primary {
+    background: var(--orange);
+    color: var(--white);
+    border-color: var(--orange);
+  }
+
+  .plan-btn--primary:hover {
+    background: var(--orange-hover);
+    border-color: var(--orange-hover);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  }
+
+  /* ===== Benefits ===== */
+  .ad-benefits {
+    position: relative;
+    padding: 5rem 2rem;
+    color: var(--white);
+    overflow: hidden;
+  }
+
+  .ad-benefits-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1923 0%, #1a2332 50%, #1e3a5f 100%);
+  }
+
+  .ad-benefits-bg::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 170, 224, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .ad-benefits-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .ad-benefits .section-header h2 { color: var(--white); }
+  .ad-benefits .section-header p { color: rgba(176, 190, 197, 0.7); }
+
+  .semco-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .semco-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+
+  .semco-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 107, 53, 0.3);
+    transform: translateY(-4px);
+  }
+
+  .semco-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    color: var(--orange);
+  }
+
+  .semco-icon svg { width: 100%; height: 100%; }
+
+  .semco-card h3 {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .semco-card p {
+    font-size: 0.85rem;
+    color: rgba(176, 190, 197, 0.75);
+    line-height: 1.6;
+  }
+
+  /* ===== CTA ===== */
+  .ad-cta {
+    background: linear-gradient(135deg, var(--orange) 0%, #e85a25 50%, #c44a1a 100%);
+    padding: 4.5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ad-cta::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+  }
+
+  .ad-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .ad-cta h2 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .ad-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .ad-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .ad-cta .btn-primary {
+    background: var(--white);
+    color: var(--orange);
+    border-color: var(--white);
+  }
+
+  .ad-cta .btn-primary:hover {
+    background: var(--gray-50);
+    border-color: var(--gray-50);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .ad-cta .btn-outline {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ad-cta .btn-outline:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .ad-cta-contact {
+    font-size: 0.88rem !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    margin-bottom: 0 !important;
+  }
+
+  .ad-cta-contact a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .ad-cta-contact a:hover {
+    opacity: 0.85;
+  }
+
+  /* ===== Animations ===== */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 900px) {
+    .ad-hero-content h1 { font-size: 2.2rem; }
+    .ad-intro-inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .semco-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .plans-grid {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .ad-hero-content h1 { font-size: 1.8rem; }
+    .ad-hero-inner { padding: 6rem 1.5rem 3rem; }
+    .section-header h2 { font-size: 1.7rem; }
+    .products-grid { grid-template-columns: 1fr; }
+    .includes-grid { grid-template-columns: 1fr; }
+    .semco-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const parent = entry.target.parentElement;
+        if (parent) {
+          const siblings = Array.from(parent.querySelectorAll('.fade-up'));
+          const idx = siblings.indexOf(entry.target as Element);
+          const delay = idx >= 0 ? idx * 80 : 0;
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+        } else {
+          entry.target.classList.add('visible');
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>

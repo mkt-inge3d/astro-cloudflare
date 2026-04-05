@@ -1,0 +1,80 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Ansys Rocky"
+  product="Ansys Rocky"
+  brand="Ansys"
+  brandColor="#ffb74d"
+  description="Software líder en simulación de partículas por método de elementos discretos (DEM) para modelar flujo de materiales granulares, ruptura de partículas, desgaste y colisiones en procesos industriales."
+  breadcrumbBrand="Ansys"
+  breadcrumbBrandHref="/licencias/ansys"
+  trainingUrl="/cursos/ansys"
+  trainingLabel="Ver cursos de Ansys Rocky"
+  relatedProducts={[
+    { name: "Ansys Fluent", href: "/licencias/ansys/fluent" },
+    { name: "Ansys Mechanical", href: "/licencias/ansys/mechanical" },
+  ]}
+>
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Ansys Rocky?</h2>
+    <p>
+      Ansys Rocky es un software de simulación de elementos discretos (DEM) de clase mundial, diseñado para modelar el comportamiento de materiales granulares y partículas en equipos y procesos industriales. Desde el transporte de mineral en fajas transportadoras hasta el mezclado de polvos farmacéuticos, Rocky permite predecir con precisión cómo se comportan los materiales particulados bajo diferentes condiciones operativas.
+    </p>
+    <p>
+      A diferencia de otras herramientas DEM, Rocky soporta partículas de formas no esféricas reales, lo que resulta fundamental para obtener predicciones precisas en aplicaciones industriales donde la forma de las partículas influye significativamente en el comportamiento del flujo. El software modela contactos entre partículas, ruptura, adhesión, desgaste de superficies y la interacción con geometrías móviles complejas como molinos, trituradoras y equipos vibratorios.
+    </p>
+    <p>
+      Rocky se integra de forma bidireccional con Ansys Fluent para simulaciones acopladas DEM-CFD, permitiendo modelar la interacción entre partículas y fluidos en equipos como ciclones, lechos fluidizados y sistemas de transporte neumático. Además, su aceleración por GPU permite resolver modelos con millones de partículas en tiempos prácticos para la industria.
+    </p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Partículas no esféricas</h3>
+        <p>Modelado de partículas con formas realistas incluyendo poliedros, fibras, conchas y formas personalizadas importadas desde archivos CAD para máxima fidelidad.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Ruptura de partículas</h3>
+        <p>Simulación de fragmentación y trituración de partículas con modelos de ruptura calibrados que predicen la distribución de tamaños resultante en equipos de conminución.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Desgaste de superficies</h3>
+        <p>Predicción del desgaste abrasivo y por impacto en chutes, tuberías y equipos de transporte, permitiendo optimizar diseños para extender la vida útil de componentes.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Acoplamiento DEM-CFD</h3>
+        <p>Integración bidireccional con Ansys Fluent para simular la interacción entre partículas y fluidos en ciclones, lechos fluidizados, transporte neumático y secadores.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Aceleración por GPU</h3>
+        <p>Aprovechamiento de tarjetas gráficas NVIDIA para resolver modelos con millones de partículas, logrando speedups de hasta 10x respecto a soluciones basadas solo en CPU.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Geometrías móviles complejas</h3>
+        <p>Soporte para equipos con movimientos complejos como molinos SAG, trituradoras de cono, cribas vibratorias y mecanismos articulados con cinemática prescrita.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Adhesión y cohesión</h3>
+        <p>Modelos de fuerzas adhesivas para simular materiales húmedos, cohesivos o pegajosos que se encuentran frecuentemente en procesos mineros, alimentarios y farmacéuticos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Post-procesamiento especializado</h3>
+        <p>Herramientas de análisis incluyendo distribución de tamaños, mapas de desgaste, trayectorias de partículas, tiempos de residencia y exportación de datos para análisis avanzado.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Ansys Rocky?</h2>
+    <ul class="pp-list">
+      <li>Ingenieros de procesos mineros que diseñan y optimizan chutes de transferencia, fajas transportadoras, molinos y sistemas de clasificación de mineral.</li>
+      <li>Profesionales de la industria cementera que simulan hornos rotatorios, molinos de bolas, sistemas de transporte y equipos de dosificación.</li>
+      <li>Ingenieros farmacéuticos que analizan procesos de mezclado, recubrimiento de tabletas, granulación y transporte de polvos en ambientes GMP.</li>
+      <li>Especialistas en industria alimentaria que optimizan equipos de procesamiento, empaque, transporte y clasificación de productos granulares.</li>
+      <li>Ingenieros de diseño de equipos que necesitan predecir cargas sobre componentes mecánicos generadas por el impacto y flujo de partículas.</li>
+    </ul>
+  </div>
+</ProductPage>

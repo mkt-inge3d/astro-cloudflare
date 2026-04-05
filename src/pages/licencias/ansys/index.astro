@@ -1,0 +1,718 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const products = [
+  {
+    name: 'Ansys Fluent',
+    href: '/licencias/ansys/fluent',
+    desc: 'Potente herramienta de dinámica de fluidos computacional (CFD) que ofrece resultados rápidos y precisos para la más amplia gama de aplicaciones multifísicas y de CFD.',
+    icon: 'fluent',
+  },
+  {
+    name: 'Ansys Rocky',
+    href: '/licencias/ansys/rocky',
+    desc: 'Software líder en simulación de partículas por el método de elementos discretos (DEM) para simular el movimiento de materiales granulares y discontinuos.',
+    icon: 'rocky',
+  },
+  {
+    name: 'Ansys Mechanical',
+    href: '/licencias/ansys/mechanical',
+    desc: 'Solución de simulación de análisis estructural por elementos finitos que evalúa el comportamiento estructural de componentes y sistemas.',
+    icon: 'mechanical',
+  },
+  {
+    name: 'Ansys Discovery',
+    href: '/licencias/ansys/discovery',
+    desc: 'Primera herramienta de diseño basada en simulación que combina simulación física instantánea, simulación de alta fidelidad y modelado geométrico interactivo.',
+    icon: 'discovery',
+  },
+  {
+    name: 'Ansys CFD',
+    href: '/licencias/ansys/cfd',
+    desc: 'Módulo enfocado en la simulación de fluidos y dinámica computacional. Analiza flujo de fluidos, transferencia de calor, intercambio de masa y más.',
+    icon: 'cfd',
+  },
+];
+
+const benefits = [
+  { title: 'Impulso de la innovación', desc: 'Explore y prediga el funcionamiento de productos en entornos reales.' },
+  { title: 'Reducción de costos', desc: 'Reduzca o elimine costosas pruebas físicas innecesarias.' },
+  { title: 'Aumento de calidad', desc: 'Mejore la calidad de sus proyectos con simulación avanzada.' },
+  { title: 'Gestión de complejidad', desc: 'Maneje proyectos de alta complejidad multifísica.' },
+  { title: 'Menor tiempo de ciclo', desc: 'Acelere el desarrollo con simulaciones precisas.' },
+  { title: 'Minimización de riesgo', desc: 'Anticipe problemas antes de fabricar prototipos.' },
+  { title: 'Time-to-market', desc: 'Recorte el tiempo de comercialización de sus productos.' },
+  { title: 'Impulso de ingresos', desc: 'Optimice diseños para maximizar el rendimiento y las ventas.' },
+];
+
+const services = [
+  { title: 'Análisis Estructurales', desc: 'Análisis FEM de equipos, componentes y estructuras: cálculo de esfuerzos, deformaciones, vibraciones, fatiga y dinámica de mecanismos.' },
+  { title: 'Análisis de Partículas', desc: 'Simulación DEM para visualización de flujo de partículas, ruptura, formas geométricas, humedad relativa, patrones de flujo y desgaste.' },
+  { title: 'Análisis de Fluidos', desc: 'Dinámica de fluidos computacional (CFD) mono y multifásica en regímenes laminar o turbulento, perfiles de temperatura, presión y velocidad.' },
+  { title: 'Recipientes a Presión', desc: 'Diseño y análisis de equipos y recipientes a presión, validación estructural, evaluaciones de integridad mecánica y vida a fatiga.' },
+  { title: 'Estructuras', desc: 'Diseño de estructuras de acero y concreto armado, análisis sísmico y de viento, verificación de integridad y diseño de juntas.' },
+  { title: 'Máquinas Térmicas', desc: 'Determinación de intercambio de calor, estudios de combustión, análisis termostructurales y diseño bajo normas estandarizadas.' },
+  { title: 'Equipos Rotativos', desc: 'Evaluación CFD de bombas, compresores, ventiladores y turbinas. Optimización de diseño, análisis de erosión y cavitación.' },
+  { title: 'Ventilación y HVAC', desc: 'Distribución de temperatura, perfiles de velocidad, escenarios de incendio y explosión, fugas de sustancias tóxicas y confort.' },
+  { title: 'Fatiga, Erosión y Desgaste', desc: 'Estimación de vida remanente, factores de seguridad, localización de zonas críticas, tasas de erosión y esfuerzos alternantes.' },
+  { title: 'Fitness-for-Service', desc: 'Evaluación según normas estandarizadas, re-rating, incorporación de defectos de campo y procesamiento de nubes de puntos 3D.' },
+  { title: 'Tuberías y Flujo', desc: 'Cálculo y dimensionamiento de tuberías, análisis de flexibilidad, vibraciones inducidas por flujo y diseño de juntas de expansión.' },
+];
+---
+
+<Layout title="Licencias Ansys | Software de Simulación CAE | SemcoCAD" description="Software de simulación Ansys: Fluent, Rocky, Mechanical, Discovery y CFD. Licencias perpetuas y de renta. Partner autorizado ESSS Ansys en Perú.">
+
+  <!-- Hero -->
+  <section class="an-hero">
+    <div class="an-hero-bg"></div>
+    <div class="an-hero-inner">
+      <nav class="breadcrumb fade-up">
+        <a href="/">Home</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/licencias">Licencias</a>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Ansys</span>
+      </nav>
+      <div class="an-hero-grid fade-up">
+        <div class="an-hero-text">
+          <span class="an-badge">Partner ESSS Ansys</span>
+          <h1>Software de Simulación Ansys</h1>
+          <p>El líder en software de simulación CAE multifísico para análisis y simulación de elementos finitos (FEA). Prediga el comportamiento de sus diseños y optimícelos.</p>
+          <div class="an-hero-actions">
+            <a href="/contacto" class="btn-primary">Solicitar cotización</a>
+            <a href="#productos" class="btn-secondary">Ver productos</a>
+          </div>
+        </div>
+        <div class="an-hero-logo">
+          <img src="/logos/ansys-full.png" alt="Ansys" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits grid -->
+  <section class="an-value">
+    <div class="an-value-inner">
+      <div class="section-header fade-up">
+        <span class="an-section-tag">Ventajas</span>
+        <h2>El poder de la simulación para sus proyectos</h2>
+        <p>Explore y prediga el funcionamiento de productos en entornos reales, eliminando costosas pruebas físicas.</p>
+      </div>
+      <div class="value-grid">
+        {benefits.map((b) => (
+          <div class="value-card fade-up">
+            <div class="value-dot"></div>
+            <h3>{b.title}</h3>
+            <p>{b.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="an-products" id="productos">
+    <div class="an-products-inner">
+      <div class="section-header fade-up">
+        <span class="an-section-tag">Plataforma Ansys Workbench</span>
+        <h2>Productos de simulación</h2>
+        <p>Plataforma de simulación integrada que permite realizar análisis estructurales, de fluidos, electromagnéticos y de sistemas completos en una sola interfaz.</p>
+      </div>
+      <div class="an-products-grid">
+        {products.map((p, i) => (
+          <a href={p.href} class="an-product-card fade-up">
+            <div class="an-product-num">0{i + 1}</div>
+            <h3>{p.name}</h3>
+            <p>{p.desc}</p>
+            <span class="an-product-link">Ver más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Licensing -->
+  <section class="an-licensing">
+    <div class="an-licensing-inner">
+      <div class="section-header fade-up">
+        <span class="an-section-tag">Licencias</span>
+        <h2>¿Cómo adquirir una licencia Ansys?</h2>
+        <p>La adquisición de licencias se realiza de acuerdo a los requerimientos de cada empresa.</p>
+      </div>
+      <div class="license-types">
+        <div class="license-type-card fade-up">
+          <div class="lt-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M18 20h12M18 28h8"/><circle cx="36" cy="12" r="6" fill="currentColor" opacity="0.15"/></svg>
+          </div>
+          <h3>Licencia Perpetua</h3>
+          <p>Adquisición permanente del software con pagos anuales de mantenimiento y actualización para recibir las últimas mejoras y características.</p>
+          <div class="lt-badge">Pago único + mantenimiento anual</div>
+          <a href="/contacto" class="lt-btn">Solicitar cotización</a>
+        </div>
+        <div class="license-type-card license-type-card--featured fade-up">
+          <div class="lt-popular">Flexible</div>
+          <div class="lt-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l7 7"/></svg>
+          </div>
+          <h3>Licencia de Renta</h3>
+          <p>Acceso al software por el tiempo que requiera su proyecto. Ideal para necesidades específicas o evaluación de la plataforma antes de una compra perpetua.</p>
+          <div class="lt-badge lt-badge--alt">Pago por periodo de uso</div>
+          <a href="/contacto" class="lt-btn lt-btn--primary">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="an-services">
+    <div class="an-services-bg"></div>
+    <div class="an-services-inner">
+      <div class="section-header fade-up">
+        <span class="an-section-tag an-section-tag--light">CAE</span>
+        <h2>Servicios especializados de simulación</h2>
+        <p>Externalice sus necesidades de simulación con nuestro equipo de expertos certificados.</p>
+      </div>
+      <div class="services-grid">
+        {services.map((s) => (
+          <div class="service-card fade-up">
+            <h3>{s.title}</h3>
+            <p>{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Added value -->
+  <section class="an-added">
+    <div class="an-added-inner">
+      <div class="section-header fade-up">
+        <span class="an-section-tag">Valor Agregado</span>
+        <h2>Beneficios Semco</h2>
+        <p>Al adquirir su licencia Ansys con nosotros, accede a estos beneficios exclusivos.</p>
+      </div>
+      <div class="added-grid">
+        <div class="added-card fade-up">
+          <div class="added-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Soporte técnico</h3>
+          <p>Asistencia ante problemas técnicos y mantenimiento del software con las últimas mejoras y características.</p>
+        </div>
+        <div class="added-card fade-up">
+          <div class="added-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Capacitación personalizada</h3>
+          <p>Capacitación en productos Ansys para que aprenda a utilizar eficazmente el software y mejore su experiencia de simulación.</p>
+        </div>
+        <div class="added-card fade-up">
+          <div class="added-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Atención personalizada local</h3>
+          <p>Equipo local de expertos en Perú que brinda atención personalizada y soporte técnico con respuesta rápida y efectiva.</p>
+        </div>
+        <div class="added-card fade-up">
+          <div class="added-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Simulación computacional</h3>
+          <p>Externalice sus necesidades de simulación con nuestros servicios CAE, enfóquese en sus actividades primarias y mejore la eficiencia de sus procesos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="an-cta">
+    <div class="an-cta-inner fade-up">
+      <h2>¿Necesita más información sobre Ansys?</h2>
+      <p>Nuestro equipo de especialistas está listo para asesorarlo en la elección de la mejor solución de simulación para su empresa.</p>
+      <div class="an-cta-actions">
+        <a href="/contacto" class="btn-primary">Solicitar cotización</a>
+        <a href="tel:+51985335750" class="btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          985 335 750
+        </a>
+      </div>
+      <p class="an-cta-contact">
+        <strong>Asesor Ansys:</strong> Alvaro Huillca Muñoz —
+        <a href="mailto:simulacion@semco.com.pe">simulacion@semco.com.pe</a>
+      </p>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ===== Hero ===== */
+  .an-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .an-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0a0f1a 0%, #1a1a2e 40%, #16213e 100%);
+    z-index: 0;
+  }
+
+  .an-hero-bg::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 183, 77, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .an-hero-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 183, 77, 0.4), transparent);
+  }
+
+  .an-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7rem 2rem 4rem;
+    width: 100%;
+  }
+
+  .an-hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(176, 190, 197, 0.7);
+    margin-bottom: 2rem;
+  }
+
+  .breadcrumb a { color: rgba(176, 190, 197, 0.7); transition: color 0.3s ease; }
+  .breadcrumb a:hover { color: #ffb74d; }
+  .breadcrumb svg { opacity: 0.4; }
+  .breadcrumb span { color: var(--white); }
+
+  .an-badge {
+    display: inline-block;
+    background: rgba(255, 183, 77, 0.12);
+    color: #ffb74d;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 183, 77, 0.2);
+    margin-bottom: 1rem;
+  }
+
+  .an-hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+
+  .an-hero-text > p {
+    font-size: 1.1rem;
+    color: rgba(176, 190, 197, 0.85);
+    max-width: 560px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .an-hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .an-hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .an-hero-logo img {
+    max-width: 260px;
+    filter: brightness(1.1) drop-shadow(0 0 40px rgba(255, 183, 77, 0.15));
+    animation: logo-float 5s ease-in-out infinite;
+  }
+
+  @keyframes logo-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* ===== Buttons ===== */
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--orange); color: var(--white);
+    padding: 0.9rem 2rem; border-radius: 8px;
+    font-weight: 600; font-size: 0.95rem;
+    transition: all 0.3s ease; border: 2px solid var(--orange);
+  }
+  .btn-primary:hover { background: var(--orange-hover); border-color: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3); }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: transparent; color: var(--white);
+    padding: 0.9rem 2rem; border-radius: 8px;
+    font-weight: 600; font-size: 0.95rem;
+    border: 2px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;
+  }
+  .btn-secondary:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.08); transform: translateY(-2px); }
+
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: transparent; color: var(--orange);
+    padding: 0.9rem 2rem; border-radius: 8px;
+    font-weight: 600; font-size: 0.95rem;
+    border: 2px solid var(--orange); transition: all 0.3s ease;
+  }
+  .btn-outline:hover { background: rgba(255, 107, 53, 0.08); transform: translateY(-2px); }
+
+  /* ===== Section common ===== */
+  .section-header { text-align: center; max-width: 640px; margin: 0 auto 3rem; }
+
+  .an-section-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 183, 77, 0.1), rgba(255, 183, 77, 0.05));
+    color: #ffb74d;
+    font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;
+    padding: 0.35rem 1rem; border-radius: 100px;
+    margin-bottom: 1rem; border: 1px solid rgba(255, 183, 77, 0.15);
+  }
+
+  .an-section-tag--light {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .section-header h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; line-height: 1.2; }
+  .section-header p { font-size: 1rem; color: var(--gray-600); line-height: 1.6; }
+
+  /* ===== Value / Benefits ===== */
+  .an-value { padding: 5rem 2rem; background: var(--white); }
+  .an-value-inner { max-width: 1100px; margin: 0 auto; }
+
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .value-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 1.4rem;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .value-card:hover {
+    border-color: rgba(255, 183, 77, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  }
+
+  .value-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: linear-gradient(135deg, #ffb74d, var(--orange));
+    margin-bottom: 0.8rem;
+  }
+
+  .value-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.3rem; }
+  .value-card p { font-size: 0.82rem; color: var(--gray-600); line-height: 1.5; }
+
+  /* ===== Products ===== */
+  .an-products { padding: 5rem 2rem; background: var(--gray-50); }
+  .an-products-inner { max-width: 1100px; margin: 0 auto; }
+
+  .an-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .an-product-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .an-product-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #ffb74d, var(--orange));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .an-product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+
+  .an-product-card:hover::before { transform: scaleX(1); }
+
+  .an-product-num {
+    font-size: 2.5rem; font-weight: 800;
+    color: rgba(255, 183, 77, 0.15);
+    line-height: 1; margin-bottom: 1rem;
+  }
+
+  .an-product-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
+  .an-product-card p { font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.2rem; }
+
+  .an-product-link {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 0.88rem; font-weight: 600; color: var(--orange);
+    margin-top: auto;
+    transition: gap 0.3s ease;
+  }
+  .an-product-card:hover .an-product-link { gap: 0.8rem; }
+
+  /* ===== Licensing ===== */
+  .an-licensing { padding: 5rem 2rem; background: var(--white); }
+  .an-licensing-inner { max-width: 800px; margin: 0 auto; }
+
+  .license-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .license-type-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .license-type-card:hover { transform: translateY(-4px); box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08); }
+
+  .license-type-card--featured {
+    background: var(--white);
+    border-color: var(--orange);
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.1);
+  }
+
+  .lt-popular {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--orange); color: var(--white);
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.5px; padding: 0.3rem 1.2rem;
+    border-radius: 100px; white-space: nowrap;
+  }
+
+  .lt-icon { width: 56px; height: 56px; color: var(--orange); margin-bottom: 1.2rem; }
+  .lt-icon svg { width: 100%; height: 100%; }
+
+  .license-type-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; }
+  .license-type-card p { font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.2rem; }
+
+  .lt-badge {
+    font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+    background: rgba(26, 35, 50, 0.06); color: var(--navy);
+    padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem;
+  }
+  .lt-badge--alt { background: rgba(255, 107, 53, 0.08); color: var(--orange); }
+
+  .lt-btn {
+    display: inline-block; padding: 0.7rem 1.8rem; border-radius: 8px;
+    font-weight: 600; font-size: 0.88rem; transition: all 0.3s ease;
+    background: var(--gray-50); color: var(--navy); border: 1px solid var(--gray-200); margin-top: auto;
+  }
+  .lt-btn:hover { background: var(--navy); color: var(--white); border-color: var(--navy); transform: translateY(-2px); }
+  .lt-btn--primary { background: var(--orange); color: var(--white); border-color: var(--orange); }
+  .lt-btn--primary:hover { background: var(--orange-hover); border-color: var(--orange-hover); box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3); }
+
+  /* ===== Services ===== */
+  .an-services { position: relative; padding: 5rem 2rem; color: var(--white); overflow: hidden; }
+
+  .an-services-bg {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, #0a0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  }
+  .an-services-bg::before {
+    content: ''; position: absolute;
+    top: -40%; right: -15%; width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(255, 183, 77, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .an-services-inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+  .an-services .section-header h2 { color: var(--white); }
+  .an-services .section-header p { color: rgba(176, 190, 197, 0.7); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .service-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 183, 77, 0.3);
+    transform: translateY(-3px);
+  }
+
+  .service-card h3 { color: var(--white); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .service-card p { font-size: 0.82rem; color: rgba(176, 190, 197, 0.7); line-height: 1.6; }
+
+  /* ===== Added value ===== */
+  .an-added { padding: 5rem 2rem; background: var(--white); }
+  .an-added-inner { max-width: 1100px; margin: 0 auto; }
+
+  .added-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .added-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+
+  .added-card:hover {
+    border-color: rgba(255, 107, 53, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  .added-icon { width: 44px; height: 44px; margin: 0 auto 1rem; color: var(--orange); }
+  .added-icon svg { width: 100%; height: 100%; }
+  .added-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .added-card p { font-size: 0.85rem; color: var(--gray-600); line-height: 1.6; }
+
+  /* ===== CTA ===== */
+  .an-cta {
+    background: linear-gradient(135deg, var(--orange) 0%, #e85a25 50%, #c44a1a 100%);
+    padding: 4.5rem 2rem; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .an-cta::before {
+    content: ''; position: absolute;
+    top: -80px; right: -80px; width: 300px; height: 300px;
+    background: rgba(255, 255, 255, 0.05); border-radius: 50%;
+  }
+
+  .an-cta-inner { position: relative; z-index: 1; max-width: 650px; margin: 0 auto; }
+  .an-cta h2 { color: var(--white); font-size: 2rem; font-weight: 800; margin-bottom: 1rem; }
+  .an-cta p { color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; line-height: 1.6; margin-bottom: 2rem; }
+
+  .an-cta-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+
+  .an-cta .btn-primary { background: var(--white); color: var(--orange); border-color: var(--white); }
+  .an-cta .btn-primary:hover { background: var(--gray-50); border-color: var(--gray-50); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); }
+  .an-cta .btn-outline { color: var(--white); border-color: rgba(255, 255, 255, 0.5); }
+  .an-cta .btn-outline:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.1); }
+
+  .an-cta-contact { font-size: 0.88rem !important; color: rgba(255, 255, 255, 0.75) !important; margin-bottom: 0 !important; }
+  .an-cta-contact a { color: var(--white); text-decoration: underline; text-underline-offset: 2px; }
+  .an-cta-contact a:hover { opacity: 0.85; }
+
+  /* ===== Animations ===== */
+  .fade-up {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 1024px) {
+    .value-grid { grid-template-columns: repeat(2, 1fr); }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .added-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 900px) {
+    .an-hero-text h1 { font-size: 2.2rem; }
+    .an-hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .an-hero-text > p { margin-left: auto; margin-right: auto; }
+    .an-hero-actions { justify-content: center; }
+    .an-hero-logo img { max-width: 200px; }
+    .an-products-grid { grid-template-columns: repeat(2, 1fr); }
+    .license-types { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  }
+
+  @media (max-width: 600px) {
+    .an-hero-text h1 { font-size: 1.8rem; }
+    .an-hero-inner { padding: 6rem 1.5rem 3rem; }
+    .section-header h2 { font-size: 1.7rem; }
+    .value-grid { grid-template-columns: 1fr 1fr; }
+    .an-products-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .added-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const parent = entry.target.parentElement;
+        if (parent) {
+          const siblings = Array.from(parent.querySelectorAll('.fade-up'));
+          const idx = siblings.indexOf(entry.target as Element);
+          const delay = idx >= 0 ? idx * 80 : 0;
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+        } else {
+          entry.target.classList.add('visible');
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>

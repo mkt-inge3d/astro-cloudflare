@@ -1,0 +1,82 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Ansys Mechanical"
+  product="Ansys Mechanical"
+  brand="Ansys"
+  brandColor="#ffb74d"
+  description="Plataforma de análisis estructural por elementos finitos para resolver problemas estáticos, dinámicos, de fatiga, no lineales, térmicos y de vibraciones con precisión y confiabilidad industrial."
+  breadcrumbBrand="Ansys"
+  breadcrumbBrandHref="/licencias/ansys"
+  trainingUrl="/cursos/ansys"
+  trainingLabel="Ver cursos de Ansys Mechanical"
+  relatedProducts={[
+    { name: "Ansys Discovery", href: "/licencias/ansys/discovery" },
+    { name: "Ansys CFD", href: "/licencias/ansys/cfd" },
+    { name: "Ansys Rocky", href: "/licencias/ansys/rocky" },
+  ]}
+>
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Ansys Mechanical?</h2>
+    <p>
+      Ansys Mechanical es la solución de simulación estructural por elementos finitos (FEA) más completa del mercado, utilizada por ingenieros en todo el mundo para predecir el comportamiento mecánico de estructuras, componentes y ensamblajes bajo cargas y condiciones operativas reales. Desde análisis estáticos lineales hasta simulaciones dinámicas no lineales con grandes deformaciones, Mechanical proporciona la precisión necesaria para tomar decisiones de diseño confiables.
+    </p>
+    <p>
+      La plataforma ofrece una amplia gama de capacidades de análisis que incluyen esfuerzos y deformaciones estáticas, análisis modal y de vibraciones, respuesta dinámica transitoria y armónica, análisis de fatiga, pandeo, contacto no lineal, materiales hiperelásticos y análisis térmico acoplado. Esta versatilidad permite abordar prácticamente cualquier problema de ingeniería estructural desde una única herramienta.
+    </p>
+    <p>
+      Integrado en el entorno Ansys Workbench, Mechanical facilita flujos de trabajo paramétricos y multidisciplinarios. Los ingenieros pueden acoplar resultados térmicos y de fluidos como cargas para análisis estructurales, realizar estudios de optimización paramétrica y generar reportes automatizados. Su interfaz intuitiva y sus asistentes de configuración permiten que tanto usuarios experimentados como nuevos aprovechen al máximo las capacidades del software.
+    </p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Análisis estático y dinámico</h3>
+        <p>Resolución de esfuerzos, deformaciones y reacciones bajo cargas estáticas, así como respuesta dinámica transitoria, armónica, espectral y de impacto.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis de fatiga</h3>
+        <p>Predicción de vida útil bajo cargas cíclicas utilizando métodos de esfuerzo-vida, deformación-vida y mecánica de fractura con criterios multiaxiales avanzados.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>No linealidades</h3>
+        <p>Soporte completo para no linealidades geométricas, de material y de contacto, incluyendo grandes deformaciones, plasticidad, hiperelasticidad y contacto con fricción.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis térmico</h3>
+        <p>Simulación de conducción, convección y radiación en estado estacionario y transitorio, con acoplamiento termomecánico para evaluar esfuerzos térmicos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis modal y vibraciones</h3>
+        <p>Extracción de frecuencias naturales y modos de vibración, análisis de respuesta armónica forzada y estudios de resonancia para prevenir fallas por vibración.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Optimización topológica</h3>
+        <p>Herramientas de diseño generativo que determinan la distribución óptima de material para cumplir requisitos de rigidez, resistencia y peso simultáneamente.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Materiales compuestos</h3>
+        <p>Modelado de laminados y estructuras en materiales compuestos con criterios de falla específicos como Tsai-Wu, Hashin y delaminación interlaminar.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Automatización con scripting</h3>
+        <p>API de Python y APDL para automatizar flujos de trabajo repetitivos, parametrizar estudios y personalizar el comportamiento del solver según necesidades específicas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Ansys Mechanical?</h2>
+    <ul class="pp-list">
+      <li>Ingenieros estructurales que diseñan y validan componentes mecánicos, estructuras metálicas y ensamblajes sometidos a cargas complejas.</li>
+      <li>Ingenieros mecánicos que necesitan verificar la integridad estructural de productos antes de la fabricación y certificación.</li>
+      <li>Profesionales automotrices que analizan durabilidad de chasis, suspensión, carrocería y componentes de tren motriz bajo condiciones de servicio.</li>
+      <li>Ingenieros aeroespaciales que validan estructuras de aeronaves, componentes de motores y sistemas de aterrizaje según normativas de certificación.</li>
+      <li>Ingenieros civiles y de infraestructura que evalúan estructuras bajo cargas sísmicas, de viento y condiciones operativas especiales.</li>
+      <li>Equipos de diseño de producto que buscan reducir peso, mejorar rendimiento y acelerar el ciclo de desarrollo mediante simulación virtual.</li>
+    </ul>
+  </div>
+</ProductPage>

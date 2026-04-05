@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const categories = [
+  {
+    name: 'Diseño General',
+    slug: 'diseno',
+    courses: [
+      { name: 'AutoCAD', slug: 'autocad' },
+      { name: '3ds Max', slug: '3ds-max' },
+      { name: 'Navisworks', slug: 'navisworks' },
+      { name: 'Tinkercad', slug: 'tinkercad' },
+    ],
+  },
+  {
+    name: 'BIM AEC',
+    slug: 'bim-aec',
+    courses: [
+      { name: 'Revit', slug: 'revit' },
+      { name: 'Civil 3D', slug: 'civil-3d' },
+      { name: 'Advance Steel', slug: 'advance-steel' },
+      { name: 'Dynamo', slug: 'dynamo' },
+      { name: 'Twinmotion', slug: 'twinmotion' },
+      { name: 'ISO 19650', slug: 'iso-19650' },
+      { name: 'Autodesk Construction Cloud', slug: 'construction-cloud' },
+      { name: 'Robot Structural Analysis', slug: 'robot-structural' },
+    ],
+  },
+  {
+    name: 'Mecánica',
+    slug: 'mecanica',
+    courses: [
+      { name: 'Inventor', slug: 'inventor' },
+      { name: 'Fusion', slug: 'fusion' },
+      { name: 'Inventor CAM', slug: 'inventor-cam' },
+      { name: 'AutoCAD Electrical', slug: 'autocad-electrical' },
+      { name: 'AutoCAD Plant 3D', slug: 'autocad-plant-3d' },
+    ],
+  },
+  {
+    name: 'Simulación',
+    slug: 'simulacion',
+    courses: [
+      { name: 'CFD', slug: 'cfd' },
+      { name: 'Ansys Rocky', slug: 'ansys-rocky' },
+    ],
+  },
+  {
+    name: 'Gestión',
+    slug: 'gestion',
+    courses: [
+      { name: 'Oracle Primavera', slug: 'oracle-primavera' },
+      { name: 'Corporativo', slug: 'corporativo' },
+    ],
+  },
+];
+---
+
+<Layout title="Cursos - SemcoCAD">
+  <section class="hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Inicio</a>
+        <span>/</span>
+        <span>Cursos</span>
+      </nav>
+      <h1>Nuestros Cursos</h1>
+      <p class="subtitle">Formación especializada en software de diseño, ingeniería, simulación y gestión de proyectos.</p>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="container">
+      {categories.map((cat) => (
+        <div class="category">
+          <h2>{cat.name}</h2>
+          <div class="course-grid">
+            {cat.courses.map((course) => (
+              <a href={`/cursos/${cat.slug}/${course.slug}`} class="course-card">
+                <span class="course-name">{course.name}</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 3rem 1.5rem 2.5rem;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .breadcrumb {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb span {
+    margin: 0 0.35rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.125rem;
+    opacity: 0.85;
+    max-width: 600px;
+  }
+  .categories {
+    padding: 3rem 1.5rem 4rem;
+  }
+  .category {
+    margin-bottom: 2.5rem;
+  }
+  .category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--orange);
+    display: inline-block;
+  }
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .course-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), border-color var(--transition);
+  }
+  .course-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--orange);
+  }
+  .course-name {
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .arrow {
+    color: var(--orange);
+    font-size: 1.25rem;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 1.75rem; }
+    .course-grid { grid-template-columns: 1fr; }
+  }
+</style>

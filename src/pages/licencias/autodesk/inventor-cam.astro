@@ -1,0 +1,78 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Inventor CAM"
+  product="Inventor CAM"
+  brand="Autodesk"
+  brandColor="#00aae0"
+  description="Solución de manufactura asistida por computadora integrada en Inventor para fresado de 2.5 a 5 ejes, torneado y estrategias de mecanizado avanzadas."
+  breadcrumbBrand="Autodesk"
+  breadcrumbBrandHref="/licencias/autodesk"
+  trainingUrl="https://www.semco.com.pe/inventor-cam/"
+  trainingLabel="Ver cursos de Inventor CAM"
+  relatedProducts={[
+    { name: 'Inventor', href: '/licencias/autodesk/inventor' },
+    { name: 'Fusion', href: '/licencias/autodesk/fusion' },
+    { name: 'Inventor Nastran', href: '/licencias/autodesk/inventor-nastran' },
+  ]}
+>
+
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Inventor CAM?</h2>
+    <p>Inventor CAM (anteriormente HSMWorks para Inventor) es una solución de manufactura asistida por computadora integrada directamente en Autodesk Inventor que permite programar operaciones de mecanizado CNC sin salir del entorno de diseño. Basado en la tecnología HSM (High Speed Machining) de Autodesk, ofrece estrategias de mecanizado de alta eficiencia que reducen tiempos de ciclo y desgaste de herramientas.</p>
+    <p>El software soporta fresado desde 2.5 ejes hasta 5 ejes simultáneos, torneado, fresado-torneado combinado y corte por chorro de agua o láser. Su tecnología de mecanizado adaptativo (Adaptive Clearing) mantiene una carga constante sobre la herramienta, permitiendo velocidades de avance más altas y profundidades de corte mayores con menor vibración y mayor vida útil del cortador.</p>
+    <p>Al estar integrado nativamente en Inventor, las trayectorias de herramienta se asocian directamente al modelo CAD: cuando el diseño cambia, las operaciones de mecanizado se actualizan automáticamente. Esto elimina la necesidad de rehacer la programación CAM y asegura que el código G siempre corresponda al diseño más reciente.</p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Fresado 2.5 ejes</h3>
+        <p>Operaciones de planeado, contorneado, cajeras, perforado y roscado con reconocimiento automático de features y estrategias optimizadas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Fresado 3 ejes</h3>
+        <p>Desbaste y acabado de superficies 3D con estrategias de contorno, espiral, barrido y acabado de pared para formas complejas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Fresado de 4 y 5 ejes</h3>
+        <p>Mecanizado multieje con orientación de herramienta controlada para piezas complejas, moldes, álabes de turbina e impellers.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Torneado y fresado-torneado</h3>
+        <p>Programación de tornos CNC con operaciones de refrentado, cilindrado, ranurado, roscado y fresado en vivo para piezas de revolución.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Mecanizado adaptativo</h3>
+        <p>Estrategia de desbaste de alta eficiencia que mantiene carga constante en la herramienta, reduciendo tiempos de ciclo hasta un 60% frente a métodos convencionales.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Simulación de trayectorias</h3>
+        <p>Verificación visual del proceso de mecanizado con detección de colisiones entre herramienta, pieza, fijaciones y componentes de la máquina.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Biblioteca de post-procesadores</h3>
+        <p>Extensa biblioteca de post-procesadores para las principales marcas de máquinas CNC (Haas, Mazak, DMG Mori, Fanuc, Siemens) con editor personalizable.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Asociatividad CAD-CAM</h3>
+        <p>Las operaciones de mecanizado se actualizan automáticamente al modificar el modelo de Inventor, manteniendo la programación siempre sincronizada con el diseño.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Inventor CAM?</h2>
+    <ul class="pp-list">
+      <li>Programadores CNC y técnicos de manufactura</li>
+      <li>Talleres de mecanizado y fabricación de piezas</li>
+      <li>Ingenieros de manufactura y procesos</li>
+      <li>Fabricantes de moldes, matrices y herramientas</li>
+      <li>Industria automotriz, aeroespacial y de maquinaria</li>
+      <li>Empresas que usan Inventor y necesitan integración CAD-CAM directa</li>
+    </ul>
+  </div>
+
+</ProductPage>

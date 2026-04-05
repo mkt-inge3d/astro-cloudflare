@@ -1,0 +1,78 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Task-ing"
+  product="Task-ing"
+  brand="LyraCode"
+  brandColor="#7c4dff"
+  description="Solución de gestión de tareas diseñada específicamente para proyectos de ingeniería, con funciones de asignación, seguimiento en tiempo real, notificaciones inteligentes y reportes de avance detallados."
+  breadcrumbBrand="LyraCode"
+  breadcrumbBrandHref="/licencias/lyracode"
+  relatedProducts={[
+    { name: "Plan-ing", href: "/licencias/lyracode/plan-ing" },
+    { name: "ADVManager", href: "/licencias/lyracode/advmanager" },
+  ]}
+>
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Task-ing?</h2>
+    <p>
+      Task-ing es una plataforma de gestión de tareas desarrollada específicamente para equipos de ingeniería que necesitan coordinar actividades técnicas complejas con múltiples dependencias, entregables y participantes. A diferencia de las herramientas genéricas de gestión de tareas, Task-ing comprende la naturaleza iterativa de los proyectos de ingeniería, donde las tareas involucran revisiones técnicas, aprobaciones multi-nivel y entregables que deben cumplir estándares de calidad específicos.
+    </p>
+    <p>
+      La plataforma permite asignar tareas con niveles de prioridad, fechas límite, dependencias y responsables, proporcionando visibilidad completa sobre quién está trabajando en qué y cuál es el estado de avance de cada actividad. Las notificaciones inteligentes alertan a los miembros del equipo sobre tareas próximas a vencer, bloqueos y cambios de prioridad, asegurando que nada se pierda en proyectos con cientos de actividades simultáneas.
+    </p>
+    <p>
+      Task-ing genera reportes de avance automatizados que muestran el progreso del equipo, la distribución de carga de trabajo, las tareas atrasadas y las métricas de productividad. Estos reportes permiten a los líderes de proyecto tomar decisiones informadas sobre reasignación de recursos, ajuste de prioridades y comunicación de estatus a los stakeholders del proyecto.
+    </p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Asignación inteligente de tareas</h3>
+        <p>Sistema de asignación que considera la carga de trabajo actual, las competencias técnicas y la disponibilidad de cada miembro del equipo para distribuir tareas de forma equilibrada.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Seguimiento en tiempo real</h3>
+        <p>Dashboard interactivo que muestra el estado actualizado de todas las tareas del proyecto con indicadores visuales de progreso, prioridad y proximidad a fechas límite.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Notificaciones inteligentes</h3>
+        <p>Sistema de alertas configurables que notifica sobre tareas próximas a vencer, cambios de estado, nuevas asignaciones y bloqueos que requieren atención inmediata.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Gestión de dependencias</h3>
+        <p>Definición y visualización de dependencias entre tareas para identificar la ruta crítica y prevenir retrasos en cadena que afecten los hitos del proyecto.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Reportes de avance</h3>
+        <p>Generación automática de reportes de progreso con métricas de cumplimiento, tareas completadas, pendientes y atrasadas, listos para presentar a la dirección del proyecto.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Flujos de revisión técnica</h3>
+        <p>Procesos configurables de revisión y aprobación de entregables técnicos con ciclos de comentarios, correcciones y validación final integrados en la tarea.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Vistas múltiples</h3>
+        <p>Visualización de tareas en formato lista, tablero Kanban, calendario y diagrama de Gantt simplificado para adaptarse al estilo de trabajo de cada usuario.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Integración con Plan-ing</h3>
+        <p>Sincronización directa con Plan-ing para vincular tareas operativas con el cronograma maestro del proyecto, asegurando consistencia entre planificación y ejecución.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Task-ing?</h2>
+    <ul class="pp-list">
+      <li>Gerentes de proyecto de ingeniería que necesitan coordinar equipos multidisciplinarios y mantener visibilidad sobre el avance de cientos de tareas técnicas simultáneas.</li>
+      <li>Líderes de equipo y jefes de disciplina que asignan, priorizan y supervisan las tareas de sus equipos técnicos en proyectos de ingeniería y construcción.</li>
+      <li>Ingenieros y especialistas técnicos que requieren una herramienta clara para gestionar sus asignaciones, entregables y plazos de forma organizada.</li>
+      <li>Coordinadores de proyecto que necesitan generar reportes de avance periódicos y comunicar el estatus del proyecto a clientes y stakeholders.</li>
+      <li>Oficinas de gestión de proyectos (PMO) que buscan estandarizar la forma en que los equipos gestionan y reportan sus tareas a nivel organizacional.</li>
+    </ul>
+  </div>
+</ProductPage>

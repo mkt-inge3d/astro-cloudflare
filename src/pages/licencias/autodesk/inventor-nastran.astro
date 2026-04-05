@@ -1,0 +1,75 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Inventor Nastran"
+  product="Inventor Nastran"
+  brand="Autodesk"
+  brandColor="#00aae0"
+  description="Herramienta de simulación FEA avanzada integrada en Inventor con el solucionador Nastran para análisis de esfuerzos, térmico, vibraciones y fatiga."
+  breadcrumbBrand="Autodesk"
+  breadcrumbBrandHref="/licencias/autodesk"
+  relatedProducts={[
+    { name: 'Inventor', href: '/licencias/autodesk/inventor' },
+    { name: 'Fusion', href: '/licencias/autodesk/fusion' },
+    { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+  ]}
+>
+
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Inventor Nastran?</h2>
+    <p>Inventor Nastran es una herramienta de análisis por elementos finitos (FEA) avanzada que se integra directamente dentro de Autodesk Inventor, utilizando el solucionador Nastran reconocido mundialmente en la industria aeroespacial, automotriz y de ingeniería. Permite a los ingenieros mecánicos realizar simulaciones de alta fidelidad sin salir de su entorno de diseño habitual.</p>
+    <p>A diferencia del análisis de tensiones básico incluido en Inventor, Inventor Nastran ofrece capacidades avanzadas como análisis no lineal (de material, geométrico y de contacto), análisis de pandeo, análisis térmico acoplado con mecánico, análisis de fatiga para predicción de vida útil, y optimización topológica para reducir peso manteniendo la resistencia.</p>
+    <p>El software soporta múltiples tipos de elementos (tetraédricos, hexaédricos, láminas, barras), condiciones de contorno avanzadas, cargas de presión y temperatura variables, y contacto entre superficies con fricción. Los resultados se visualizan directamente sobre el modelo CAD con gráficas de tensiones, deformaciones, factores de seguridad y modos de vibración.</p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Análisis lineal de esfuerzos</h3>
+        <p>Cálculo de tensiones de Von Mises, deformaciones, desplazamientos y factores de seguridad bajo cargas estáticas con mallas adaptativas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis no lineal</h3>
+        <p>Simulación con grandes deformaciones, plasticidad de material, hiperelasticidad y contacto no lineal entre componentes.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis de vibraciones y modal</h3>
+        <p>Determinación de frecuencias naturales, modos de vibración, respuesta de frecuencia forzada y análisis de respuesta transitoria.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis térmico</h3>
+        <p>Simulación de transferencia de calor por conducción, convección y radiación con análisis estacionario y transitorio acoplado a esfuerzos térmicos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis de fatiga</h3>
+        <p>Predicción de vida útil de componentes bajo cargas cíclicas con curvas S-N, criterios de fatiga multiaxial y factor de concentración de esfuerzos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis de pandeo</h3>
+        <p>Determinación de cargas críticas de pandeo y modos de inestabilidad para estructuras esbeltas, columnas y paneles bajo compresión.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Solucionador Nastran certificado</h3>
+        <p>Motor de cálculo Nastran validado por décadas de uso en industrias de alta exigencia con precisión comprobada en aplicaciones críticas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Integración nativa con Inventor</h3>
+        <p>Asociatividad total con el modelo CAD: los cambios de diseño actualizan automáticamente las condiciones de análisis y resultados.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Inventor Nastran?</h2>
+    <ul class="pp-list">
+      <li>Ingenieros mecánicos que requieren simulación avanzada</li>
+      <li>Diseñadores de productos con exigencias de validación estructural</li>
+      <li>Ingenieros de análisis FEA y simulación</li>
+      <li>Industria aeroespacial, automotriz y de maquinaria pesada</li>
+      <li>Empresas que necesitan predecir vida útil y fatiga de componentes</li>
+    </ul>
+  </div>
+
+</ProductPage>

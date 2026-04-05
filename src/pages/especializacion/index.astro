@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const programs = [
+  {
+    name: 'BIM en Edificaciones',
+    slug: 'bim-edificaciones',
+    duration: '6 meses',
+    description: 'Especialización integral en modelado BIM para proyectos de edificaciones residenciales, comerciales e institucionales.',
+  },
+  {
+    name: 'BIM en Plantas Industriales',
+    slug: 'bim-plantas-industriales',
+    duration: '6 meses',
+    description: 'Gestión BIM aplicada a plantas industriales: piping, equipos, estructuras metálicas y coordinación multidisciplinaria.',
+  },
+  {
+    name: 'BIM en Infraestructura',
+    slug: 'bim-infraestructura',
+    duration: '5 meses',
+    description: 'Metodología BIM para proyectos de infraestructura vial, hidráulica y obras lineales con Civil 3D e InfraWorks.',
+  },
+  {
+    name: 'PIM - Prototipos Digitales',
+    slug: 'pim-prototipos-digitales',
+    duration: '5 meses',
+    description: 'Gestión de información de producto (PIM) con Inventor, Fusion y herramientas de simulación para manufactura avanzada.',
+  },
+];
+---
+
+<Layout title="Especializaciones - SemcoCAD">
+  <section class="hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Inicio</a>
+        <span>/</span>
+        <span>Especializaciones</span>
+      </nav>
+      <h1>Programas de Especialización</h1>
+      <p class="subtitle">Programas de varios meses con certificación profesional. Formación profunda que combina teoría, práctica y proyecto integrador.</p>
+    </div>
+  </section>
+
+  <section class="programs">
+    <div class="container">
+      {programs.map((p) => (
+        <a href={`/especializacion/${p.slug}`} class="program-card">
+          <div class="card-body">
+            <h2>{p.name}</h2>
+            <p>{p.description}</p>
+          </div>
+          <div class="card-footer">
+            <span class="duration">{p.duration}</span>
+            <span class="link">Ver programa &rarr;</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 3rem 1.5rem 2.5rem;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .breadcrumb {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb span { margin: 0 0.35rem; }
+  h1 {
+    font-size: 2.25rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.125rem;
+    opacity: 0.85;
+    max-width: 650px;
+  }
+  .programs {
+    padding: 3rem 1.5rem 4rem;
+  }
+  .programs .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 1.5rem;
+  }
+  .program-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), border-color var(--transition);
+    overflow: hidden;
+  }
+  .program-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--orange);
+  }
+  .card-body {
+    padding: 1.75rem;
+  }
+  .card-body h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+  }
+  .card-body p {
+    color: var(--gray-600);
+    line-height: 1.6;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.75rem;
+    background: var(--gray-50);
+    border-top: 1px solid var(--gray-200);
+  }
+  .duration {
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 0.9rem;
+  }
+  .link {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 1.75rem; }
+    .programs .container { grid-template-columns: 1fr; }
+  }
+</style>

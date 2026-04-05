@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const servicios = [
+  {
+    icon: '📦',
+    title: 'Catálogos 3D',
+    description: 'Creación de bibliotecas y catálogos de productos en 3D para integrar directamente en tus proyectos de diseño CAD y BIM.',
+  },
+  {
+    icon: '🤖',
+    title: 'Automatización CAD',
+    description: 'Desarrollo de scripts, plugins y rutinas personalizadas para automatizar tareas repetitivas en AutoCAD, Revit e Inventor.',
+  },
+  {
+    icon: '🔬',
+    title: 'Simulación CAE',
+    description: 'Análisis de elementos finitos, simulación térmica, dinámica de fluidos y validación de diseños con Ansys.',
+  },
+  {
+    icon: '🌐',
+    title: 'IoT / Forge',
+    description: 'Integración de datos IoT con modelos BIM mediante Autodesk Platform Services (Forge) para gemelos digitales y monitoreo.',
+  },
+  {
+    icon: '💻',
+    title: 'LyraCode',
+    description: 'Soluciones de desarrollo de software a medida para el sector de ingeniería y construcción. Aplicaciones web y móviles especializadas.',
+  },
+  {
+    icon: '📊',
+    title: 'ADVManager',
+    description: 'Gestión avanzada de licencias y activos de software. Control centralizado del uso y asignación de licencias en tu organización.',
+  },
+  {
+    icon: '🛠️',
+    title: 'Soporte post-venta',
+    description: 'Asistencia técnica continua, resolución de incidencias, actualizaciones y acompañamiento para maximizar tu inversión en software.',
+  },
+];
+---
+
+<Layout title="Servicios - SemcoCAD">
+  <section class="page-header">
+    <h1>Servicios</h1>
+    <p>Soluciones integrales de ingeniería, desarrollo y soporte para potenciar la productividad de tu empresa.</p>
+  </section>
+
+  <section class="servicios-section">
+    <div class="servicios-grid">
+      {servicios.map((s) => (
+        <div class="servicio-card">
+          <span class="servicio-icon">{s.icon}</span>
+          <h3>{s.title}</h3>
+          <p>{s.description}</p>
+          <a href="/contacto" class="servicio-link">Solicitar información &rarr;</a>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .page-header p {
+    color: #b0bec5;
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+  }
+
+  .servicios-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .servicio-card {
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    background: var(--white);
+    transition: box-shadow var(--transition), transform var(--transition);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicio-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+  }
+
+  .servicio-icon {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .servicio-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .servicio-card p {
+    font-size: 0.92rem;
+    color: var(--gray-600);
+    flex: 1;
+    margin-bottom: 1.25rem;
+  }
+
+  .servicio-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--orange);
+    transition: color var(--transition);
+  }
+
+  .servicio-link:hover {
+    color: var(--orange-hover);
+  }
+</style>

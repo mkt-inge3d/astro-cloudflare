@@ -1,0 +1,80 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Ansys Discovery"
+  product="Ansys Discovery"
+  brand="Ansys"
+  brandColor="#ffb74d"
+  description="Herramienta de simulación interactiva en tiempo real que permite explorar diseños, realizar simulaciones instantáneas y optimización topológica en las etapas tempranas del desarrollo de productos."
+  breadcrumbBrand="Ansys"
+  breadcrumbBrandHref="/licencias/ansys"
+  trainingUrl="/cursos/ansys"
+  trainingLabel="Ver cursos de Ansys Discovery"
+  relatedProducts={[
+    { name: "Ansys Mechanical", href: "/licencias/ansys/mechanical" },
+    { name: "Ansys CFD", href: "/licencias/ansys/cfd" },
+  ]}
+>
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Ansys Discovery?</h2>
+    <p>
+      Ansys Discovery es una herramienta revolucionaria de simulación en tiempo real que combina modelado 3D directo, simulación instantánea y optimización topológica en una única plataforma interactiva. A diferencia de las herramientas de simulación tradicionales que requieren configuraciones complejas y largos tiempos de cálculo, Discovery proporciona resultados de simulación mientras el usuario modifica la geometría, eliminando las barreras entre diseño y análisis.
+    </p>
+    <p>
+      Gracias a su motor de simulación basado en GPU, Discovery permite explorar múltiples alternativas de diseño en minutos en lugar de horas o días. Los ingenieros y diseñadores pueden evaluar rápidamente el comportamiento estructural, térmico y de fluidos de sus conceptos, descartando opciones inviables y enfocándose en las más prometedoras desde las primeras etapas del proceso de diseño. Esto reduce drásticamente los costos de rediseño y acelera el tiempo de llegada al mercado.
+    </p>
+    <p>
+      Discovery incluye capacidades de modelado directo que permiten crear y modificar geometría 3D sin las limitaciones de los sistemas CAD paramétricos tradicionales. Los usuarios pueden empujar, tirar, mover y combinar formas de manera intuitiva, lo que facilita la exploración creativa de conceptos. Además, los resultados de Discovery pueden transferirse directamente a Ansys Mechanical o Ansys Fluent para análisis de alta fidelidad cuando el diseño está más maduro.
+    </p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Simulación en tiempo real</h3>
+        <p>Resultados de simulación instantáneos que se actualizan mientras el usuario modifica la geometría, permitiendo explorar el espacio de diseño de forma interactiva y ágil.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Modelado directo 3D</h3>
+        <p>Herramientas intuitivas de modelado que permiten crear y editar geometría sin restricciones paramétricas, ideal para exploración conceptual y modificación rápida de diseños importados.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Optimización topológica</h3>
+        <p>Generación automática de formas óptimas que cumplen requisitos de resistencia y rigidez con el mínimo peso, produciendo diseños orgánicos listos para manufactura aditiva.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Análisis estructural interactivo</h3>
+        <p>Evaluación instantánea de esfuerzos, deformaciones y factores de seguridad bajo cargas estáticas, permitiendo validar la integridad estructural durante el proceso de diseño.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Simulación térmica</h3>
+        <p>Análisis de distribución de temperaturas y flujo de calor en estado estacionario y transitorio, con visualización en tiempo real de gradientes térmicos en el diseño.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Simulación de fluidos</h3>
+        <p>Análisis de flujo interno y externo con visualización de velocidades, presiones y líneas de corriente para evaluar el rendimiento fluidodinámico de conceptos de diseño.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Motor de cálculo GPU</h3>
+        <p>Aprovechamiento de la potencia de las tarjetas gráficas para proporcionar resultados de simulación en segundos, eliminando los tiempos de espera del análisis tradicional por FEA.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Transferencia a solvers avanzados</h3>
+        <p>Exportación directa de modelos y configuraciones a Ansys Mechanical y Ansys Fluent para validación de alta fidelidad cuando el diseño alcanza la madurez necesaria.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Ansys Discovery?</h2>
+    <ul class="pp-list">
+      <li>Diseñadores de producto que necesitan evaluar el rendimiento de sus conceptos sin depender del departamento de simulación para obtener resultados rápidos.</li>
+      <li>Ingenieros en etapas tempranas de desarrollo que exploran múltiples alternativas de diseño antes de comprometerse con una configuración específica.</li>
+      <li>Equipos de innovación y desarrollo que buscan acelerar la fase conceptual reduciendo iteraciones costosas entre diseño y análisis.</li>
+      <li>Ingenieros mecánicos que desean validar rápidamente la viabilidad estructural y térmica de componentes antes de realizar análisis detallados.</li>
+      <li>Profesionales de manufactura aditiva que utilizan optimización topológica para crear diseños ligeros y eficientes adaptados a impresión 3D.</li>
+    </ul>
+  </div>
+</ProductPage>

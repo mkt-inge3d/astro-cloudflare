@@ -1,0 +1,78 @@
+---
+import ProductPage from '../../../layouts/ProductPage.astro';
+---
+<ProductPage
+  title="Autodesk Navisworks"
+  product="Autodesk Navisworks"
+  brand="Autodesk"
+  brandColor="#00aae0"
+  description="Herramienta de coordinación, revisión de modelos y simulación de construcción para proyectos BIM multidisciplinarios."
+  breadcrumbBrand="Autodesk"
+  breadcrumbBrandHref="/licencias/autodesk"
+  trainingUrl="https://www.semco.com.pe/navisworks/"
+  trainingLabel="Ver cursos de Navisworks"
+  relatedProducts={[
+    { name: 'Revit', href: '/licencias/autodesk/revit' },
+    { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
+    { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
+  ]}
+>
+
+  <div class="pp-section fade-up" id="caracteristicas">
+    <h2>¿Qué es Autodesk Navisworks?</h2>
+    <p>Autodesk Navisworks es una solución de revisión y coordinación de modelos 3D que permite a los equipos de proyecto integrar y analizar modelos de múltiples disciplinas y formatos en un entorno unificado. Es una herramienta esencial en flujos de trabajo BIM para detectar conflictos antes de que se conviertan en costosos problemas en obra.</p>
+    <p>El software puede combinar modelos de Revit, AutoCAD, Civil 3D, archivos IFC, formatos de terceros y nubes de puntos en un modelo federado navegable. Su motor de detección de interferencias (Clash Detective) identifica automáticamente colisiones entre sistemas — como una tubería que atraviesa una viga estructural — permitiendo resolverlas en la fase de diseño.</p>
+    <p>Navisworks también ofrece simulación de construcción 4D (vinculando el modelo con el cronograma) y simulación de costos 5D, proporcionando una visión integral del proyecto que facilita la toma de decisiones, la comunicación con stakeholders y el control de avance de obra.</p>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>Características principales</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Detección de interferencias (Clash Detective)</h3>
+        <p>Análisis automático de colisiones entre disciplinas con generación de reportes, asignación de estados y seguimiento de resolución de conflictos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Modelo federado multiformato</h3>
+        <p>Integración de más de 60 formatos de archivo incluyendo RVT, DWG, IFC, DGN, NWC, FBX y nubes de puntos en un solo entorno de revisión.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Simulación 4D (TimeLiner)</h3>
+        <p>Vinculación del modelo 3D con cronogramas de Microsoft Project o Primavera para simular la secuencia constructiva a lo largo del tiempo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Simulación 5D (Quantification)</h3>
+        <p>Medición y extracción de cantidades directamente del modelo para estimaciones de costos y control presupuestario del proyecto.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Navegación en tiempo real</h3>
+        <p>Recorrido interactivo del modelo completo del proyecto con herramientas de visualización, puntos de vista guardados y animaciones de recorrido.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Revisión y anotación</h3>
+        <p>Herramientas de markup, comentarios y redlines para comunicar observaciones y correcciones directamente sobre el modelo 3D federado.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Propiedades y datos del modelo</h3>
+        <p>Acceso a todas las propiedades BIM de los elementos, búsqueda avanzada, selección por conjuntos y filtrado por criterios personalizados.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Exportación de reportes</h3>
+        <p>Generación de reportes de interferencias en HTML, XML y formatos tabulares para distribución y seguimiento entre los miembros del equipo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Navisworks?</h2>
+    <ul class="pp-list">
+      <li>Coordinadores BIM y gerentes de proyecto</li>
+      <li>Empresas constructoras y contratistas generales</li>
+      <li>Ingenieros de instalaciones MEP</li>
+      <li>Arquitectos e ingenieros estructurales</li>
+      <li>Planificadores de construcción y supervisores de obra</li>
+    </ul>
+  </div>
+
+</ProductPage>
