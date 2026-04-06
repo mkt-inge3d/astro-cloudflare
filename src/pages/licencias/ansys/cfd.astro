@@ -5,8 +5,8 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   title="Ansys CFD"
   product="Ansys CFD"
   brand="Ansys"
-  brandColor="#ffb74d"
-  description="Soluciones avanzadas de simulación de dinámica de fluidos computacional para modelar flujo de fluidos, transferencia de calor, mezcla y reacciones químicas en entornos industriales complejos."
+  brandColor="#FFB71B"
+  description="Suite de dinámica de fluidos computacional que incluye Fluent y CFX. Simula flujo de fluidos, transferencia de calor y reacciones químicas para aplicaciones industriales complejas."
   breadcrumbBrand="Ansys"
   breadcrumbBrandHref="/licencias/ansys"
   trainingUrl="/cursos/ansys"
@@ -15,68 +15,142 @@ import ProductPage from '../../../layouts/ProductPage.astro';
     { name: "Ansys Fluent", href: "/licencias/ansys/fluent" },
     { name: "Ansys Mechanical", href: "/licencias/ansys/mechanical" },
     { name: "Ansys Discovery", href: "/licencias/ansys/discovery" },
+    { name: "Ansys Rocky", href: "/licencias/ansys/rocky" },
   ]}
 >
+
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Ansys CFD?</h2>
-    <p>
-      Ansys CFD es un conjunto integral de herramientas de simulación de dinámica de fluidos computacional que permite a los ingenieros modelar y analizar el comportamiento de flujos de fluidos, transferencia de calor, turbulencia, mezcla de especies y reacciones químicas. Utilizando métodos numéricos avanzados y algoritmos de alta precisión, Ansys CFD proporciona resultados confiables que permiten tomar decisiones de diseño informadas antes de construir prototipos físicos.
-    </p>
-    <p>
-      La plataforma abarca desde flujos incompresibles simples hasta simulaciones multifísicas altamente complejas que involucran combustión, flujos multifase, aeroacústica y transferencia de calor conjugada. Los ingenieros pueden evaluar el rendimiento de sus diseños bajo condiciones operativas reales, identificar problemas potenciales y optimizar configuraciones para maximizar la eficiencia y reducir costos de desarrollo.
-    </p>
-    <p>
-      Ansys CFD se integra de forma nativa con el ecosistema Ansys Workbench, facilitando flujos de trabajo multidisciplinarios que combinan análisis de fluidos con análisis estructurales, térmicos y electromagnéticos. Esto permite abordar problemas de ingeniería complejos desde una plataforma unificada, reduciendo tiempos de iteración y mejorando la calidad del producto final.
-    </p>
+    <div class="pp-product-header">
+      <img src="/licencias/ansys/logo-ansys-cfd.webp" alt="Ansys CFD" class="pp-product-logo" />
+    </div>
+    <h2>Suite completa de dinámica de fluidos computacional</h2>
+    <p>Ansys CFD es un conjunto integral de herramientas de simulación de dinámica de fluidos computacional que incluye los solvers <strong>Ansys Fluent y Ansys CFX</strong>, proporcionando a los ingenieros las capacidades necesarias para modelar y analizar el comportamiento de flujos de fluidos, transferencia de calor, turbulencia, mezcla de especies y reacciones químicas con precisión industrial.</p>
+    <p>La plataforma abarca desde flujos incompresibles simples hasta simulaciones <strong>multifísicas altamente complejas</strong> que involucran combustión, flujos multifase, aeroacústica y transferencia de calor conjugada. Los ingenieros pueden evaluar el rendimiento de sus diseños bajo condiciones operativas reales, identificar problemas potenciales y optimizar configuraciones para maximizar la eficiencia y reducir costos de desarrollo.</p>
+    <p>Ansys CFD se integra de forma nativa con el ecosistema <strong>Ansys Workbench</strong>, facilitando flujos de trabajo multidisciplinarios que combinan análisis de fluidos con análisis estructurales, térmicos y electromagnéticos. Esto permite abordar problemas de ingeniería complejos desde una plataforma unificada, reduciendo tiempos de iteración y mejorando la calidad del producto final.</p>
   </div>
 
+  <!-- Características principales -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Modelado de flujos complejos</h3>
-        <p>Simulación precisa de flujos laminares, turbulentos, compresibles e incompresibles con modelos de turbulencia avanzados como RANS, LES y DES.</p>
+        <h3>Solvers Fluent + CFX</h3>
+        <p>Acceso a los dos solvers CFD más reconocidos de la industria: Fluent para aplicaciones generales y CFX con fortalezas en turbomaquinaria, proporcionando versatilidad total.</p>
       </div>
       <div class="pp-feature">
-        <h3>Transferencia de calor</h3>
-        <p>Análisis de convección forzada y natural, radiación, conducción y transferencia de calor conjugada entre sólidos y fluidos.</p>
+        <h3>Herramientas de mallado</h3>
+        <p>Generación automática de mallas poliédricas, hexaédricas y tetraédricas de alta calidad con controles de refinamiento local y capas de prismas para resolución de capa límite.</p>
       </div>
       <div class="pp-feature">
-        <h3>Flujos multifase</h3>
-        <p>Modelado de interacciones entre múltiples fases incluyendo gas-líquido, líquido-líquido, partículas en suspensión y flujos con superficie libre.</p>
+        <h3>Acoplamiento multifísico</h3>
+        <p>Integración directa con Ansys Mechanical y otros módulos para simulaciones de interacción fluido-estructura, aeroacústica y análisis termomecánicos acoplados.</p>
       </div>
       <div class="pp-feature">
-        <h3>Reacciones químicas y combustión</h3>
-        <p>Simulación de procesos reactivos, mezcla de especies, cinética química detallada y modelos de combustión para aplicaciones energéticas e industriales.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Mallado adaptativo</h3>
-        <p>Herramientas de mallado automático y adaptativo que refinan la malla en zonas críticas para maximizar la precisión sin comprometer el rendimiento computacional.</p>
+        <h3>Turbomaquinaria</h3>
+        <p>Herramientas especializadas para simular compresores, turbinas y bombas, incluyendo marcos de referencia múltiples, mezcla de planos y análisis de cavitación.</p>
       </div>
       <div class="pp-feature">
         <h3>Post-procesamiento avanzado</h3>
-        <p>Visualización de resultados con líneas de corriente, contornos, vectores, animaciones y reportes automatizados para comunicar hallazgos de forma efectiva.</p>
+        <p>Visualización de resultados con líneas de corriente, contornos, vectores, animaciones y reportes automatizados para comunicar hallazgos de forma efectiva a equipos de diseño.</p>
       </div>
       <div class="pp-feature">
-        <h3>Computación de alto rendimiento</h3>
-        <p>Soporte para ejecución en paralelo y en clústeres HPC, permitiendo resolver modelos de gran escala con millones de elementos en tiempos reducidos.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Integración multifísica</h3>
-        <p>Acoplamiento directo con Ansys Mechanical y otros módulos para simulaciones de interacción fluido-estructura, aeroacústica y análisis termomecánicos.</p>
+        <h3>Soporte HPC</h3>
+        <p>Rendimiento probado en miles de núcleos con escalado lineal, permitiendo resolver modelos de gran escala con millones de elementos en tiempos reducidos para ciclos industriales.</p>
       </div>
     </div>
   </div>
 
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Ansys CFD?</h2>
+    <p>Ansys CFD está dirigido a profesionales que necesitan herramientas de simulación de fluidos de clase mundial para una amplia variedad de aplicaciones industriales:</p>
     <ul class="pp-list">
-      <li>Ingenieros de procesos en la industria de petróleo y gas que necesitan simular flujos en tuberías, separadores y equipos de proceso.</li>
-      <li>Ingenieros aeroespaciales que diseñan perfiles aerodinámicos, sistemas de propulsión y componentes de aeronaves.</li>
-      <li>Profesionales del sector energético que optimizan turbinas, calderas, intercambiadores de calor y sistemas de generación.</li>
-      <li>Ingenieros automotrices que analizan aerodinámica vehicular, sistemas de refrigeración y confort térmico de cabina.</li>
-      <li>Investigadores y académicos que requieren herramientas de simulación CFD de clase mundial para proyectos de investigación avanzada.</li>
-      <li>Consultores de ingeniería que ofrecen servicios de análisis de fluidos a múltiples industrias y necesitan una plataforma versátil.</li>
+      <li>Ingenieros de CFD que requieren los solvers más completos del mercado para simulaciones de flujos complejos con turbulencia, multifase y reacciones.</li>
+      <li>Ingenieros de procesos en industrias de petróleo y gas, química y energía que simulan flujos en tuberías, separadores y equipos de proceso.</li>
+      <li>Especialistas en turbomaquinaria que diseñan y optimizan compresores, turbinas, bombas y ventiladores industriales.</li>
     </ul>
   </div>
+
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Ansys CFD está disponible bajo modelos de <strong>licencia perpetua</strong> (con mantenimiento anual) o <strong>licencia de alquiler</strong> (basada en tiempo). Contacte a nuestro equipo de simulación para obtener una propuesta personalizada.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Licencia perpetua</h3>
+        <p>Adquiera la licencia de forma permanente con un contrato de mantenimiento anual que incluye actualizaciones y soporte técnico del fabricante.</p>
+        <ul class="pp-license-features">
+          <li>Licencia permanente con pago único</li>
+          <li>Mantenimiento anual para actualizaciones</li>
+          <li>Acceso a nuevas versiones del software</li>
+          <li>Soporte técnico del fabricante incluido</li>
+        </ul>
+        <a href="mailto:simulacion@semco.com.pe" class="pp-license-btn">simulacion@semco.com.pe</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Licencia de alquiler (Rental)</h3>
+        <p>Modelo de licenciamiento basado en tiempo con flexibilidad para escalar según las necesidades del proyecto o equipo de simulación.</p>
+        <ul class="pp-license-features">
+          <li>Pago periódico según duración contratada</li>
+          <li>Flexibilidad para escalar licencias</li>
+          <li>Actualizaciones incluidas durante la vigencia</li>
+          <li>Soporte técnico completo incluido</li>
+          <li>Ideal para proyectos con duración definida</li>
+        </ul>
+        <a href="mailto:simulacion@semco.com.pe" class="pp-license-btn">simulacion@semco.com.pe</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Ansys CFD que mejor se adapte a las necesidades de simulación de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano de ingeniería.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo de simulación.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación especializada</h3>
+        <p>Cursos de simulación CFD con instructores certificados en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Partner Ansys con más de tres décadas formando profesionales y distribuyendo software de ingeniería en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+</style>

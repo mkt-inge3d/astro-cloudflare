@@ -6,94 +6,264 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Autodesk Revit"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software BIM líder para proyectos multidisciplinarios de arquitectura, ingeniería estructural e instalaciones MEP."
+  description="Software BIM líder para proyectos multidisciplinarios de arquitectura, ingeniería estructural e instalaciones MEP. Diseñe, analice y documente edificaciones con un modelo inteligente único."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/revit/"
+  trainingUrl="/cursos/bim-aec/revit"
   trainingLabel="Ver cursos de Revit"
   relatedProducts={[
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
     { name: 'Robot Structural', href: '/licencias/autodesk/robot-structural' },
     { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
     { name: 'Advance Steel', href: '/licencias/autodesk/advance-steel' },
-    { name: 'Dynamo', href: '/licencias/autodesk/dynamo' },
+    { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Autodesk Revit?</h2>
-    <p>Autodesk Revit es la plataforma de modelado BIM (Building Information Modeling) diseñada para que arquitectos y diseñadores desarrollen proyectos arquitectónicos con mayor calidad y precisión a lo largo de todo el ciclo de vida del proyecto.</p>
-    <p>El software funciona con herramientas creadas para soportar flujos de trabajo BIM, permitiendo a los profesionales capturar y analizar conceptos mientras mantienen la visión de diseño durante las fases de diseño, documentación y construcción. Incluye herramientas para <strong>diseño arquitectónico (Revit Architecture)</strong>, <strong>instalaciones MEP (Revit MEP)</strong> y <strong>diseño estructural (Revit Structural)</strong> en un solo entorno.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/revit/logo-revit.webp" alt="Autodesk Revit" class="pp-product-logo" />
+    </div>
+    <h2>Software BIM para proyectos multidisciplinarios</h2>
+    <p>Autodesk Revit es la herramienta de modelado de Autodesk para diseño arquitectónico y de construcción que opera a través de flujos de trabajo BIM (Building Information Modeling). Con Revit, los profesionales de la construcción pueden generar diseños arquitectónicos <strong>coherentes, coordinados y completos</strong> basados en modelos BIM inteligentes.</p>
+    <p>El software actualiza automáticamente las <strong>vistas de planta, elevaciones, cortes y representaciones 3D</strong> cada vez que se realiza un cambio en el modelo, garantizando documentación siempre precisa y sincronizada. Además, proporciona una visualización 3D completa de la representación digital del edificio antes de su ejecución, permitiendo tomar decisiones informadas desde las etapas más tempranas del proyecto.</p>
+    <p>Revit soporta la <strong>colaboración multidisciplinaria</strong> integrando arquitectura, ingeniería estructural, instalaciones MEP (mecánica, eléctrica y plomería) y construcción en un solo entorno. Permite el análisis, la simulación y la conectividad en la nube para mejorar continuamente el diseño, conectando equipos y datos con <strong>Autodesk Construction Cloud</strong> y BIM 360.</p>
   </div>
 
+  <!-- Imagen de características -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up" data-video="VhT6nGynm_0">
+        <div class="rv-gallery-img"><img src="/licencias/revit/integracion-1.webp" alt="Revit + FormIt + Insight + Dynamo" loading="lazy" /><span class="rv-play"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <p><strong>Revit + FormIt + Insight + Dynamo</strong><br/>Diseño conceptual y análisis energético integrados</p>
+      </button>
+      <button class="rv-gallery-item fade-up" data-video="cll9LxYOhi8">
+        <div class="rv-gallery-img"><img src="/licencias/revit/integracion-2.webp" alt="Revit + Robot Structural + Advance Steel" loading="lazy" /><span class="rv-play"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <p><strong>Revit + Robot Structural + Advance Steel</strong><br/>Diseño y detallado estructural completo</p>
+      </button>
+      <button class="rv-gallery-item fade-up" data-video="KCqoloc-P2Q">
+        <div class="rv-gallery-img"><img src="/licencias/revit/fabrication-camduct.webp" alt="Revit Fabrication CAMduct" loading="lazy" /><span class="rv-play"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <p><strong>Fabrication CAMduct</strong><br/>Manufactura de ductos HVAC desde el modelo BIM</p>
+      </button>
+      <button class="rv-gallery-item fade-up" data-video="yqHue0_VLWk">
+        <div class="rv-gallery-img"><img src="/licencias/revit/familias.webp" alt="Carga múltiple de familias" loading="lazy" /><span class="rv-play"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <p><strong>Carga múltiple de familias</strong><br/>Acelera el modelado con bibliotecas paramétricas</p>
+      </button>
+      <button class="rv-gallery-item fade-up" data-video="JzUTJYzdw0c">
+        <div class="rv-gallery-img"><img src="/licencias/revit/exportar-pdf.webp" alt="Exportación PDF por lotes" loading="lazy" /><span class="rv-play"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <p><strong>Exportación PDF por lotes</strong><br/>Nomenclatura personalizada para documentación</p>
+      </button>
+      <button class="rv-gallery-item fade-up" data-video="CwVWQnuUARI">
+        <div class="rv-gallery-img"><img src="/licencias/revit/schedules.webp" alt="División de schedules" loading="lazy" /><span class="rv-play"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <p><strong>División de schedules</strong><br/>Tablas de planificación en múltiples hojas</p>
+      </button>
+    </div>
+
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
         <h3>Modelado paramétrico 3D</h3>
-        <p>Diseño y documentación coherente, coordinada y completa basada en modelos BIM inteligentes.</p>
+        <p>Diseño y documentación coherente, coordinada y completa basada en modelos BIM inteligentes con información paramétrica integrada.</p>
       </div>
       <div class="pp-feature">
         <h3>Documentación automática</h3>
-        <p>Actualización automática de plantas, elevaciones, cortes y representaciones 3D al modificar el modelo.</p>
+        <p>Actualización automática de plantas, elevaciones, cortes y representaciones 3D al modificar cualquier elemento del modelo.</p>
       </div>
       <div class="pp-feature">
         <h3>Trabajo colaborativo</h3>
-        <p>Worksharing para que todas las disciplinas compartan y guarden trabajo en el mismo proyecto.</p>
+        <p>Worksharing para que todas las disciplinas compartan y guarden trabajo simultáneamente en el mismo proyecto centralizado.</p>
       </div>
       <div class="pp-feature">
-        <h3>Visualización 3D</h3>
-        <p>Renderizado avanzado con análisis solar y animaciones de recorrido virtual del edificio.</p>
+        <h3>Visualización 3D avanzada</h3>
+        <p>Renderizado avanzado con análisis solar, animaciones de recorrido virtual y generación de imágenes fotorrealistas del edificio.</p>
       </div>
       <div class="pp-feature">
         <h3>Detección de interferencias</h3>
-        <p>Verificación de interferencias entre disciplinas para resolver conflictos antes de la construcción.</p>
+        <p>Verificación de interferencias entre disciplinas para resolver conflictos de coordinación antes de la construcción física.</p>
       </div>
       <div class="pp-feature">
-        <h3>Gestión de fases</h3>
-        <p>Configuración de fases de proyecto y opciones de diseño para evaluar alternativas.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Exportación PDF avanzada</h3>
-        <p>Exportación por lotes con reglas de nomenclatura personalizadas para documentación eficiente.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Tablas y schedules</h3>
-        <p>Tabulación avanzada de información y división de schedules en múltiples hojas.</p>
+        <h3>Conectividad cloud</h3>
+        <p>Conexión directa con Autodesk Construction Cloud y BIM 360 para gestión documental, revisiones y coordinación en la nube.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
   <div class="pp-section fade-up">
-    <h2>Integración con otras herramientas</h2>
-    <p>Revit se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las necesidades de su proyecto:</p>
+    <h2>Ecosistema de integración</h2>
+    <p>Revit se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las necesidades de su proyecto multidisciplinario:</p>
     <div class="pp-integration-grid">
-      <a href="/licencias/autodesk/robot-structural" class="pp-integration">Robot Structural — Análisis estructural</a>
-      <a href="/licencias/autodesk/advance-steel" class="pp-integration">Advance Steel — Detallado de acero</a>
-      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación de modelos</a>
-      <a href="/licencias/autodesk/3ds-max" class="pp-integration">3ds Max — Visualización</a>
-      <a href="/licencias/autodesk/dynamo" class="pp-integration">Dynamo — Diseño computacional</a>
-      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión en nube</a>
+      <a href="/licencias/autodesk/robot-structural" class="pp-integration">Robot Structural — Análisis y cálculo estructural</a>
+      <a href="/licencias/autodesk/advance-steel" class="pp-integration">Advance Steel — Detallado y fabricación de acero</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y simulación 4D</a>
+      <a href="/licencias/autodesk/3ds-max" class="pp-integration">3ds Max — Visualización fotorrealista</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <span class="pp-integration">FormIt — Diseño conceptual y masas</span>
+      <span class="pp-integration">Insight — Análisis energético y sostenibilidad</span>
+      <span class="pp-integration">Dynamo — Diseño computacional y automatización</span>
     </div>
   </div>
 
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Revit?</h2>
+    <p>Revit está dirigido a profesionales de los sectores de <strong>Arquitectura, Ingeniería, Construcción y Minería</strong> que requieren flujos de trabajo coordinados entre múltiples especialidades:</p>
     <ul class="pp-list">
       <li>Arquitectos y estudios de arquitectura</li>
       <li>Ingenieros civiles y estructurales</li>
-      <li>Ingenieros eléctricos, sanitarios y HVAC</li>
+      <li>Ingenieros eléctricos, sanitarios y de HVAC</li>
       <li>Dibujantes técnicos y coordinadores CAD/BIM</li>
       <li>Gerentes de proyectos de construcción</li>
       <li>Propietarios y administradores de inmuebles</li>
+      <li>Profesionales del sector minero</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
   <div class="pp-section fade-up">
     <h2>Tipos de licencia</h2>
-    <p><strong>Suscripción individual de Revit:</strong> Acceso completo al software con actualizaciones, 3 versiones anteriores y 25 GB en la nube. Disponible en planes de 1 año o 3 años.</p>
-    <p><strong>Colección AEC (Architecture, Engineering & Construction):</strong> Incluye Revit junto con AutoCAD, Civil 3D, Navisworks y más herramientas para un flujo de trabajo AEC completo.</p>
-    <p>Los planes de 3 años mantienen el precio fijo durante todo el periodo de contrato, eliminando incrementos anuales.</p>
+    <p>Revit está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/revit/licencia-revit.webp" alt="Licencia Revit" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual Revit</h3>
+        <p>Licencia directa del software Revit con todas las funcionalidades para diseño BIM multidisciplinario.</p>
+        <ul class="pp-license-features">
+          <li>Gestión sencilla sin códigos de activación</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Uso remoto y portabilidad de licencia</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/revit/licencia-aec.webp" alt="AEC Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección AEC</h3>
+        <p>Incluye Revit junto con AutoCAD, Civil 3D, Navisworks y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>AutoCAD + Civil 3D + Navisworks incluidos</li>
+          <li>Advance Steel + Robot Structural + InfraWorks</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
   </div>
 
 </ProductPage>
+
+<!-- Video popup (outside layout to avoid stacking context issues) -->
+<div id="rvOverlay" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.15);">
+  <div id="rvPopup" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:960px;max-width:90vw;z-index:100000;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35);background:#000;">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#1a2332;color:#fff;">
+      <span id="rvPopupTitle" style="font-size:.9rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></span>
+      <button id="rvPopupClose" style="background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer;padding:0 .25rem;line-height:1;">&times;</button>
+    </div>
+    <div style="position:relative;padding-bottom:56.25%;height:0;">
+      <iframe id="rvVideo" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const overlay = document.getElementById('rvOverlay') as HTMLElement;
+  const popup = document.getElementById('rvPopup') as HTMLElement;
+  const iframe = document.getElementById('rvVideo') as HTMLIFrameElement;
+  const titleEl = document.getElementById('rvPopupTitle') as HTMLElement;
+
+  function openVideo(id: string, title: string) {
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    titleEl.textContent = title;
+    overlay.style.display = 'block';
+  }
+
+  function closeVideo() {
+    overlay.style.display = 'none';
+    iframe.src = '';
+  }
+
+  document.querySelectorAll('.rv-gallery-item[data-video]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = (btn as HTMLElement).getAttribute('data-video') || '';
+      const title = (btn as HTMLElement).querySelector('strong')?.textContent || '';
+      openVideo(id, title);
+    });
+  });
+
+  document.getElementById('rvPopupClose')!.addEventListener('click', closeVideo);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeVideo(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeVideo(); });
+</script>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);opacity:0;transition:opacity .3s}
+  .rv-gallery-item:hover .rv-play{opacity:1}
+  .rv-play svg{filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

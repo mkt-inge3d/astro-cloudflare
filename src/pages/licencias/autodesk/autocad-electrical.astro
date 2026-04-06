@@ -6,72 +6,212 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="AutoCAD Electrical"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de diseño de sistemas de control eléctrico con bibliotecas de símbolos, numeración automática y generación de reportes de cableado."
+  description="CAD especializado para diseño eléctrico y sistemas de control. Bibliotecas de símbolos inteligentes, herramientas de automatización y funciones CAD completas para instalaciones eléctricas."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/autocad-electrical/"
+  trainingUrl="/cursos/mecanica/autocad-electrical"
   trainingLabel="Ver cursos de AutoCAD Electrical"
   relatedProducts={[
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
     { name: 'Inventor', href: '/licencias/autodesk/inventor' },
     { name: 'AutoCAD Plant 3D', href: '/licencias/autodesk/autocad-plant-3d' },
+    { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es AutoCAD Electrical?</h2>
-    <p>AutoCAD Electrical es el software de Autodesk diseñado específicamente para el diseño de sistemas de control eléctrico e ingeniería eléctrica. Incluye todas las funcionalidades de AutoCAD más un conjunto completo de herramientas especializadas que automatizan las tareas de diseño eléctrico, reduciendo drásticamente los errores y aumentando la productividad de los ingenieros electricistas.</p>
-    <p>El software contiene una biblioteca con más de 65,000 símbolos eléctricos según estándares IEC, JIC (NFPA), AS y GB, además de herramientas para numeración automática de cables, etiquetado de componentes, referencias cruzadas en tiempo real y verificación de errores. Al insertar un componente, AutoCAD Electrical actualiza automáticamente las referencias cruzadas, las listas de contactos y la información del circuito.</p>
-    <p>AutoCAD Electrical genera automáticamente reportes profesionales de listas de materiales (BOM), listas de cables, tablas de conexiones de bornes, asignación de I/O de PLC y reportes personalizados, eliminando la creación manual de documentación y asegurando que los reportes estén siempre sincronizados con los esquemas.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/electrical/logo.webp" alt="AutoCAD Electrical" class="pp-product-logo" />
+    </div>
+    <h2>CAD especializado para diseño eléctrico y sistemas de control</h2>
+    <p>AutoCAD Electrical es el software de Autodesk diseñado específicamente para el <strong>diseño de sistemas de control eléctrico</strong> e ingeniería eléctrica. Incluye todas las funcionalidades de AutoCAD más un conjunto completo de herramientas especializadas que automatizan las tareas de diseño eléctrico, reduciendo drásticamente los errores y aumentando la productividad de los ingenieros electricistas.</p>
+    <p>El software contiene una biblioteca con más de <strong>65,000 símbolos eléctricos</strong> según estándares IEC, JIC (NFPA), AS y GB, además de herramientas para numeración automática de cables, etiquetado de componentes, referencias cruzadas en tiempo real y verificación de errores. Al insertar un componente, AutoCAD Electrical actualiza automáticamente las referencias cruzadas, las listas de contactos y la información del circuito.</p>
+    <p>AutoCAD Electrical genera automáticamente <strong>reportes profesionales</strong> de listas de materiales (BOM), listas de cables, tablas de conexiones de bornes, asignación de I/O de PLC y reportes personalizados, eliminando la creación manual de documentación y asegurando que los reportes estén siempre sincronizados con los esquemas.</p>
   </div>
 
+  <!-- Galería e imágenes -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/electrical/catalogo.webp" alt="Búsqueda en catálogo global" loading="lazy" /></div>
+        <p><strong>Búsqueda en Catálogo Global</strong><br/>Selección de componentes de fabricantes reales con datos técnicos completos</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/electrical/informes.webp" alt="Reportes automatizados" loading="lazy" /></div>
+        <p><strong>Reportes Automatizados</strong><br/>BOM, listas de cables, tablas de bornes y reportes de PLC sincronizados</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/electrical/enumeracion.webp" alt="Numeración de cables" loading="lazy" /></div>
+        <p><strong>Numeración de Cables</strong><br/>Asignación automática de números de cable y etiquetas de componentes</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/electrical/comprobacion.webp" alt="Comprobación de errores en tiempo real" loading="lazy" /></div>
+        <p><strong>Comprobación de Errores</strong><br/>Detección automática de cables sin número, contactos duplicados y discrepancias</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/electrical/referencias.webp" alt="Referencias cruzadas" loading="lazy" /></div>
+        <p><strong>Referencias Cruzadas</strong><br/>Seguimiento automático de referencias entre esquemas, paneles y reportes</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/electrical/inventor.webp" alt="Interoperabilidad con Inventor" loading="lazy" /></div>
+        <p><strong>Interoperabilidad con Inventor</strong><br/>Conexión con diseño mecánico 3D para proyectos electromecánicos integrados</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Biblioteca de símbolos eléctricos</h3>
-        <p>Más de 65,000 símbolos estándar IEC, JIC, AS y GB incluyendo contactores, relés, interruptores, variadores, instrumentos y componentes de potencia.</p>
+        <h3>Búsqueda en Catálogo Global</h3>
+        <p>Selección de componentes eléctricos de fabricantes reales con datos técnicos completos, asignación automática de referencias y vinculación al esquema.</p>
       </div>
       <div class="pp-feature">
-        <h3>Esquemas eléctricos inteligentes</h3>
-        <p>Creación de diagramas esquemáticos con conexiones inteligentes, referencias cruzadas automáticas y numeración de cables en tiempo real.</p>
+        <h3>Reportes Automatizados</h3>
+        <p>Generación automática de BOM, listas de cables, tablas de bornes, reportes de conexiones de PLC y reportes personalizados siempre sincronizados con los planos.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño de paneles eléctricos</h3>
-        <p>Layout de paneles con colocación gráfica de componentes, representación en 2D de la disposición física y verificación de espacio disponible.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Asignación de I/O de PLC</h3>
-        <p>Herramientas dedicadas para dibujo e inserción de módulos PLC con asignación de puntos de entrada/salida y generación de tablas de I/O.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Numeración automática de cables</h3>
+        <h3>Numeración de Cables</h3>
         <p>Asignación automática de números de cable, etiquetas de componentes y marcas de borne con esquemas de numeración configurables por proyecto.</p>
       </div>
       <div class="pp-feature">
-        <h3>Verificación de errores</h3>
+        <h3>Comprobación de Errores en Tiempo Real</h3>
         <p>Detección automática de errores como cables sin número, contactos duplicados, componentes sin referencia y discrepancias entre esquemas y paneles.</p>
       </div>
       <div class="pp-feature">
-        <h3>Reportes automáticos</h3>
-        <p>Generación de BOM, listas de cables, tablas de bornes, reportes de conexiones de PLC y reportes personalizados sincronizados con los planos.</p>
+        <h3>Seguimiento de Referencias Cruzadas</h3>
+        <p>Actualización automática de referencias cruzadas entre esquemas, paneles, listas de contactos e información del circuito al insertar o modificar componentes.</p>
       </div>
       <div class="pp-feature">
-        <h3>Circuit Builder</h3>
-        <p>Inserción rápida de circuitos completos predefinidos (arranque de motor, inversión de giro, variadores) con configuración paramétrica.</p>
+        <h3>Interoperabilidad con Inventor</h3>
+        <p>Conexión bidireccional con Inventor para proyectos electromecánicos, sincronizando el diseño eléctrico con el modelo 3D mecánico de la máquina o equipo.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>AutoCAD Electrical se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las necesidades de su proyecto eléctrico e industrial:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Plataforma base de dibujo y documentación</a>
+      <a href="/licencias/autodesk/inventor" class="pp-integration">Inventor — Diseño mecánico 3D integrado</a>
+      <a href="/licencias/autodesk/autocad-plant-3d" class="pp-integration">AutoCAD Plant 3D — Diseño de plantas industriales</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y detección de interferencias</a>
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM de instalaciones MEP</a>
+      <span class="pp-integration">Vault — Gestión de datos de ingeniería</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es AutoCAD Electrical?</h2>
+    <p>AutoCAD Electrical está dirigido a profesionales del <strong>diseño eléctrico, automatización industrial y sistemas de control</strong> que requieren herramientas especializadas:</p>
     <ul class="pp-list">
-      <li>Ingenieros eléctricos y de control</li>
+      <li>Diseñadores eléctricos e ingenieros de control</li>
+      <li>Ingenieros de automatización industrial</li>
       <li>Diseñadores de tableros y paneles eléctricos</li>
-      <li>Integradores de sistemas de automatización industrial</li>
+      <li>Programadores de PLC y sistemas SCADA</li>
+      <li>Integradores de sistemas de automatización</li>
       <li>Empresas fabricantes de maquinaria y equipos</li>
       <li>Consultoras de ingeniería eléctrica e instrumentación</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>AutoCAD Electrical está <strong>incluido en la suscripción de AutoCAD</strong> y también disponible como parte de las <strong>Colecciones AEC y PDM</strong> de Autodesk.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Incluido en AutoCAD</h3>
+        <p>AutoCAD Electrical viene incluido como toolset especializado dentro de la suscripción de AutoCAD, sin costo adicional.</p>
+        <ul class="pp-license-features">
+          <li>Incluido en la suscripción de AutoCAD</li>
+          <li>Acceso al toolset Electrical completo</li>
+          <li>Más de 65,000 símbolos eléctricos</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>25 GB de almacenamiento en la nube</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Colecciones AEC / PDM</h3>
+        <p>Incluye AutoCAD Electrical junto con Revit o Inventor y más herramientas para flujos de trabajo multidisciplinarios completos.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción de AutoCAD</li>
+          <li>AEC: Revit + Civil 3D + Navisworks incluidos</li>
+          <li>PDM: Inventor + Vault + Inventor CAM incluidos</li>
+          <li>Mejor relación costo-beneficio para equipos multidisciplinarios</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

@@ -6,29 +6,62 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="AutoCAD"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de diseño 2D y 3D líder en la industria para dibujo técnico, documentación y modelado de precisión."
+  description="Software profesional de diseño CAD para dibujo técnico 2D y modelado 3D. Incluye conjuntos de herramientas especializados: Architecture (8,000+ objetos), MEP (10,500 objetos), Mechanical (700,000+ piezas), Plant 3D (400+ objetos), Electrical, Map 3D y Raster Design."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/autocad/"
+  trainingUrl="/cursos/diseno/autocad"
   trainingLabel="Ver cursos de AutoCAD"
   relatedProducts={[
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
     { name: 'Inventor', href: '/licencias/autodesk/inventor' },
-    { name: 'AutoCAD Plant 3D', href: '/licencias/autodesk/autocad-plant-3d' },
-    { name: 'AutoCAD Electrical', href: '/licencias/autodesk/autocad-electrical' },
+    { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+    { name: 'Advance Steel', href: '/licencias/autodesk/advance-steel' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es AutoCAD?</h2>
-    <p>AutoCAD es el software de diseño asistido por computadora más utilizado en el mundo, desarrollado por Autodesk desde 1982. Permite a profesionales de arquitectura, ingeniería, construcción y manufactura crear dibujos técnicos de precisión en 2D y modelos 3D con una exactitud milimétrica. Su formato nativo DWG se ha convertido en el estándar de facto para el intercambio de planos y documentación técnica a nivel global.</p>
-    <p>Con más de cuatro décadas de desarrollo continuo, AutoCAD ofrece un conjunto completo de herramientas de dibujo, anotación y documentación que se adaptan a prácticamente cualquier disciplina de diseño. Incluye conjuntos de herramientas especializados para arquitectura, ingeniería mecánica, electricidad, cartografía, diseño de plantas y rasterización, todo integrado en una sola suscripción.</p>
-    <p>AutoCAD está disponible para escritorio (Windows y Mac) y dispositivos móviles, además de contar con AutoCAD Web App para acceso desde el navegador, permitiendo a los equipos de trabajo colaborar y revisar diseños desde cualquier lugar.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/autocad/logo.webp" alt="AutoCAD" class="pp-product-logo" />
+    </div>
+    <h2>Software CAD profesional para diseño 2D y 3D</h2>
+    <p>AutoCAD es el software de diseño asistido por computadora más utilizado en el mundo, desarrollado por Autodesk desde 1982. Permite a profesionales de arquitectura, ingeniería, construcción y manufactura crear dibujos técnicos de precisión en 2D y modelos 3D con una exactitud milimétrica. Su formato nativo <strong>DWG se ha convertido en el estándar de facto</strong> para el intercambio de planos y documentación técnica a nivel global, siendo compatible con prácticamente todas las plataformas de diseño del mercado.</p>
+    <p>La suscripción actual de AutoCAD incluye <strong>siete conjuntos de herramientas especializados</strong> que antes se vendían por separado: Architecture con más de 8,000 objetos inteligentes para diseño arquitectónico, MEP con 10,500 objetos para instalaciones mecánicas, eléctricas y sanitarias, Mechanical con más de 700,000 piezas estándar para ingeniería mecánica, Plant 3D con 400+ componentes para diseño de plantas industriales, Electrical para esquemas eléctricos, Map 3D para cartografía GIS y Raster Design para edición de imágenes escaneadas.</p>
+    <p>AutoCAD está disponible para escritorio (Windows y Mac), dispositivos móviles y como <strong>AutoCAD Web App</strong> para acceso desde cualquier navegador, permitiendo a los equipos de trabajo colaborar, revisar y editar diseños desde cualquier ubicación. Con más de cuatro décadas de desarrollo continuo, AutoCAD sigue evolucionando con herramientas de automatización, comparación inteligente de dibujos y conectividad en la nube a través de <strong>Autodesk Drive</strong>.</p>
   </div>
 
+  <!-- Características principales con galería -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/autocad/historia.webp" alt="Drawing History" loading="lazy" /></div>
+        <p><strong>Drawing History</strong><br/>Historial de cambios en dibujos guardados en la nube</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/autocad/xref.webp" alt="Xref Changes" loading="lazy" /></div>
+        <p><strong>Cambios en Xrefs</strong><br/>Notificación y comparación de cambios en referencias externas</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/autocad/bloques.webp" alt="Block Palette" loading="lazy" /></div>
+        <p><strong>Paleta de bloques</strong><br/>Inserción visual de bloques recientes y biblioteca integrada</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/autocad/medida.webp" alt="Dynamic Measurement" loading="lazy" /></div>
+        <p><strong>Medición dinámica</strong><br/>Medición rápida de áreas y distancias en tiempo real</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/autocad/dwg-compare.webp" alt="DWG Comparison" loading="lazy" /></div>
+        <p><strong>Comparación DWG</strong><br/>Compara versiones de dibujos resaltando diferencias automáticamente</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/autocad/dispositivos.webp" alt="Multi-device Access" loading="lazy" /></div>
+        <p><strong>Acceso multidispositivo</strong><br/>Trabaje desde escritorio, web y móvil con sincronización</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
         <h3>Dibujo 2D de precisión</h3>
@@ -43,38 +76,160 @@ import ProductPage from '../../../layouts/ProductPage.astro';
         <p>Bloques inteligentes con parámetros y acciones configurables que se adaptan a múltiples configuraciones sin duplicar contenido.</p>
       </div>
       <div class="pp-feature">
-        <h3>Anotación y acotado</h3>
-        <p>Sistema completo de cotas, textos multilínea, tablas, directrices y estilos de anotación con escalas automáticas para documentación profesional.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Referencias externas (Xrefs)</h3>
-        <p>Vinculación de archivos DWG, imágenes, PDFs y nubes de puntos como referencias para trabajo coordinado entre equipos multidisciplinarios.</p>
-      </div>
-      <div class="pp-feature">
         <h3>Conjuntos de herramientas especializados</h3>
-        <p>Toolsets incluidos para Architecture, Mechanical, Electrical, Map 3D, MEP, Plant 3D y Raster Design con bibliotecas y funciones específicas por industria.</p>
+        <p>Toolsets incluidos para Architecture, Mechanical, Electrical, Map 3D, MEP, Plant 3D y Raster Design con bibliotecas específicas por industria.</p>
       </div>
       <div class="pp-feature">
         <h3>Automatización con LISP y scripts</h3>
-        <p>Personalización mediante AutoLISP, Visual LISP, .NET y scripts de línea de comandos para automatizar tareas repetitivas y crear flujos personalizados.</p>
+        <p>Personalización mediante AutoLISP, Visual LISP, .NET y scripts de línea de comandos para automatizar tareas repetitivas y flujos personalizados.</p>
       </div>
       <div class="pp-feature">
         <h3>Colaboración en la nube</h3>
-        <p>Guardado en Autodesk Drive, AutoCAD Web App para edición online y aplicación móvil para revisión de planos en campo desde cualquier dispositivo.</p>
+        <p>Guardado en Autodesk Drive, AutoCAD Web App para edición online y aplicación móvil para revisión de planos desde cualquier dispositivo.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>AutoCAD se conecta con un ecosistema completo de soluciones Autodesk y es la base sobre la que operan múltiples productos verticales:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM multidisciplinario</a>
+      <a href="/licencias/autodesk/civil-3d" class="pp-integration">Civil 3D — Ingeniería civil e infraestructura</a>
+      <a href="/licencias/autodesk/inventor" class="pp-integration">Inventor — Diseño mecánico 3D</a>
+      <a href="/licencias/autodesk/advance-steel" class="pp-integration">Advance Steel — Detallado de acero estructural</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y simulación 4D</a>
+      <span class="pp-integration">Autodesk Drive — Almacenamiento en la nube</span>
+      <span class="pp-integration">AutoCAD Web App — Edición desde el navegador</span>
+      <span class="pp-integration">AutoCAD Mobile — Revisión en campo</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es AutoCAD?</h2>
+    <p>AutoCAD está dirigido a profesionales de <strong>diseño, ingeniería y construcción</strong> que requieren herramientas de dibujo técnico de alta precisión:</p>
     <ul class="pp-list">
       <li>Arquitectos y diseñadores de interiores</li>
       <li>Ingenieros civiles, mecánicos y eléctricos</li>
       <li>Dibujantes técnicos y delineantes profesionales</li>
+      <li>Estudiantes de ingeniería y arquitectura</li>
       <li>Topógrafos y profesionales de cartografía</li>
       <li>Diseñadores industriales y de productos</li>
-      <li>Contratistas y profesionales de la construcción</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>AutoCAD está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/autocad/lic-autocad.webp" alt="Licencia AutoCAD" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual AutoCAD</h3>
+        <p>Licencia completa de AutoCAD con los 7 conjuntos de herramientas especializados incluidos para todas las disciplinas de diseño.</p>
+        <ul class="pp-license-features">
+          <li>7 toolsets especializados incluidos</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>AutoCAD Web App y Mobile incluidos</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card">
+        <img src="/licencias/autocad/lic-autocad.webp" alt="AEC Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección AEC</h3>
+        <p>Incluye AutoCAD junto con Revit, Civil 3D, Navisworks y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>Revit + Civil 3D + Navisworks incluidos</li>
+          <li>Advance Steel + Robot Structural + InfraWorks</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/autocad/lic-pdm.webp" alt="PDM Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección PDM</h3>
+        <p>Incluye AutoCAD junto con Inventor, Fusion, Vault y más herramientas para diseño de productos y manufactura.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>Inventor + Fusion + Inventor CAM incluidos</li>
+          <li>Vault + Inventor Nastran + Factory Design</li>
+          <li>Ideal para equipos de diseño mecánico y manufactura</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer;background:none}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}.pp-license-cards{grid-template-columns:1fr 1fr}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

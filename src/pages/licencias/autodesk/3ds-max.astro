@@ -2,37 +2,70 @@
 import ProductPage from '../../../layouts/ProductPage.astro';
 ---
 <ProductPage
-  title="3ds Max"
-  product="3ds Max"
+  title="Autodesk 3ds Max"
+  product="Autodesk 3ds Max"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software profesional de modelado 3D, animación y renderizado para visualización arquitectónica, diseño de productos y entretenimiento."
+  description="Solución integral de modelado 3D, animación y renderizado. Imágenes fotorrealistas, animaciones cinematográficas y análisis de iluminación natural para arquitectura y diseño."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
+  trainingUrl="/cursos/diseno/3ds-max"
+  trainingLabel="Ver cursos de 3ds Max"
   relatedProducts={[
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
     { name: 'Fusion', href: '/licencias/autodesk/fusion' },
+    { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+    { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es 3ds Max?</h2>
-    <p>Autodesk 3ds Max es un software de modelado 3D, animación y renderizado utilizado por profesionales de visualización arquitectónica, diseño de productos, entretenimiento y desarrollo de videojuegos. Es la herramienta de referencia para crear imágenes fotorrealistas de proyectos arquitectónicos, recorridos virtuales, animaciones de productos y efectos visuales de alta calidad.</p>
-    <p>El software ofrece herramientas de modelado poligonal, spline y paramétrico, junto con un sistema de materiales y texturas altamente configurable. Incluye el motor de renderizado Arnold integrado, y es compatible con motores de terceros como V-Ray, Corona Renderer y Enscape, que son los estándares de la industria de visualización arquitectónica.</p>
-    <p>3ds Max se integra con Revit mediante la importación directa de archivos RVT y enlaces en vivo, permitiendo a los visualizadores trabajar con modelos BIM actualizados. También soporta la importación de archivos de AutoCAD, SketchUp, FBX y otros formatos, facilitando flujos de trabajo con múltiples herramientas de diseño.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/3dsmax/logo.webp" alt="Autodesk 3ds Max" class="pp-product-logo" />
+    </div>
+    <h2>Modelado 3D, animación y renderizado profesional</h2>
+    <p>Autodesk 3ds Max es una <strong>solución integral de modelado 3D, animación y renderizado</strong> utilizada por profesionales de visualización arquitectónica, diseño de productos, entretenimiento y desarrollo de videojuegos. Es la herramienta de referencia para crear imágenes fotorrealistas de proyectos arquitectónicos, recorridos virtuales inmersivos, animaciones cinematográficas de productos y efectos visuales de alta calidad que comunican ideas de diseño con impacto visual.</p>
+    <p>El software ofrece herramientas de <strong>modelado poligonal, spline y paramétrico</strong>, junto con un sistema de materiales y texturas altamente configurable que soporta flujos PBR (Physically Based Rendering). Incluye el motor de renderizado Arnold integrado para resultados fotorrealistas con iluminación física precisa, y es compatible con motores de terceros como V-Ray, Corona Renderer y Enscape, que son los estándares de la industria de visualización arquitectónica para análisis de iluminación natural y renderizado de alta calidad.</p>
+    <p>3ds Max se integra con <strong>Revit mediante la importación directa de archivos RVT</strong> y enlaces en vivo, permitiendo a los visualizadores trabajar con modelos BIM siempre actualizados. También soporta la importación de archivos de AutoCAD, SketchUp, FBX y otros formatos, facilitando flujos de trabajo con múltiples herramientas de diseño. La automatización mediante <strong>Python 3 y MAXScript</strong> permite crear pipelines de producción eficientes para estudios de visualización.</p>
   </div>
 
+  <!-- Características principales con galería -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/3dsmax/texturas.webp" alt="Baked Textures" loading="lazy" /></div>
+        <p><strong>Baked Textures</strong><br/>Horneado de texturas para optimización de escenas y exportación</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/3dsmax/python.webp" alt="Python 3 Scripting" loading="lazy" /></div>
+        <p><strong>Python 3 Scripting</strong><br/>Automatización avanzada de flujos de trabajo y herramientas personalizadas</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/3dsmax/pbr.webp" alt="PBR Materials" loading="lazy" /></div>
+        <p><strong>Materiales PBR</strong><br/>Flujo de trabajo basado en física para materiales realistas</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/3dsmax/osl.webp" alt="OSL Shading" loading="lazy" /></div>
+        <p><strong>OSL Shading</strong><br/>Open Shading Language para shaders procedurales avanzados</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/3dsmax/arnold.webp" alt="Arnold Renderer" loading="lazy" /></div>
+        <p><strong>Arnold Renderer</strong><br/>Motor de renderizado fotorrealista con iluminación física integrado</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
         <h3>Modelado 3D versátil</h3>
-        <p>Modelado poligonal, NURBS, spline y paramétrico con modificadores apilables para crear cualquier tipo de geometría 3D.</p>
+        <p>Modelado poligonal, NURBS, spline y paramétrico con modificadores apilables para crear cualquier tipo de geometría 3D con total control creativo.</p>
       </div>
       <div class="pp-feature">
         <h3>Renderizado con Arnold</h3>
-        <p>Motor de renderizado Arnold integrado con iluminación física, materiales PBR y renderizado progresivo para resultados fotorrealistas.</p>
+        <p>Motor de renderizado Arnold integrado con iluminación física, materiales PBR y renderizado progresivo para resultados fotorrealistas profesionales.</p>
       </div>
       <div class="pp-feature">
         <h3>Compatibilidad V-Ray y Corona</h3>
@@ -40,37 +73,159 @@ import ProductPage from '../../../layouts/ProductPage.astro';
       </div>
       <div class="pp-feature">
         <h3>Animación avanzada</h3>
-        <p>Sistema de animación por keyframes, controladores de animación, cinemática inversa y herramientas de rigging para personajes y objetos.</p>
+        <p>Sistema de animación por keyframes, controladores, cinemática inversa y herramientas de rigging para personajes, cámaras y objetos.</p>
       </div>
       <div class="pp-feature">
-        <h3>Importación de Revit y AutoCAD</h3>
-        <p>Importación directa de archivos RVT con materiales y metadatos, y enlace en vivo para mantener sincronización con el modelo BIM.</p>
+        <h3>OSL Shading</h3>
+        <p>Open Shading Language para creación de shaders procedurales avanzados con control total sobre la apariencia de materiales y superficies.</p>
       </div>
       <div class="pp-feature">
-        <h3>Sistema de partículas y física</h3>
-        <p>Simulación de partículas, fluidos, tela, cabello y cuerpos rígidos para efectos visuales realistas en animaciones y recorridos.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>MAXScript y Python</h3>
-        <p>Lenguajes de scripting integrados para automatización de tareas, creación de herramientas personalizadas y flujos de trabajo por lotes.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Scene Explorer y Layer Manager</h3>
-        <p>Gestión avanzada de escenas complejas con jerarquías, capas, selección por criterios y organización de objetos en proyectos grandes.</p>
+        <h3>Python 3 y MAXScript</h3>
+        <p>Lenguajes de scripting integrados para automatización de tareas, creación de herramientas personalizadas y pipelines de producción eficientes.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>3ds Max se conecta con un ecosistema completo de soluciones Autodesk y motores de renderizado de terceros para visualización profesional:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Importación directa de modelos BIM (RVT)</a>
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Importación de dibujos DWG</a>
+      <a href="/licencias/autodesk/fusion" class="pp-integration">Fusion — Diseño de productos y exportación 3D</a>
+      <span class="pp-integration">Arnold — Motor de renderizado fotorrealista integrado</span>
+      <span class="pp-integration">V-Ray / Corona — Motores de renderizado de terceros</span>
+      <span class="pp-integration">SketchUp / FBX — Importación de formatos estándar</span>
+      <span class="pp-integration">Substance — Materiales y texturas PBR</span>
+      <span class="pp-integration">Unreal / Unity — Exportación para motores de juegos</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es 3ds Max?</h2>
+    <p>3ds Max está dirigido a profesionales de <strong>visualización, animación y diseño</strong> que requieren herramientas de modelado y renderizado de alta calidad:</p>
     <ul class="pp-list">
-      <li>Visualizadores arquitectónicos y artistas de render</li>
-      <li>Estudios de arquitectura que producen imágenes de presentación</li>
-      <li>Diseñadores de productos y packaging</li>
+      <li>Arquitectos y estudios de visualización arquitectónica</li>
+      <li>Ingenieros y profesionales de presentación de proyectos</li>
+      <li>Diseñadores de interiores y paisajistas</li>
+      <li>Especialistas en visualización y renderizado fotorrealista</li>
       <li>Animadores y artistas de efectos visuales</li>
-      <li>Desarrolladores de videojuegos y contenido interactivo</li>
-      <li>Estudios de producción audiovisual y publicidad</li>
+      <li>Desarrolladores de contenido interactivo y videojuegos</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>3ds Max está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/3dsmax/lic-3dsmax.webp" alt="Licencia 3ds Max" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual 3ds Max</h3>
+        <p>Licencia completa del software 3ds Max con Arnold integrado para modelado 3D, animación y renderizado profesional.</p>
+        <ul class="pp-license-features">
+          <li>Arnold Renderer integrado</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Soporte para V-Ray, Corona y Enscape</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card">
+        <img src="/licencias/3dsmax/lic-3dsmax.webp" alt="AEC Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección AEC</h3>
+        <p>Incluye 3ds Max junto con Revit, AutoCAD, Civil 3D, Navisworks y más para un flujo de trabajo AEC completo con visualización.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>Revit + AutoCAD + Civil 3D + Navisworks</li>
+          <li>Advance Steel + Robot Structural + InfraWorks</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/3dsmax/lic-pdm.webp" alt="PDM Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección PDM</h3>
+        <p>Incluye 3ds Max junto con Inventor, AutoCAD, Fusion y más herramientas para diseño de productos con visualización profesional.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>Inventor + AutoCAD + Fusion incluidos</li>
+          <li>Vault + Inventor CAM + Factory Design</li>
+          <li>Ideal para equipos de diseño y visualización de productos</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer;background:none}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}.pp-license-cards{grid-template-columns:1fr 1fr}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

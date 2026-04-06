@@ -26,12 +26,12 @@ const currentYear = new Date().getFullYear();
     <div class="footer-main-inner">
       <!-- Col 1: Logo + About -->
       <div class="footer-col footer-col--brand">
-        <img src="/logo-blanco.png" alt="SemcoCAD" class="footer-logo" />
+        <img src="/logo-blanco.webp" alt="SemcoCAD" class="footer-logo" />
         <p class="footer-about">Somos el proveedor líder en Perú de licencias de software, capacitación especializada y servicios de ingeniería para los sectores de diseño, construcción y manufactura.</p>
         <div class="footer-partners">
-          <img src="/partners/autodesk-gold.png" alt="Autodesk Gold Partner" />
-          <img src="/partners/ansys-esss.png" alt="Ansys ESSS Partner" />
-          <img src="/partners/oracle-partner.png" alt="Oracle Partner" class="footer-partner--dark" />
+          <img src="/logos/logos_footer/autodesk_blanco.webp" alt="Autodesk Gold Partner" />
+          <img src="/logos/logos_footer/ansys_blanco.webp" alt="Ansys Channel Partner" class="footer-partner--larger" />
+          <img src="/logos/logos_footer/oracle_blanco.webp" alt="Oracle Partner" class="footer-partner--larger" />
         </div>
       </div>
 
@@ -73,10 +73,10 @@ const currentYear = new Date().getFullYear();
         </div>
         <div class="footer-compliance">
           <a href="https://www.semco.com.pe/libro-de-reclamaciones-semco/" target="_blank" rel="noopener" class="compliance-link">
-            <img src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" />
+            <img src="/libro-reclamaciones.webp" alt="Libro de Reclamaciones" />
           </a>
           <a href="https://www.semco.com.pe/denuncias-antisoborno/" target="_blank" rel="noopener" class="compliance-link">
-            <img src="/denuncias-antisoborno.png" alt="Denuncias Antisoborno" />
+            <img src="/denuncias-antisoborno.webp" alt="Denuncias Antisoborno" />
           </a>
         </div>
       </div>
@@ -99,7 +99,7 @@ const currentYear = new Date().getFullYear();
 <style is:inline>
   /* ===== Social Bar ===== */
   .footer-social-bar {
-    background: var(--navy);
+    background: #05080D;
     padding: 0.75rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
@@ -126,7 +126,7 @@ const currentYear = new Date().getFullYear();
 
   /* ===== Main Footer ===== */
   .footer-main {
-    background: var(--navy);
+    background: #05080D;
     padding: 3.5rem 2rem 2.5rem;
   }
 
@@ -180,15 +180,15 @@ const currentYear = new Date().getFullYear();
   }
 
   .footer-partners {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1.2rem;
-    flex-wrap: wrap;
   }
 
   .footer-partners img {
-    height: 32px;
-    width: auto;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     opacity: 0.7;
     transition: opacity 0.3s ease;
@@ -202,6 +202,10 @@ const currentYear = new Date().getFullYear();
     background: rgba(255, 255, 255, 0.05);
     padding: 4px 8px;
     border-radius: 4px;
+  }
+
+  .footer-partners img:last-child {
+    max-width: 100%;
   }
 
   /* ===== Contact Blocks ===== */
@@ -252,7 +256,7 @@ const currentYear = new Date().getFullYear();
 
   /* ===== Bottom Bar ===== */
   .footer-bottom {
-    background: #0d1520;
+    background: #030507;
     padding: 1rem 2rem;
   }
 

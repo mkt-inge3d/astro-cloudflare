@@ -5,78 +5,153 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   title="Ansys Mechanical"
   product="Ansys Mechanical"
   brand="Ansys"
-  brandColor="#ffb74d"
-  description="Plataforma de análisis estructural por elementos finitos para resolver problemas estáticos, dinámicos, de fatiga, no lineales, térmicos y de vibraciones con precisión y confiabilidad industrial."
+  brandColor="#FFB71B"
+  description="Plataforma de análisis estructural por elementos finitos con flujos de trabajo guiados para resolver problemas estáticos, dinámicos, de fatiga, no lineales, térmicos y de vibraciones con precisión industrial."
   breadcrumbBrand="Ansys"
   breadcrumbBrandHref="/licencias/ansys"
   trainingUrl="/cursos/ansys"
   trainingLabel="Ver cursos de Ansys Mechanical"
   relatedProducts={[
+    { name: "Ansys Fluent", href: "/licencias/ansys/fluent" },
     { name: "Ansys Discovery", href: "/licencias/ansys/discovery" },
     { name: "Ansys CFD", href: "/licencias/ansys/cfd" },
     { name: "Ansys Rocky", href: "/licencias/ansys/rocky" },
   ]}
 >
+
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Ansys Mechanical?</h2>
-    <p>
-      Ansys Mechanical es la solución de simulación estructural por elementos finitos (FEA) más completa del mercado, utilizada por ingenieros en todo el mundo para predecir el comportamiento mecánico de estructuras, componentes y ensamblajes bajo cargas y condiciones operativas reales. Desde análisis estáticos lineales hasta simulaciones dinámicas no lineales con grandes deformaciones, Mechanical proporciona la precisión necesaria para tomar decisiones de diseño confiables.
-    </p>
-    <p>
-      La plataforma ofrece una amplia gama de capacidades de análisis que incluyen esfuerzos y deformaciones estáticas, análisis modal y de vibraciones, respuesta dinámica transitoria y armónica, análisis de fatiga, pandeo, contacto no lineal, materiales hiperelásticos y análisis térmico acoplado. Esta versatilidad permite abordar prácticamente cualquier problema de ingeniería estructural desde una única herramienta.
-    </p>
-    <p>
-      Integrado en el entorno Ansys Workbench, Mechanical facilita flujos de trabajo paramétricos y multidisciplinarios. Los ingenieros pueden acoplar resultados térmicos y de fluidos como cargas para análisis estructurales, realizar estudios de optimización paramétrica y generar reportes automatizados. Su interfaz intuitiva y sus asistentes de configuración permiten que tanto usuarios experimentados como nuevos aprovechen al máximo las capacidades del software.
-    </p>
+    <div class="pp-product-header">
+      <img src="/licencias/ansys/logo-ansys-mechanical.webp" alt="Ansys Mechanical" class="pp-product-logo" />
+    </div>
+    <h2>Análisis estructural con flujos de trabajo guiados</h2>
+    <p>Ansys Mechanical es la solución de simulación estructural por elementos finitos (FEA) más completa del mercado, utilizada por ingenieros en todo el mundo para predecir el comportamiento mecánico de estructuras, componentes y ensamblajes bajo cargas y condiciones operativas reales. Desde análisis estáticos lineales hasta simulaciones dinámicas no lineales con grandes deformaciones, Mechanical proporciona la precisión necesaria para tomar decisiones de diseño confiables.</p>
+    <p>La plataforma ofrece una amplia gama de capacidades que incluyen <strong>análisis estático y dinámico</strong>, fatiga, comportamiento no lineal de materiales, <strong>acoplamiento térmico-estructural</strong> y grandes deformaciones. Su entorno de simulación guiado permite configurar análisis complejos de manera intuitiva, reduciendo errores y acelerando la obtención de resultados precisos incluso para usuarios con experiencia moderada en simulación.</p>
+    <p>Integrado en el entorno <strong>Ansys Workbench</strong>, Mechanical facilita flujos de trabajo paramétricos y multidisciplinarios. Los ingenieros pueden acoplar resultados térmicos y de fluidos como cargas para análisis estructurales, realizar estudios de optimización paramétrica y generar reportes automatizados. Su interfaz intuitiva y sus asistentes de configuración permiten que tanto usuarios experimentados como nuevos aprovechen al máximo las capacidades del software.</p>
   </div>
 
+  <!-- Características principales -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Análisis estático y dinámico</h3>
-        <p>Resolución de esfuerzos, deformaciones y reacciones bajo cargas estáticas, así como respuesta dinámica transitoria, armónica, espectral y de impacto.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Análisis de fatiga</h3>
-        <p>Predicción de vida útil bajo cargas cíclicas utilizando métodos de esfuerzo-vida, deformación-vida y mecánica de fractura con criterios multiaxiales avanzados.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>No linealidades</h3>
-        <p>Soporte completo para no linealidades geométricas, de material y de contacto, incluyendo grandes deformaciones, plasticidad, hiperelasticidad y contacto con fricción.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Análisis térmico</h3>
-        <p>Simulación de conducción, convección y radiación en estado estacionario y transitorio, con acoplamiento termomecánico para evaluar esfuerzos térmicos.</p>
+        <h3>Análisis estático lineal y no lineal</h3>
+        <p>Resolución de esfuerzos, deformaciones y reacciones bajo cargas estáticas con soporte completo para no linealidades geométricas, de material y de contacto, incluyendo grandes deformaciones y plasticidad.</p>
       </div>
       <div class="pp-feature">
         <h3>Análisis modal y vibraciones</h3>
-        <p>Extracción de frecuencias naturales y modos de vibración, análisis de respuesta armónica forzada y estudios de resonancia para prevenir fallas por vibración.</p>
+        <p>Extracción de frecuencias naturales y modos de vibración, análisis de respuesta armónica forzada y estudios de resonancia para prevenir fallas por vibración en componentes y estructuras.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Respuesta armónica y transitoria</h3>
+        <p>Simulación de respuesta dinámica transitoria, armónica, espectral y de impacto para evaluar el comportamiento de estructuras sometidas a cargas variables en el tiempo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Acoplamiento térmico-estructural</h3>
+        <p>Simulación de conducción, convección y radiación en estado estacionario y transitorio, con acoplamiento termomecánico para evaluar esfuerzos térmicos y dilataciones en componentes.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Vida a fatiga</h3>
+        <p>Predicción de vida útil bajo cargas cíclicas utilizando métodos de esfuerzo-vida, deformación-vida y mecánica de fractura con criterios multiaxiales avanzados para componentes sometidos a servicio.</p>
       </div>
       <div class="pp-feature">
         <h3>Optimización topológica</h3>
-        <p>Herramientas de diseño generativo que determinan la distribución óptima de material para cumplir requisitos de rigidez, resistencia y peso simultáneamente.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Materiales compuestos</h3>
-        <p>Modelado de laminados y estructuras en materiales compuestos con criterios de falla específicos como Tsai-Wu, Hashin y delaminación interlaminar.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Automatización con scripting</h3>
-        <p>API de Python y APDL para automatizar flujos de trabajo repetitivos, parametrizar estudios y personalizar el comportamiento del solver según necesidades específicas.</p>
+        <p>Herramientas de diseño generativo que determinan la distribución óptima de material para cumplir requisitos de rigidez, resistencia y peso simultáneamente, ideal para manufactura aditiva.</p>
       </div>
     </div>
   </div>
 
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Ansys Mechanical?</h2>
+    <p>Ansys Mechanical está dirigido a profesionales de ingeniería y simulación que necesitan validar el comportamiento estructural de componentes y ensamblajes antes de la fabricación:</p>
     <ul class="pp-list">
-      <li>Ingenieros estructurales que diseñan y validan componentes mecánicos, estructuras metálicas y ensamblajes sometidos a cargas complejas.</li>
       <li>Ingenieros mecánicos que necesitan verificar la integridad estructural de productos antes de la fabricación y certificación.</li>
-      <li>Profesionales automotrices que analizan durabilidad de chasis, suspensión, carrocería y componentes de tren motriz bajo condiciones de servicio.</li>
-      <li>Ingenieros aeroespaciales que validan estructuras de aeronaves, componentes de motores y sistemas de aterrizaje según normativas de certificación.</li>
-      <li>Ingenieros civiles y de infraestructura que evalúan estructuras bajo cargas sísmicas, de viento y condiciones operativas especiales.</li>
-      <li>Equipos de diseño de producto que buscan reducir peso, mejorar rendimiento y acelerar el ciclo de desarrollo mediante simulación virtual.</li>
+      <li>Ingenieros estructurales que diseñan y validan componentes metálicos, ensamblajes y estructuras sometidos a cargas complejas.</li>
+      <li>Ingenieros de diseño que buscan reducir peso, mejorar rendimiento y acelerar el ciclo de desarrollo mediante simulación virtual.</li>
+      <li>Especialistas en simulación que requieren una plataforma FEA completa para análisis estáticos, dinámicos, térmicos y de fatiga.</li>
     </ul>
   </div>
+
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Ansys Mechanical está disponible bajo modelos de <strong>licencia perpetua</strong> (con mantenimiento anual) o <strong>licencia de alquiler</strong> (basada en tiempo). Contacte a nuestro equipo de simulación para obtener una propuesta personalizada.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Licencia perpetua</h3>
+        <p>Adquiera la licencia de forma permanente con un contrato de mantenimiento anual que incluye actualizaciones y soporte técnico del fabricante.</p>
+        <ul class="pp-license-features">
+          <li>Licencia permanente con pago único</li>
+          <li>Mantenimiento anual para actualizaciones</li>
+          <li>Acceso a nuevas versiones del software</li>
+          <li>Soporte técnico del fabricante incluido</li>
+        </ul>
+        <a href="mailto:simulacion@semco.com.pe" class="pp-license-btn">simulacion@semco.com.pe</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Licencia de alquiler (Rental)</h3>
+        <p>Modelo de licenciamiento basado en tiempo con flexibilidad para escalar según las necesidades del proyecto o equipo de simulación.</p>
+        <ul class="pp-license-features">
+          <li>Pago periódico según duración contratada</li>
+          <li>Flexibilidad para escalar licencias</li>
+          <li>Actualizaciones incluidas durante la vigencia</li>
+          <li>Soporte técnico completo incluido</li>
+          <li>Ideal para proyectos con duración definida</li>
+        </ul>
+        <a href="mailto:simulacion@semco.com.pe" class="pp-license-btn">simulacion@semco.com.pe</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Ansys que mejor se adapte a las necesidades específicas de simulación de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano de ingeniería y simulación.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo de simulación.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación especializada</h3>
+        <p>Cursos de simulación con instructores certificados en modalidad presencial, online en vivo e híbrida para su equipo técnico.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Partner Ansys con más de tres décadas formando profesionales y distribuyendo software de ingeniería en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+</style>

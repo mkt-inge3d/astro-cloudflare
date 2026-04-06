@@ -6,10 +6,10 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="AutoCAD Plant 3D"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software especializado para diseño de plantas industriales con modelado 3D de tuberías, generación de P&ID e isométricos automáticos."
+  description="Solución BIM para diseño de plantas industriales. Creación de P&ID, modelos 3D de tuberías, modelado de equipos e isométricos automáticos. 74% más productividad vs AutoCAD básico."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/autocad-plant-3d/"
+  trainingUrl="/cursos/mecanica/autocad-plant-3d"
   trainingLabel="Ver cursos de AutoCAD Plant 3D"
   relatedProducts={[
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
@@ -19,61 +19,199 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es AutoCAD Plant 3D?</h2>
-    <p>AutoCAD Plant 3D es un software especializado para el diseño y modelado de plantas de procesamiento industrial, refinerías, plantas químicas, farmacéuticas y de generación de energía. Construido sobre la plataforma AutoCAD, integra la creación de diagramas de tuberías e instrumentación (P&ID) con el modelado tridimensional completo de la planta, manteniendo la consistencia entre ambos.</p>
-    <p>El software permite diseñar sistemas de tuberías con enrutamiento automático, catálogos de especificaciones configurables según normas industriales (ASME, DIN, JIS), y generación automática de isométricos de fabricación con listas de materiales, tablas de soldaduras y notas de construcción. Los planos ortográficos de la planta también se generan directamente del modelo 3D.</p>
-    <p>Plant 3D se conecta con Navisworks para revisión del modelo integrado y detección de interferencias entre las disciplinas de tuberías, estructuras, equipos y electricidad. También soporta flujos de trabajo colaborativos donde múltiples diseñadores trabajan simultáneamente en el mismo proyecto.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/plant3d/logo.webp" alt="AutoCAD Plant 3D" class="pp-product-logo" />
+    </div>
+    <h2>Solución BIM para diseño de plantas industriales</h2>
+    <p>AutoCAD Plant 3D es el software especializado de Autodesk para el <strong>diseño y modelado de plantas de procesamiento industrial</strong>, refinerías, plantas químicas, farmacéuticas y de generación de energía. Construido sobre la plataforma AutoCAD, integra la creación de diagramas de tuberías e instrumentación (P&ID) con el modelado tridimensional completo de la planta, manteniendo la consistencia entre ambos.</p>
+    <p>El software permite diseñar sistemas de tuberías con enrutamiento automático, catálogos de especificaciones configurables según <strong>normas industriales (ASME, DIN, JIS)</strong>, y generación automática de isométricos de fabricación con listas de materiales, tablas de soldaduras y notas de construcción. Los estudios demuestran una <strong>ganancia de productividad del 74%</strong> en comparación con el uso de AutoCAD básico para diseño de plantas.</p>
+    <p>Plant 3D se conecta con <strong>Navisworks y BIM 360</strong> para revisión del modelo integrado, detección de interferencias entre las disciplinas de tuberías, estructuras, equipos y electricidad. También soporta flujos de trabajo colaborativos donde múltiples diseñadores trabajan simultáneamente en el mismo proyecto.</p>
   </div>
 
+  <!-- Galería e imágenes -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/plant3d/visualizacion.webp" alt="Visualización de aislamiento en Plant 3D" loading="lazy" /></div>
+        <p><strong>Visualización de Aislamiento</strong><br/>Representación visual del aislamiento térmico en tuberías y equipos</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/plant3d/pid.webp" alt="Diagramas P&ID rápidos" loading="lazy" /></div>
+        <p><strong>P&ID Rápidos</strong><br/>Creación ágil de diagramas de tuberías e instrumentación inteligentes</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/plant3d/modelado.webp" alt="Modelado 3D de planta" loading="lazy" /></div>
+        <p><strong>Modelado 3D de Planta</strong><br/>Enrutamiento de tuberías con catálogos de especificaciones industriales</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/plant3d/parametrico.webp" alt="Equipos paramétricos" loading="lazy" /></div>
+        <p><strong>Equipos Paramétricos</strong><br/>Modelado de tanques, recipientes e intercambiadores con bibliotecas parametrizables</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/plant3d/pcf.webp" alt="Generación de PCF" loading="lazy" /></div>
+        <p><strong>Generación de PCF</strong><br/>Isométricos automáticos con listas de materiales y tablas de soldaduras</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/plant3d/colaboracion.webp" alt="Colaboración BIM 360" loading="lazy" /></div>
+        <p><strong>Colaboración BIM 360</strong><br/>Trabajo simultáneo en proyectos con gestión de datos en la nube</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Diagramas P&ID inteligentes</h3>
-        <p>Creación de diagramas de tuberías e instrumentación con símbolos inteligentes, datos de proceso y conectividad lógica entre equipos y líneas.</p>
+        <h3>Visualización de Aislamiento</h3>
+        <p>Representación visual del aislamiento térmico en tuberías y equipos de la planta, con cálculo automático de espesores según especificaciones del proyecto.</p>
       </div>
       <div class="pp-feature">
-        <h3>Modelado 3D de tuberías</h3>
+        <h3>P&ID Rápidos</h3>
+        <p>Creación ágil de diagramas de tuberías e instrumentación con símbolos inteligentes, datos de proceso y conectividad lógica entre equipos y líneas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Modelado 3D de Planta</h3>
         <p>Enrutamiento de tuberías con catálogos de especificaciones, fittings, válvulas, bridas y soportes según normas ASME, DIN y estándares industriales.</p>
       </div>
       <div class="pp-feature">
-        <h3>Isométricos automáticos</h3>
-        <p>Generación automática de isométricos de fabricación con listas de materiales, tablas de soldaduras, coordenadas y notas de construcción.</p>
+        <h3>Equipos Paramétricos</h3>
+        <p>Creación de tanques, recipientes, intercambiadores, bombas y estructuras de soporte con bibliotecas de equipos completamente parametrizables.</p>
       </div>
       <div class="pp-feature">
-        <h3>Planos ortográficos</h3>
-        <p>Producción de planos de planta, elevaciones y secciones directamente del modelo 3D con anotaciones y cotas actualizadas dinámicamente.</p>
+        <h3>Generación de PCF</h3>
+        <p>Generación automática de isométricos de fabricación (PCF) con listas de materiales, tablas de soldaduras, coordenadas y notas de construcción.</p>
       </div>
       <div class="pp-feature">
-        <h3>Catálogos de especificaciones</h3>
-        <p>Editor de especificaciones de tuberías con catálogos de componentes por clase, rating, material y norma, completamente personalizables.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Consistencia P&ID a 3D</h3>
-        <p>Verificación automática de consistencia entre el diagrama P&ID y el modelo 3D para detectar discrepancias entre diseño de proceso y diseño físico.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Modelado de equipos y estructuras</h3>
-        <p>Creación de tanques, recipientes, intercambiadores, bombas y estructuras de soporte de acero con bibliotecas de equipos parametrizables.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Integración con Navisworks</h3>
-        <p>Exportación directa a Navisworks para coordinación multidisciplinaria, detección de interferencias y revisión del modelo completo de la planta.</p>
+        <h3>Colaboración BIM 360</h3>
+        <p>Flujos de trabajo colaborativos con BIM 360 donde múltiples diseñadores trabajan simultáneamente en el mismo proyecto con gestión de datos en la nube.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>AutoCAD Plant 3D se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las necesidades de su proyecto de planta industrial:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Plataforma base de dibujo y documentación</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y detección de interferencias</a>
+      <a href="/licencias/autodesk/inventor" class="pp-integration">Inventor — Diseño mecánico de equipos</a>
+      <a href="/licencias/autodesk/autocad-electrical" class="pp-integration">AutoCAD Electrical — Diseño eléctrico de la planta</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <span class="pp-integration">BIM 360 — Colaboración y revisión de modelos</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es AutoCAD Plant 3D?</h2>
+    <p>AutoCAD Plant 3D está dirigido a profesionales del <strong>diseño de plantas industriales y procesamiento</strong> que requieren herramientas especializadas de modelado 3D:</p>
     <ul class="pp-list">
       <li>Ingenieros de tuberías y piping designers</li>
-      <li>Empresas de ingeniería de plantas industriales (EPC)</li>
+      <li>Diseñadores de plantas industriales</li>
       <li>Ingenieros de proceso y de instrumentación</li>
+      <li>Empresas de ingeniería EPC (Engineering, Procurement, Construction)</li>
       <li>Industria petrolera, química y petroquímica</li>
       <li>Plantas de generación de energía y tratamiento de agua</li>
       <li>Empresas de mantenimiento y revamping de plantas</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>AutoCAD Plant 3D está <strong>incluido en la suscripción de AutoCAD</strong> y también disponible como parte de la <strong>Colección AEC</strong> de Autodesk.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Incluido en AutoCAD</h3>
+        <p>AutoCAD Plant 3D viene incluido como toolset especializado dentro de la suscripción de AutoCAD, sin costo adicional.</p>
+        <ul class="pp-license-features">
+          <li>Incluido en la suscripción de AutoCAD</li>
+          <li>Acceso al toolset Plant 3D completo</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+          <li>25 GB de almacenamiento en la nube</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Colección AEC</h3>
+        <p>Incluye AutoCAD Plant 3D junto con Revit, Civil 3D, Navisworks y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción de AutoCAD</li>
+          <li>Revit + Civil 3D + Navisworks incluidos</li>
+          <li>Advance Steel + Robot Structural + InfraWorks</li>
+          <li>Mejor relación costo-beneficio para equipos multidisciplinarios</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

@@ -11,85 +11,453 @@ import Layout from '../../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Featured event -->
-  <section class="featured">
-    <div class="featured-inner">
-      <div class="featured-badge fade-up">Evento destacado</div>
-      <a href="/eventos/del-caos-al-control" class="featured-card fade-up">
-        <div class="featured-img">
-          <img src="/webinar-caos-control.png" alt="Webinar: Del Caos al Control" loading="lazy" />
-          <span class="featured-live">EN VIVO</span>
-        </div>
-        <div class="featured-content">
-          <div class="featured-meta">
-            <span class="badge badge-webinar">Webinar gratuito</span>
-            <span class="featured-date">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              Lun 06 Abril — 08:00 PM
-            </span>
-          </div>
-          <h2>Del Caos al Control: Cómo centralizar la información en proyectos de construcción</h2>
-          <p>Descubre cómo implementar un Entorno Común de Datos (CDE) para eliminar la dispersión documental y mejorar la coordinación en tus proyectos AEC.</p>
-          <span class="featured-cta">Ver detalles e inscribirme <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  <!-- Upcoming events -->
+  <section class="upcoming-events">
+    <h2 class="events-title fade-up">Próximos eventos</h2>
+    <p class="past-subtitle fade-up">Inscríbete en nuestros próximos webinars y talleres. Cupos limitados.</p>
+
+    <div class="past-grid">
+
+      <a href="/eventos/del-caos-al-control" class="past-card fade-up">
+        <div class="past-card-img"><img src="/webinar-caos-control.webp" alt="Del Caos al Control" loading="lazy" /><span class="upcoming-badge">Próximamente</span></div>
+        <div class="past-card-body">
+          <div class="past-card-top"><span class="past-date">06 ABR 2026</span><span class="badge badge-webinar">Webinar</span></div>
+          <h3>Del Caos al Control: Centralizar información en construcción</h3>
+          <p>Webinar gratuito en vivo. Aprende sobre entornos comunes de datos (CDE) y gestión documental en la nube.</p>
+          <span class="past-link btn-upcoming">Inscribirme <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </a>
+
+      <a href="/contacto" class="past-card fade-up">
+        <div class="past-card-img"><img src="/eventos/plan-de-ejecucion-bim.webp" alt="Introducción a Revit 2026" loading="lazy" /><span class="upcoming-badge">Próximamente</span></div>
+        <div class="past-card-body">
+          <div class="past-card-top"><span class="past-date">15 ABR 2026</span><span class="badge badge-webinar">Webinar</span></div>
+          <h3>Introducción a Revit 2026: Novedades y flujo BIM</h3>
+          <p>Descubre las nuevas funcionalidades de Revit 2026 y cómo optimizar tu flujo de trabajo BIM.</p>
+          <span class="past-link btn-upcoming">Registrarse <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/contacto" class="past-card fade-up">
+        <div class="past-card-img"><img src="/eventos/reducir-costos-simulacion-estructural.webp" alt="Taller de Simulación Estructural" loading="lazy" /><span class="upcoming-badge">Próximamente</span></div>
+        <div class="past-card-body">
+          <div class="past-card-top"><span class="past-date">28 ABR 2026</span><span class="badge badge-presencial">Presencial</span></div>
+          <h3>Taller de Simulación Estructural con Ansys</h3>
+          <p>Taller práctico en nuestras oficinas de Lima. Análisis de elementos finitos para validar diseños mecánicos.</p>
+          <span class="past-link btn-upcoming">Registrarse <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+
     </div>
   </section>
 
-  <!-- Upcoming events -->
-  <section class="events">
-    <h2 class="events-title fade-up">Próximos eventos</h2>
+  <!-- Past events -->
+  <section class="past-events">
+    <h2 class="events-title fade-up">Eventos pasados</h2>
+    <p class="past-subtitle fade-up">Revive nuestros webinars y talleres anteriores. Cada evento incluye un resumen del contenido abordado.</p>
 
-    <div class="event-card fade-up">
-      <div class="event-date">
-        <span class="day">06</span>
-        <span class="month">ABR</span>
-      </div>
-      <div class="event-info">
-        <span class="badge badge-webinar">Webinar</span>
-        <h3><a href="/eventos/del-caos-al-control">Del Caos al Control: Centralizar información en construcción</a></h3>
-        <p>Webinar gratuito en vivo. Aprende sobre entornos comunes de datos (CDE) y gestión documental en la nube.</p>
-        <a href="/eventos/del-caos-al-control" class="btn-register">Inscribirme</a>
-      </div>
+    <!-- Filter tabs -->
+    <div class="filter-tabs fade-up">
+      <button class="filter-tab active" data-filter="all">Todos</button>
+      <button class="filter-tab" data-filter="bim">BIM / AEC</button>
+      <button class="filter-tab" data-filter="ansys">Ansys / Simulación</button>
+      <button class="filter-tab" data-filter="oracle">Oracle / Gestión</button>
+      <button class="filter-tab" data-filter="manufactura">Diseño / Manufactura</button>
     </div>
 
-    <div class="event-card fade-up">
-      <div class="event-date">
-        <span class="day">15</span>
-        <span class="month">ABR</span>
-      </div>
-      <div class="event-info">
-        <span class="badge badge-webinar">Webinar</span>
-        <h3>Introducción a Revit 2026: Novedades y flujo BIM</h3>
-        <p>Descubre las nuevas funcionalidades de Revit 2026 y cómo optimizar tu flujo de trabajo BIM.</p>
-        <a href="/contacto" class="btn-register">Registrarse</a>
-      </div>
-    </div>
+    <div class="past-grid">
 
-    <div class="event-card fade-up">
-      <div class="event-date">
-        <span class="day">28</span>
-        <span class="month">ABR</span>
-      </div>
-      <div class="event-info">
-        <span class="badge badge-presencial">Presencial</span>
-        <h3>Taller de Simulación Estructural con Ansys</h3>
-        <p>Taller práctico en nuestras oficinas de Lima. Análisis de elementos finitos para validar diseños mecánicos.</p>
-        <a href="/contacto" class="btn-register">Registrarse</a>
-      </div>
-    </div>
+      <a href="/eventos/diseno-bim-arquitectura-interiores" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/diseno-bim-arquitectura-interiores.webp" alt="Diseño BIM para Arquitectura de Interiores" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">05 NOV 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Diseño BIM para Arquitectura de Interiores</h3>
+          <p>Del modelado en Revit a la visualización fotorrealista con Twinmotion.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
 
-    <div class="event-card fade-up">
-      <div class="event-date">
-        <span class="day">10</span>
-        <span class="month">MAY</span>
-      </div>
-      <div class="event-info">
-        <span class="badge badge-webinar">Webinar</span>
-        <h3>Automatización de planos con AutoCAD y Dynamo</h3>
-        <p>Técnicas de automatización para generar planos y documentación de manera eficiente.</p>
-        <a href="/contacto" class="btn-register">Registrarse</a>
-      </div>
+      <a href="/eventos/diseno-y-manufactura-con-autodesk" class="past-card fade-up" data-category="manufactura">
+        <div class="past-card-img"><img src="/eventos/diseno-y-manufactura-con-autodesk.webp" alt="Revoluciona tu diseño y manufactura con Autodesk" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">16 OCT 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Revoluciona tu diseño y manufactura con Autodesk</h3>
+          <p>Innovación aplicada al diseño y la manufactura digital.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/plan-de-ejecucion-bim" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/plan-de-ejecucion-bim.webp" alt="Plan de Ejecución BIM ISO 19650" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">14 OCT 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Plan de Ejecución BIM ISO 19650</h3>
+          <p>Retos y oportunidades bajo la norma ISO 19650 para proyectos AEC.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/simulacion-electromagnetica-ansys" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/simulacion-electromagnetica-ansys.webp" alt="Potencia tu diseño con Ansys: Electromagnetismo" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">30 SEP 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Potencia tu diseño con Ansys: Electromagnetismo</h3>
+          <p>Electromagnetismo y dispositivos eficientes con simulación Ansys.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/digitalizacion-obra-oracle" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/digitalizacion-obra-oracle.webp" alt="Digitalización de la obra con Oracle Primavera Cloud" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">29 SEP 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Digitalización de la obra con Oracle Primavera Cloud</h3>
+          <p>Planificación y control sin errores con herramientas cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/bim-sin-limites" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/bim-sin-limites.webp" alt="BIM sin límites: conecta equipos, datos y proyectos" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">AGO 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>BIM sin límites: conecta equipos, datos y proyectos</h3>
+          <p>Flujo de trabajo integrado con AEC Collection de Autodesk.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/ansys-discovery-simulacion" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/ansys-discovery-simulacion.webp" alt="Ansys Discovery: Simulación en Tiempo Real" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">25 AGO 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Ansys Discovery: Simulación en Tiempo Real</h3>
+          <p>Toma de decisiones rápidas con simulación multifísica integrada.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/transformacion-digital-construccion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/transformacion-digital-construccion.webp" alt="Transformación Digital en la Construcción" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">21 AGO 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Transformación Digital en la Construcción</h3>
+          <p>Soluciones cloud con Oracle Primavera y Aconex.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/optimizacion-proyectos-construccion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/optimizacion-proyectos-construccion.webp" alt="Optimización de Proyectos de Construcción" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">14 JUL 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Optimización de Proyectos de Construcción</h3>
+          <p>Eficiencia y reducción de costos con herramientas Oracle.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/transparencia-proyectos-construccion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/transparencia-proyectos-construccion.webp" alt="Transparencia en proyectos de construcción" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">10 JUN 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Transparencia en proyectos de construcción</h3>
+          <p>Visibilidad, control y eficiencia con Oracle Primavera Cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/reducir-costos-simulacion-estructural" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/reducir-costos-simulacion-estructural.webp" alt="Reducir costos con simulación estructural" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">30 ABR 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Reducir costos con simulación estructural</h3>
+          <p>Análisis de elementos finitos con Ansys Mechanical.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/simulacion-procesos-mineros" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/simulacion-procesos-mineros.webp" alt="Simulación de Procesos Mineros con DEM" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">13 MAR 2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Simulación de Procesos Mineros con DEM</h3>
+          <p>Simulaciones DEM y Ansys Rocky R24 para minería.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/planificacion-tiempo-construccion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/planificacion-tiempo-construccion.webp" alt="Planificación del Tiempo en Construcción" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Planificación del Tiempo en Construcción</h3>
+          <p>Buenas prácticas con Primavera P6 para proyectos de construcción.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/planificacion-minera-oracle" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/planificacion-minera-oracle.webp" alt="Planificación y coordinación minera efectiva" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">2025</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Planificación y coordinación minera efectiva</h3>
+          <p>Gestión de recursos y tiempos con Oracle Primavera Cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/experto-bim-autodesk" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/experto-bim-autodesk.webp" alt="Conviértete en un Experto BIM con Autodesk" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">19 DIC 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Conviértete en un Experto BIM con Autodesk</h3>
+          <p>Cuatro rutas de especialización BIM respaldadas por Autodesk.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/buenas-practicas-trabajo-colaborativo" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/buenas-practicas-trabajo-colaborativo.webp" alt="Buenas prácticas para el trabajo colaborativo" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">11 DIC 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Buenas prácticas para el trabajo colaborativo</h3>
+          <p>Comunicación efectiva, distribución de tareas y autogestión.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/costos-presupuestos-oracle" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/costos-presupuestos-oracle.webp" alt="Control de Costos y Presupuestos con Oracle" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">20 NOV 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Control de Costos y Presupuestos con Oracle</h3>
+          <p>Monitoreo financiero en tiempo real con Primavera Cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/coordinacion-proyectos-bim" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/coordinacion-proyectos-bim.webp" alt="Coordinación de Proyectos Colaborativos con BIM" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">18 OCT 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Coordinación de Proyectos Colaborativos con BIM</h3>
+          <p>IA, gemelos digitales y sostenibilidad en proyectos BIM.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/mejores-practicas-colaborativo-autogestion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/mejores-practicas-colaborativo-autogestion.webp" alt="Mejores prácticas para el trabajo colaborativo" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">08 OCT 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Mejores prácticas para el trabajo colaborativo</h3>
+          <p>Herramientas digitales de tasking para la productividad.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/simulacion-operaciones-mineras" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/simulacion-operaciones-mineras.webp" alt="Simulación avanzada para operaciones mineras" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">10 SEP 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Simulación avanzada para operaciones mineras</h3>
+          <p>CFD, Rocky y Digital Twin para optimización minera.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/estrategias-colaboracion-diseno-manufactura" class="past-card fade-up" data-category="manufactura">
+        <div class="past-card-img"><img src="/eventos/estrategias-colaboracion-diseno-manufactura.webp" alt="Estrategias de colaboración en diseño y manufactura" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Estrategias de colaboración en diseño y manufactura</h3>
+          <p>Plataformas centralizadas con Autodesk Fusion 360.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/gestion-ciclo-vida-proyectos" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/gestion-ciclo-vida-proyectos.webp" alt="Gestión del Ciclo de Vida de Proyectos" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Gestión del Ciclo de Vida de Proyectos</h3>
+          <p>Gestión integral con Oracle Primavera Cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/optimiza-diseno-manufactura-colaborativo" class="past-card fade-up" data-category="manufactura">
+        <div class="past-card-img"><img src="/eventos/optimiza-diseno-manufactura-colaborativo.webp" alt="Optimiza diseño y manufactura con flujos colaborativos" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">22 AGO 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Optimiza diseño y manufactura con flujos colaborativos</h3>
+          <p>Workflows integrados con Autodesk Fusion.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/gestion-riesgos-construccion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/gestion-riesgos-construccion.webp" alt="Gestión de riesgos en proyectos de construcción" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">14 AGO 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Gestión de riesgos en proyectos de construcción</h3>
+          <p>Claves para el éxito con Oracle Primavera Cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/simulacion-digitalizacion-industrial" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/simulacion-digitalizacion-industrial.webp" alt="Simulación avanzada para digitalización industrial" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">31 JUL 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Simulación avanzada para digitalización industrial</h3>
+          <p>Gemelos digitales, PyAnsys e inteligencia artificial.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/documentacion-iso-proyectos-bim" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/documentacion-iso-proyectos-bim.webp" alt="Documentación ISO para proyectos BIM" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">19 JUL 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Documentación ISO para proyectos BIM</h3>
+          <p>Estándares ISO 19650 y Plan BIM Perú.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/planificacion-control-recursos-construccion" class="past-card fade-up" data-category="oracle">
+        <div class="past-card-img"><img src="/eventos/planificacion-control-recursos-construccion.webp" alt="Planificación y control de recursos en construcción" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">03 JUL 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Planificación y control de recursos en construcción</h3>
+          <p>Gestión eficiente con Oracle Primavera Cloud.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/optimiza-proyectos-bim-revit" class="past-card fade-up" data-category="bim">
+        <div class="past-card-img"><img src="/eventos/optimiza-proyectos-bim-revit.webp" alt="Optimiza Proyectos BIM con Autodesk Revit" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">20 JUN 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Optimiza Proyectos BIM con Autodesk Revit</h3>
+          <p>Modelado inteligente y documentación automatizada.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/diseno-circuitos-mando-fuerza" class="past-card fade-up" data-category="manufactura">
+        <div class="past-card-img"><img src="/eventos/diseno-circuitos-mando-fuerza.webp" alt="Diseño de Circuitos de Mando y Fuerza" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">13 JUN 2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Diseño de Circuitos de Mando y Fuerza</h3>
+          <p>Autoenclavamiento para motores trifásicos.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/eventos/modelado-turbomaquinas-ansys-cfd" class="past-card fade-up" data-category="ansys">
+        <div class="past-card-img"><img src="/eventos/modelado-turbomaquinas-ansys-cfd.webp" alt="Modelado computacional de Turbomáquinas" loading="lazy" /></div>
+        <div class="past-card-body">
+          <div class="past-card-top">
+            <span class="past-date">2024</span>
+            <span class="badge badge-webinar">Webinar</span>
+          </div>
+          <h3>Modelado computacional de Turbomáquinas</h3>
+          <p>Simulación con ANSYS CFD para optimización de turbomáquinas.</p>
+          <span class="past-link">Ver grabación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
     </div>
   </section>
 </Layout>
@@ -101,52 +469,65 @@ import Layout from '../../layouts/Layout.astro';
   .page-header h1{color:var(--white);font-size:2.5rem;margin-bottom:.75rem}
   .page-header p{color:#b0bec5;max-width:600px;margin:0 auto;font-size:1.05rem}
 
-  /* Featured */
-  .featured{max-width:1100px;margin:0 auto;padding:3rem 2rem 0}
-  .featured-inner{position:relative}
-  .featured-badge{display:inline-block;background:rgba(255,107,53,.1);color:var(--orange);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:.35rem 1rem;border-radius:100px;border:1px solid rgba(255,107,53,.15);margin-bottom:1rem}
-  .featured-card{display:grid;grid-template-columns:1.2fr 1fr;background:var(--white);border:1px solid var(--gray-200);border-radius:16px;overflow:hidden;transition:all .4s;text-decoration:none;color:inherit}
-  .featured-card:hover{box-shadow:0 16px 50px rgba(0,0,0,.1);transform:translateY(-4px);border-color:rgba(255,107,53,.2)}
-  .featured-img{position:relative;overflow:hidden;min-height:280px}
-  .featured-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-  .featured-card:hover .featured-img img{transform:scale(1.05)}
-  .featured-live{position:absolute;top:1rem;left:1rem;background:#e53935;color:var(--white);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:.3rem .8rem;border-radius:4px;animation:live-pulse 2s ease-in-out infinite}
-  @keyframes live-pulse{0%,100%{opacity:1}50%{opacity:.6}}
-  .featured-content{padding:2rem;display:flex;flex-direction:column;justify-content:center}
-  .featured-meta{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;flex-wrap:wrap}
-  .featured-date{display:flex;align-items:center;gap:.35rem;font-size:.85rem;color:var(--gray-600);font-weight:500}
-  .featured-content h2{font-size:1.4rem;font-weight:800;margin-bottom:.75rem;line-height:1.3}
-  .featured-content p{font-size:.92rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
-  .featured-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:.9rem;font-weight:600;color:var(--orange);transition:gap .3s}
-  .featured-card:hover .featured-cta{gap:.8rem}
-
-  /* Events list */
-  .events{max-width:800px;margin:0 auto;padding:2.5rem 2rem 5rem;display:flex;flex-direction:column;gap:1.2rem}
+  /* Upcoming events */
+  .upcoming-events{max-width:1100px;margin:0 auto;padding:2.5rem 2rem 1rem}
   .events-title{font-size:1.4rem;font-weight:800;margin-bottom:.5rem;padding-bottom:.5rem;border-bottom:2px solid var(--gray-200);position:relative}
   .events-title::after{content:'';position:absolute;bottom:-2px;left:0;width:50px;height:2px;background:var(--orange)}
-
-  .event-card{display:flex;gap:1.5rem;background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
-  .event-card:hover{box-shadow:0 8px 25px rgba(0,0,0,.06);border-color:rgba(255,107,53,.15);transform:translateY(-2px)}
-  .event-date{flex-shrink:0;width:70px;text-align:center;padding:.75rem 0;background:var(--gray-50);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-  .event-date .day{font-size:1.75rem;font-weight:800;color:var(--orange);line-height:1}
-  .event-date .month{font-size:.8rem;font-weight:600;color:var(--gray-600);text-transform:uppercase;margin-top:.25rem}
-  .event-info h3{font-size:1.05rem;margin-bottom:.4rem;margin-top:.4rem}
-  .event-info h3 a{color:inherit;transition:color .3s}
-  .event-info h3 a:hover{color:var(--orange)}
-  .event-info p{font-size:.88rem;color:var(--gray-600);margin-bottom:.75rem;line-height:1.5}
+  .upcoming-badge{position:absolute;top:.75rem;left:.75rem;background:var(--orange);color:#fff;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:.25rem .7rem;border-radius:4px}
+  .btn-upcoming{color:var(--orange);font-weight:700}
   .badge{display:inline-block;font-size:.72rem;font-weight:700;padding:.2rem .7rem;border-radius:50px;text-transform:uppercase;letter-spacing:.5px}
   .badge-webinar{background:#e3f2fd;color:#1565c0}
   .badge-presencial{background:#e8f5e9;color:#2e7d32}
-  .btn-register{display:inline-block;background:var(--orange);color:var(--white);padding:.5rem 1.3rem;border-radius:8px;font-weight:600;font-size:.85rem;transition:all .3s}
-  .btn-register:hover{background:var(--orange-hover);transform:translateY(-1px)}
+
+  /* Past events section */
+  .past-events{max-width:1100px;margin:0 auto;padding:1rem 2rem 5rem}
+  .past-subtitle{font-size:.95rem;color:var(--gray-600);margin-bottom:1.5rem;margin-top:-.25rem}
+
+  .filter-tabs{display:flex;gap:.5rem;margin-bottom:2rem;flex-wrap:wrap}
+  .filter-tab{padding:.45rem 1.1rem;border:1px solid var(--gray-200);border-radius:100px;font-size:.82rem;font-weight:600;cursor:pointer;background:var(--white);color:var(--gray-600);transition:all .3s}
+  .filter-tab:hover{border-color:var(--orange);color:var(--orange)}
+  .filter-tab.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+
+  .past-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+
+  .past-card{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--gray-200);border-radius:12px;overflow:hidden;transition:all .3s;text-decoration:none;color:inherit}
+  .past-card-img{position:relative;width:100%;height:160px;overflow:hidden}
+  .past-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .past-card:hover .past-card-img img{transform:scale(1.05)}
+  .past-card-body{padding:1.2rem;display:flex;flex-direction:column;flex:1}
+  .past-card:hover{box-shadow:0 8px 25px rgba(0,0,0,.06);border-color:rgba(255,107,53,.15);transform:translateY(-3px)}
+  .past-card.hidden{display:none}
+  .past-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+  .past-date{font-size:.75rem;font-weight:700;color:var(--gray-600);letter-spacing:.5px}
+  .past-card h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;line-height:1.35}
+  .past-card p{font-size:.85rem;color:var(--gray-600);line-height:1.5;margin-bottom:.75rem;flex:1}
+  .past-link{display:inline-flex;align-items:center;gap:.35rem;font-size:.84rem;font-weight:600;color:var(--orange);transition:gap .3s}
+  .past-card:hover .past-link{gap:.7rem}
 
   .fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
   .fade-up.visible{opacity:1;transform:translateY(0)}
 
-  @media(max-width:768px){.featured-card{grid-template-columns:1fr}.featured-img{min-height:200px}.event-card{flex-direction:column}.event-date{width:100%;flex-direction:row;gap:.5rem;padding:.5rem}}
+  @media(max-width:900px){.past-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:550px){.past-grid{grid-template-columns:1fr}}
 </style>
 
 <script>
   const o = new IntersectionObserver(e => { e.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); o.unobserve(e.target); } }); }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(e => o.observe(e));
+
+  // Filter functionality
+  document.querySelectorAll('.filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const filter = tab.getAttribute('data-filter');
+      document.querySelectorAll('.past-card').forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
 </script>

@@ -6,72 +6,216 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Autodesk Advance Steel"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de modelado 3D y detallado de estructuras metálicas con generación automática de planos de taller y listas de materiales."
+  description="Modelado 3D para detallado de acero, fabricación y construcción sobre plataforma AutoCAD. Conexiones paramétricas, planos de taller y sincronización bidireccional con Revit."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/advance-steel/"
+  trainingUrl="/cursos/bim-aec/advance-steel"
   trainingLabel="Ver cursos de Advance Steel"
   relatedProducts={[
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Robot Structural', href: '/licencias/autodesk/robot-structural' },
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+    { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Autodesk Advance Steel?</h2>
-    <p>Autodesk Advance Steel es un software especializado en el modelado, detallado y fabricación de estructuras de acero. Construido sobre la plataforma AutoCAD, permite a los profesionales crear modelos 3D inteligentes de estructuras metálicas con conexiones reales, y generar automáticamente toda la documentación necesaria para fabricación y montaje en taller y obra.</p>
-    <p>El software incluye una extensa biblioteca de conexiones estándar parametrizables (soldadas y apernadas), perfiles de acero de catálogos internacionales, y herramientas de detallado que producen automáticamente planos de conjunto, planos de taller individuales de cada pieza, listas de materiales (BOM), listas de pernos y archivos NC (DSTV) para máquinas CNC de corte y perforación.</p>
-    <p>Advance Steel se integra con Revit a través del formato SMLX para intercambio bidireccional de modelos, permitiendo que el modelo de detallado de acero se mantenga coordinado con el modelo BIM multidisciplinario del proyecto.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/advance-steel/logo.webp" alt="Autodesk Advance Steel" class="pp-product-logo" />
+    </div>
+    <h2>Modelado 3D para detallado y fabricación de acero estructural</h2>
+    <p>Autodesk Advance Steel es un software especializado en el <strong>modelado, detallado y fabricación de estructuras de acero</strong>. Construido sobre la plataforma AutoCAD, permite a los profesionales crear modelos 3D inteligentes de estructuras metálicas con conexiones reales, y generar automáticamente toda la documentación necesaria para fabricación y montaje en taller y obra, incluyendo planos de conjunto, planos de taller individuales, listas de materiales y archivos NC para máquinas CNC.</p>
+    <p>El software incluye una extensa biblioteca de <strong>conexiones paramétricas</strong> estándar (soldadas y apernadas), perfiles de acero de catálogos internacionales como AISC, CISC, DIN y Eurocódigo, y herramientas de detallado que producen automáticamente planos con cotas, marcas de pernos, marcas de soldadura, notas de fabricación, listas de pernos y archivos DSTV para máquinas CNC de corte, perforación, punzonado y marcado. La generación de documentación es completamente automatizada y se actualiza cuando el modelo cambia.</p>
+    <p>Advance Steel se integra con <strong>Revit a través del formato SMLX</strong> para intercambio bidireccional de modelos, permitiendo que el modelo de detallado se mantenga coordinado con el modelo BIM multidisciplinario. También se conecta con <strong>Dynamo para automatización</strong> de tareas repetitivas, con Robot Structural Analysis para cálculo estructural y con Navisworks para detección de interferencias y simulación de la secuencia de montaje.</p>
   </div>
 
+  <!-- Características principales con galería -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/advance-steel/modelado.webp" alt="Shop Drawings" loading="lazy" /></div>
+        <p><strong>Planos de taller</strong><br/>Generación automática de planos individuales de cada pieza para fabricación</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/advance-steel/conexiones.webp" alt="Parametric Connections" loading="lazy" /></div>
+        <p><strong>Conexiones paramétricas</strong><br/>Biblioteca extensa de conexiones estándar soldadas y apernadas</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/advance-steel/parametricas.webp" alt="BIM Interoperability" loading="lazy" /></div>
+        <p><strong>Interoperabilidad BIM</strong><br/>Intercambio bidireccional con Revit mediante formato SMLX</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/advance-steel/bim360.webp" alt="3D Import" loading="lazy" /></div>
+        <p><strong>Importación 3D</strong><br/>Soporte para múltiples formatos de importación de modelos 3D</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/advance-steel/revit.webp" alt="Revit Synchronization" loading="lazy" /></div>
+        <p><strong>Sincronización con Revit</strong><br/>Coordinación continua del modelo de acero con el proyecto BIM</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/advance-steel/dynamo.webp" alt="Dynamo Automation" loading="lazy" /></div>
+        <p><strong>Automatización con Dynamo</strong><br/>Programación visual para automatizar tareas repetitivas de detallado</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Modelado 3D de acero estructural</h3>
-        <p>Creación rápida de estructuras con vigas, columnas, arriostramientos, escaleras, barandas y planchas usando catálogos de perfiles internacionales.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Biblioteca de conexiones</h3>
-        <p>Amplia colección de conexiones parametrizables: placas base, empalmes, clips, gussets, conexiones de momento y conexiones a corte.</p>
+        <h3>Conexiones paramétricas</h3>
+        <p>Amplia colección de conexiones parametrizables: placas base, empalmes, clips, gussets, conexiones de momento y conexiones a corte configurables.</p>
       </div>
       <div class="pp-feature">
         <h3>Planos de taller automáticos</h3>
         <p>Generación automática de planos individuales de cada pieza con cotas, marcas de pernos, marcas de soldadura y notas de fabricación.</p>
       </div>
       <div class="pp-feature">
-        <h3>Planos de conjunto (GA drawings)</h3>
-        <p>Producción de planos generales de montaje con vistas, cortes, detalles y listas de piezas para la erección en obra.</p>
+        <h3>Interoperabilidad BIM</h3>
+        <p>Intercambio bidireccional de modelos con Revit mediante formato SMLX para coordinación BIM multidisciplinaria completa del proyecto.</p>
       </div>
       <div class="pp-feature">
-        <h3>Archivos NC (DSTV)</h3>
-        <p>Exportación de archivos de control numérico en formato DSTV para máquinas CNC de corte, perforación, punzonado y marcado.</p>
+        <h3>Detección de colisiones</h3>
+        <p>Verificación automática de interferencias entre elementos estructurales, conexiones y piezas para garantizar la viabilidad de fabricación.</p>
       </div>
       <div class="pp-feature">
-        <h3>Listas de materiales (BOM)</h3>
-        <p>Generación automática de listas de materiales, listas de pernos, listas de soldaduras y reportes de pesos por fase de montaje.</p>
+        <h3>Automatización con Dynamo</h3>
+        <p>Programación visual para automatizar tareas repetitivas de detallado, generación de conexiones y producción de documentación.</p>
       </div>
       <div class="pp-feature">
-        <h3>Numeración automática</h3>
-        <p>Sistema inteligente de numeración y marcado de piezas, conjuntos y pernos con control de revisiones y seguimiento de cambios.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Interoperabilidad con Revit</h3>
-        <p>Intercambio bidireccional de modelos con Revit mediante formato SMLX para coordinación BIM multidisciplinaria completa.</p>
+        <h3>Salidas para fabricación</h3>
+        <p>Exportación de archivos NC (DSTV) para máquinas CNC, listas de materiales, listas de pernos y reportes de peso por fase de montaje.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Advance Steel se conecta con un ecosistema de soluciones Autodesk para cubrir el flujo completo de diseño, detallado y fabricación de acero:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM y sincronización bidireccional</a>
+      <a href="/licencias/autodesk/robot-structural" class="pp-integration">Robot Structural — Análisis y cálculo estructural</a>
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Plataforma base y documentación 2D</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y detección de interferencias</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <span class="pp-integration">Dynamo — Automatización de detallado</span>
+      <span class="pp-integration">Fabrication — Archivos NC/DSTV para CNC</span>
+      <span class="pp-integration">BIM 360 — Coordinación de modelos en la nube</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Advance Steel?</h2>
+    <p>Advance Steel está dirigido a profesionales del sector de <strong>estructuras metálicas y construcción en acero</strong> que requieren herramientas especializadas de detallado y fabricación:</p>
     <ul class="pp-list">
-      <li>Detallistas y dibujantes de estructuras metálicas</li>
-      <li>Fabricantes y talleres de estructuras de acero</li>
       <li>Ingenieros estructurales especializados en acero</li>
-      <li>Empresas de montaje de estructuras metálicas</li>
+      <li>Detallistas y dibujantes de estructuras metálicas</li>
       <li>Coordinadores BIM de proyectos con estructuras de acero</li>
+      <li>Especialistas en fabricación y montaje de acero</li>
+      <li>Fabricantes y talleres de estructuras metálicas</li>
+      <li>Empresas constructoras con división de acero estructural</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Advance Steel está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/advance-steel/lic-advance.webp" alt="Licencia Advance Steel" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual Advance Steel</h3>
+        <p>Licencia completa del software Advance Steel con todas las funcionalidades para modelado, detallado y fabricación de acero estructural.</p>
+        <ul class="pp-license-features">
+          <li>Incluye AutoCAD completo como plataforma base</li>
+          <li>Biblioteca completa de conexiones paramétricas</li>
+          <li>Generación automática de planos de taller</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/advance-steel/lic-advance.webp" alt="AEC Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección AEC</h3>
+        <p>Incluye Advance Steel junto con AutoCAD, Revit, Civil 3D, Navisworks, Robot Structural y más para un flujo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>AutoCAD + Revit + Civil 3D + Navisworks incluidos</li>
+          <li>Robot Structural + InfraWorks incluidos</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer;background:none}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

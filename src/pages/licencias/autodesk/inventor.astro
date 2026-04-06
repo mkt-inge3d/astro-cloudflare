@@ -6,29 +6,62 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Autodesk Inventor"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de diseño mecánico 3D profesional para modelado paramétrico, ensamblajes, simulación y documentación de productos."
+  description="Software CAD 3D para diseño mecánico y simulación mediante prototipos digitales. Valida forma, dimensiones, tolerancias y comportamiento del producto antes de la manufactura."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/inventor/"
+  trainingUrl="/cursos/mecanica/inventor"
   trainingLabel="Ver cursos de Inventor"
   relatedProducts={[
-    { name: 'AutoCAD Plant 3D', href: '/licencias/autodesk/autocad-plant-3d' },
+    { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Fusion', href: '/licencias/autodesk/fusion' },
+    { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Inventor CAM', href: '/licencias/autodesk/inventor-cam' },
     { name: 'Inventor Nastran', href: '/licencias/autodesk/inventor-nastran' },
-    { name: 'Fusion', href: '/licencias/autodesk/fusion' },
-    { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Autodesk Inventor?</h2>
-    <p>Autodesk Inventor es un software de diseño mecánico 3D profesional que proporciona herramientas completas para modelado paramétrico de piezas, creación de ensamblajes complejos, simulación de productos y generación automática de documentación técnica de fabricación. Es la solución de Autodesk para ingeniería de productos y diseño de maquinaria.</p>
-    <p>El software permite a los ingenieros mecánicos diseñar componentes con precisión utilizando modelado basado en features, diseño de chapa metálica con desarrollo automático, Frame Generator para estructuras tubulares y perfiladas, diseño de cableado y tuberías, y herramientas específicas para moldes de inyección de plástico. Los ensamblajes pueden contener miles de componentes con restricciones de posición y movimiento.</p>
-    <p>Inventor incluye herramientas de simulación integradas para análisis de tensiones, análisis de movimiento dinámico y optimización de forma, permitiendo a los ingenieros validar sus diseños antes de fabricar prototipos físicos. Se integra con Inventor Nastran para simulación FEA avanzada e Inventor CAM para programación de mecanizado CNC.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/inventor/logo.webp" alt="Autodesk Inventor" class="pp-product-logo" />
+    </div>
+    <h2>Diseño mecánico 3D y prototipado digital</h2>
+    <p>Autodesk Inventor es un software de <strong>diseño mecánico 3D profesional</strong> que proporciona herramientas completas para modelado paramétrico de piezas, creación de ensamblajes complejos, simulación de productos y generación automática de documentación técnica de fabricación. Inventor permite a los ingenieros validar la forma, las dimensiones, las tolerancias y el comportamiento del producto antes de fabricar un solo prototipo físico, reduciendo drásticamente los costos de desarrollo.</p>
+    <p>El software permite diseñar componentes con precisión utilizando <strong>modelado basado en features</strong>, diseño de chapa metálica con desarrollo automático, Frame Generator para estructuras tubulares y perfiladas, diseño de cableado y tuberías, y herramientas específicas para moldes de inyección de plástico. Los ensamblajes pueden contener miles de componentes con restricciones de posición y movimiento, y el Content Center integra millones de piezas estándar según normas DIN, ISO y ANSI.</p>
+    <p>Inventor se conecta con <strong>AutoCAD para reutilización de datos DWG</strong>, con Fusion para diseño generativo y colaboración en la nube, y con Revit para interoperabilidad BIM. Además, incluye herramientas de simulación integradas para análisis de tensiones, análisis de movimiento dinámico y optimización de forma, permitiendo validar diseños en un flujo continuo de <strong>prototipado digital</strong>.</p>
   </div>
 
+  <!-- Características principales con galería -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/inventor/autocad-integ.webp" alt="Inventor + AutoCAD Integration" loading="lazy" /></div>
+        <p><strong>Inventor + AutoCAD</strong><br/>Integración directa para reutilización de datos DWG existentes</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/inventor/fusion-integ.webp" alt="Inventor + Fusion Connectivity" loading="lazy" /></div>
+        <p><strong>Inventor + Fusion</strong><br/>Conectividad bidireccional para diseño generativo y colaboración</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/inventor/revit-integ.webp" alt="Inventor + Revit Integration" loading="lazy" /></div>
+        <p><strong>Inventor + Revit</strong><br/>Interoperabilidad BIM para equipos mecánicos en edificaciones</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/inventor/estados-modelo.webp" alt="Model State Presentation" loading="lazy" /></div>
+        <p><strong>Estados de modelo</strong><br/>Presentaciones con múltiples estados de un modelo en un solo archivo</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/inventor/ensamblaje.webp" alt="Assembly Improvements" loading="lazy" /></div>
+        <p><strong>Mejoras en ensamblajes</strong><br/>Rendimiento optimizado para ensamblajes grandes y complejos</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/inventor/simplificar.webp" alt="Simplify Command" loading="lazy" /></div>
+        <p><strong>Comando Simplificar</strong><br/>Reducción inteligente de geometría para análisis y compartición</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
         <h3>Modelado paramétrico 3D</h3>
@@ -36,7 +69,7 @@ import ProductPage from '../../../layouts/ProductPage.astro';
       </div>
       <div class="pp-feature">
         <h3>Ensamblajes y restricciones</h3>
-        <p>Creación de ensamblajes con restricciones de posición, movimiento y contacto. Gestión de representaciones de nivel de detalle y posición para proyectos grandes.</p>
+        <p>Creación de ensamblajes con restricciones de posición, movimiento y contacto. Gestión de representaciones de nivel de detalle para proyectos grandes.</p>
       </div>
       <div class="pp-feature">
         <h3>Diseño de chapa metálica</h3>
@@ -54,27 +87,135 @@ import ProductPage from '../../../layouts/ProductPage.astro';
         <h3>Documentación automática</h3>
         <p>Generación de planos 2D con vistas, cortes, detalles, cotas y listas de materiales (BOM) actualizados automáticamente desde el modelo 3D.</p>
       </div>
-      <div class="pp-feature">
-        <h3>Content Center</h3>
-        <p>Biblioteca integrada con millones de componentes estándar: pernos, tuercas, rodamientos, perfiles y piezas comerciales según normas DIN, ISO, ANSI.</p>
+    </div>
+  </div>
+
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Inventor se conecta con un ecosistema completo de soluciones Autodesk para diseño mecánico, manufactura y colaboración:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Reutilización de datos DWG y documentación 2D</a>
+      <a href="/licencias/autodesk/fusion" class="pp-integration">Fusion — Diseño generativo y colaboración en la nube</a>
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Interoperabilidad BIM multidisciplinaria</a>
+      <a href="/licencias/autodesk/inventor-cam" class="pp-integration">Inventor CAM — Programación CNC desde el modelo</a>
+      <a href="/licencias/autodesk/inventor-nastran" class="pp-integration">Inventor Nastran — Simulación FEA avanzada</a>
+      <span class="pp-integration">Vault — Gestión de datos y control de revisiones</span>
+      <span class="pp-integration">iLogic — Automatización y configuradores de productos</span>
+      <span class="pp-integration">Content Center — Millones de piezas estándar DIN/ISO/ANSI</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
+  <div class="pp-section fade-up">
+    <h2>¿Para quién es Inventor?</h2>
+    <p>Inventor está dirigido a profesionales del sector de <strong>diseño mecánico, manufactura e ingeniería de productos</strong> que requieren prototipado digital completo:</p>
+    <ul class="pp-list">
+      <li>Diseñadores mecánicos y de productos</li>
+      <li>Ingenieros mecánicos y de manufactura</li>
+      <li>Dibujantes técnicos de ingeniería mecánica</li>
+      <li>Administradores CAD y gestores de datos de diseño</li>
+      <li>Fabricantes de chapa metálica y estructuras</li>
+      <li>Industria automotriz y de equipos industriales</li>
+    </ul>
+  </div>
+
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Inventor está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/inventor/lic-inventor.webp" alt="Licencia Inventor" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual Inventor</h3>
+        <p>Licencia completa del software Inventor con todas las funcionalidades para diseño mecánico 3D, simulación y documentación.</p>
+        <ul class="pp-license-features">
+          <li>Modelado paramétrico completo</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Simulación de tensiones integrada</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
       </div>
-      <div class="pp-feature">
-        <h3>iLogic y automatización</h3>
-        <p>Motor de reglas iLogic para configuradores de productos, automatización de diseño basada en parámetros y generación de variantes sin programación.</p>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/inventor/lic-pdm.webp" alt="PDM Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección PDM</h3>
+        <p>Incluye Inventor junto con AutoCAD, Fusion, Vault, Inventor CAM y más herramientas para diseño de productos y manufactura.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>AutoCAD + Fusion + Inventor CAM incluidos</li>
+          <li>Vault + Inventor Nastran + Factory Design</li>
+          <li>Ideal para equipos de diseño y manufactura</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
       </div>
     </div>
   </div>
 
+  <!-- Valor agregado SemcoCAD -->
   <div class="pp-section fade-up">
-    <h2>¿Para quién es Inventor?</h2>
-    <ul class="pp-list">
-      <li>Ingenieros mecánicos y diseñadores de productos</li>
-      <li>Diseñadores de maquinaria y equipos industriales</li>
-      <li>Fabricantes de chapa metálica y estructuras</li>
-      <li>Ingenieros de manufactura y procesos</li>
-      <li>Empresas de diseño de moldes y herramientas</li>
-      <li>Industria automotriz y de electrodomésticos</li>
-    </ul>
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
   </div>
 
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer;background:none}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

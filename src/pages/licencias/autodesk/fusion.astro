@@ -6,10 +6,10 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Autodesk Fusion"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Plataforma CAD/CAM/CAE/PCB unificada en la nube para diseño de productos, simulación, manufactura y colaboración en equipo."
+  description="Plataforma 3D en la nube que combina CAD+CAM+CAE+PCB. Modelado paramétrico, freeform, directo y de superficies con herramientas de fabricación integradas."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/fusion/"
+  trainingUrl="/cursos/mecanica/fusion"
   trainingLabel="Ver cursos de Fusion"
   relatedProducts={[
     { name: 'Inventor', href: '/licencias/autodesk/inventor' },
@@ -19,61 +19,199 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Autodesk Fusion?</h2>
-    <p>Autodesk Fusion (anteriormente Fusion 360) es una plataforma integrada de diseño, ingeniería y manufactura basada en la nube que unifica CAD, CAM, CAE y diseño de PCB en un solo entorno. A diferencia de las herramientas tradicionales que requieren múltiples aplicaciones separadas, Fusion permite a los equipos de desarrollo de productos pasar del concepto a la fabricación sin cambiar de software.</p>
-    <p>La plataforma ofrece múltiples modalidades de modelado — paramétrico, directo, de superficies, de malla y escultura T-Spline — permitiendo a los diseñadores elegir el enfoque más adecuado para cada etapa del proyecto. Incluye diseño generativo impulsado por inteligencia artificial que explora automáticamente cientos de alternativas de diseño optimizadas según restricciones de peso, material y proceso de manufactura.</p>
-    <p>Al estar basado en la nube, Fusion permite la colaboración en tiempo real entre equipos distribuidos geográficamente, con control de versiones automático, gestión de accesos y la capacidad de trabajar desde cualquier dispositivo con navegador web o la aplicación de escritorio.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/fusion/logo.webp" alt="Autodesk Fusion" class="pp-product-logo" />
+    </div>
+    <h2>Plataforma CAD+CAM+CAE+PCB unificada en la nube</h2>
+    <p>Autodesk Fusion (anteriormente Fusion 360) es una <strong>plataforma integrada de diseño, ingeniería y manufactura basada en la nube</strong> que unifica CAD, CAM, CAE y diseño de PCB en un solo entorno. A diferencia de las herramientas tradicionales que requieren múltiples aplicaciones separadas, Fusion permite a los equipos de desarrollo de productos pasar del concepto a la fabricación sin cambiar de software.</p>
+    <p>La plataforma ofrece múltiples modalidades de modelado: <strong>paramétrico, directo, de superficies, de malla y escultura T-Spline</strong>, permitiendo a los diseñadores elegir el enfoque más adecuado para cada etapa del proyecto. Incluye diseño generativo impulsado por inteligencia artificial que explora automáticamente cientos de alternativas de diseño optimizadas según restricciones de peso, material y proceso de manufactura.</p>
+    <p>Al estar basado en la nube, Fusion permite la <strong>colaboración en tiempo real</strong> entre equipos distribuidos geográficamente, con control de versiones automático, gestión de accesos y la capacidad de trabajar desde cualquier dispositivo con navegador web o la aplicación de escritorio. Fusion Team facilita la gestión centralizada de proyectos y datos de diseño.</p>
   </div>
 
+  <!-- Galería e imágenes -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/fusion/cad.webp" alt="Modelado CAD en Fusion" loading="lazy" /></div>
+        <p><strong>Modelado CAD Integrado</strong><br/>Modelado paramétrico, directo, de superficies y escultura T-Spline</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/fusion/cam.webp" alt="Manufactura CAM en Fusion" loading="lazy" /></div>
+        <p><strong>Manufactura CAM</strong><br/>Programación CNC de 2.5 a 5 ejes con generación de código G</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/fusion/cae.webp" alt="Simulación CAE en Fusion" loading="lazy" /></div>
+        <p><strong>Simulación CAE</strong><br/>Análisis de elementos finitos, térmico, modal y de fluidos</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/fusion/pcb.webp" alt="Diseño de PCB en Fusion" loading="lazy" /></div>
+        <p><strong>Diseño de PCB</strong><br/>Circuitos impresos integrados con el modelo 3D mecánico</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/fusion/equipos.webp" alt="Trabajo en equipos con Fusion" loading="lazy" /></div>
+        <p><strong>Trabajo en Equipos</strong><br/>Colaboración en tiempo real con control de versiones automático</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/fusion/colaborar.webp" alt="Colaboración en la nube con Fusion Team" loading="lazy" /></div>
+        <p><strong>Fusion Team</strong><br/>Gestión centralizada de proyectos y datos de diseño en la nube</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Modelado multimodal</h3>
-        <p>Modelado paramétrico, directo, de superficies, malla y escultura T-Spline en un mismo entorno para máxima flexibilidad de diseño.</p>
+        <h3>Diseño Integrado hasta Fabricación</h3>
+        <p>Flujo completo desde el concepto hasta la fabricación sin cambiar de software: diseño, simulación, manufactura CNC y fabricación aditiva en un solo entorno.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño generativo</h3>
+        <h3>Modelado Multimodal</h3>
+        <p>Modelado paramétrico, directo, de superficies, malla y escultura T-Spline en un mismo entorno para máxima flexibilidad en cada etapa del proyecto.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Acceso Basado en la Nube</h3>
+        <p>Trabaje desde cualquier dispositivo con navegador web o aplicación de escritorio, con datos siempre sincronizados y accesibles para todo el equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>CAD/CAM/CAE/PCB Unificado</h3>
+        <p>Todas las disciplinas de desarrollo de productos en una sola plataforma: diseño mecánico, simulación, manufactura y electrónica sin exportar entre herramientas.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Diseño Generativo</h3>
         <p>Inteligencia artificial que genera automáticamente diseños optimizados según restricciones de cargas, materiales, procesos de manufactura y peso objetivo.</p>
       </div>
       <div class="pp-feature">
-        <h3>Simulación integrada (CAE)</h3>
-        <p>Análisis de elementos finitos, térmico, modal, de pandeo y de fluidos (CFD) directamente sobre el modelo sin exportar a herramientas externas.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Manufactura CAM</h3>
-        <p>Programación de mecanizado CNC de 2.5 a 5 ejes, torneado, fabricación aditiva y corte con generación de código G y post-procesadores.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Diseño de PCB y electrónica</h3>
-        <p>Herramientas de diseño de circuitos impresos integradas con el modelo 3D mecánico para verificar el ajuste entre la electrónica y la carcasa.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Colaboración en la nube</h3>
-        <p>Control de versiones automático, compartir diseños con stakeholders, revisiones en tiempo real y acceso desde cualquier dispositivo.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Renderizado y visualización</h3>
-        <p>Renderizado fotorrealista integrado con materiales físicos, entornos HDRI y renderizado en la nube para presentaciones profesionales.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Extensiones especializadas</h3>
-        <p>Extensiones opcionales para simulación avanzada, mecanizado de 5 ejes, diseño generativo, manufactura aditiva y gestión de datos de producto.</p>
+        <h3>Colaboración con Fusion Team</h3>
+        <p>Control de versiones automático, compartir diseños con stakeholders, revisiones en tiempo real y gestión centralizada de proyectos en la nube.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Fusion se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las necesidades de desarrollo de productos:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/inventor" class="pp-integration">Inventor — Diseño mecánico profesional</a>
+      <a href="/licencias/autodesk/inventor-cam" class="pp-integration">Inventor CAM — Manufactura CNC avanzada</a>
+      <a href="/licencias/autodesk/inventor-nastran" class="pp-integration">Inventor Nastran — Simulación FEA avanzada</a>
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Documentación y dibujo técnico</a>
+      <span class="pp-integration">Fusion Team — Gestión de datos de producto en la nube</span>
+      <span class="pp-integration">Generative Design — Optimización impulsada por IA</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Fusion?</h2>
+    <p>Fusion está dirigido a profesionales del <strong>diseño mecánico, manufactura y desarrollo de productos</strong> que necesitan una plataforma integrada en la nube:</p>
     <ul class="pp-list">
-      <li>Ingenieros de diseño de productos y startups de hardware</li>
+      <li>Ingenieros mecánicos y de diseño de productos</li>
       <li>Diseñadores industriales y de electrónica de consumo</li>
       <li>Talleres de manufactura y mecanizado CNC</li>
+      <li>Empresas fabricantes de maquinaria y equipos</li>
       <li>Equipos de desarrollo de productos que necesitan colaboración en la nube</li>
       <li>Makers, inventores y empresas de prototipado rápido</li>
       <li>Instituciones educativas de ingeniería y diseño</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Fusion está disponible como <strong>suscripción individual</strong> o como parte de la <strong>Colección PDM</strong> de Autodesk, en periodos de 1 o 3 años.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Suscripción Individual Fusion</h3>
+        <p>Licencia directa de la plataforma Fusion con CAD, CAM, CAE y PCB integrados para diseño y manufactura de productos.</p>
+        <ul class="pp-license-features">
+          <li>Gestión sencilla sin códigos de activación</li>
+          <li>CAD + CAM + CAE + PCB en un solo entorno</li>
+          <li>Fusion Team incluido para colaboración</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Acceso desde cualquier dispositivo</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Colección PDM</h3>
+        <p>Incluye Fusion junto con Inventor, AutoCAD, Vault y más herramientas para un flujo de trabajo de diseño y manufactura completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>Inventor + AutoCAD + Vault incluidos</li>
+          <li>Inventor CAM + Inventor Nastran</li>
+          <li>Mejor relación costo-beneficio para equipos de ingeniería</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

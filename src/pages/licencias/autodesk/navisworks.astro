@@ -6,28 +6,62 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Autodesk Navisworks"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Herramienta de coordinación, revisión de modelos y simulación de construcción para proyectos BIM multidisciplinarios."
+  description="Software de revisión de proyectos con simulación 4D/5D para AEC. Integra modelos de múltiples fuentes, análisis de interferencias y vinculación con cronogramas de construcción."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/navisworks/"
+  trainingUrl="/cursos/diseno/navisworks"
   trainingLabel="Ver cursos de Navisworks"
   relatedProducts={[
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Advance Steel', href: '/licencias/autodesk/advance-steel' },
     { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Autodesk Navisworks?</h2>
-    <p>Autodesk Navisworks es una solución de revisión y coordinación de modelos 3D que permite a los equipos de proyecto integrar y analizar modelos de múltiples disciplinas y formatos en un entorno unificado. Es una herramienta esencial en flujos de trabajo BIM para detectar conflictos antes de que se conviertan en costosos problemas en obra.</p>
-    <p>El software puede combinar modelos de Revit, AutoCAD, Civil 3D, archivos IFC, formatos de terceros y nubes de puntos en un modelo federado navegable. Su motor de detección de interferencias (Clash Detective) identifica automáticamente colisiones entre sistemas — como una tubería que atraviesa una viga estructural — permitiendo resolverlas en la fase de diseño.</p>
-    <p>Navisworks también ofrece simulación de construcción 4D (vinculando el modelo con el cronograma) y simulación de costos 5D, proporcionando una visión integral del proyecto que facilita la toma de decisiones, la comunicación con stakeholders y el control de avance de obra.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/navisworks/logo.webp" alt="Autodesk Navisworks" class="pp-product-logo" />
+    </div>
+    <h2>Revisión de proyectos y simulación 4D/5D para AEC</h2>
+    <p>Autodesk Navisworks es una solución de <strong>revisión y coordinación de modelos 3D</strong> que permite a los equipos de proyecto integrar y analizar modelos de múltiples disciplinas y formatos en un entorno unificado. Es una herramienta esencial en flujos de trabajo BIM para detectar conflictos antes de que se conviertan en costosos problemas en obra, combinando modelos de Revit, AutoCAD, Civil 3D, archivos IFC, formatos de terceros y nubes de puntos en un solo modelo federado navegable.</p>
+    <p>Su motor de <strong>detección de interferencias (Clash Detective)</strong> identifica automáticamente colisiones entre sistemas, como una tubería que atraviesa una viga estructural, permitiendo resolverlas durante la fase de diseño. El software soporta más de 60 formatos de archivo nativos, incluyendo RVT, DWG, IFC, DGN, NWC, FBX y formatos de escáneres láser, eliminando barreras de interoperabilidad entre equipos que trabajan con distintas herramientas.</p>
+    <p>Navisworks ofrece <strong>simulación de construcción 4D</strong> vinculando el modelo con cronogramas de Microsoft Project o Primavera P6, y <strong>simulación de costos 5D</strong> mediante extracción de cantidades directamente del modelo. Esta visión integral facilita la toma de decisiones, la comunicación con stakeholders, el control de avance de obra y la gestión integrada con <strong>Autodesk BIM 360</strong> para coordinación en la nube.</p>
   </div>
 
+  <!-- Características principales con galería -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/navisworks/bim360.webp" alt="BIM 360 Issue Management" loading="lazy" /></div>
+        <p><strong>Gestión de issues BIM 360</strong><br/>Creación y seguimiento de incidencias directamente desde el modelo</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/navisworks/ifc.webp" alt="IFC Reader" loading="lazy" /></div>
+        <p><strong>Lector IFC</strong><br/>Importación nativa de archivos IFC para interoperabilidad openBIM</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/navisworks/soporte.webp" alt="Third-Party Support" loading="lazy" /></div>
+        <p><strong>Soporte de terceros</strong><br/>Compatibilidad con más de 60 formatos de archivo del mercado</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/navisworks/integracion.webp" alt="BIM 360 Integration" loading="lazy" /></div>
+        <p><strong>Integración BIM 360</strong><br/>Coordinación de modelos en la nube con equipos distribuidos</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/navisworks/coordinacion.webp" alt="Interdisciplinary Coordination" loading="lazy" /></div>
+        <p><strong>Coordinación interdisciplinaria</strong><br/>Detección de interferencias entre todas las disciplinas del proyecto</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/navisworks/modelo-unico.webp" alt="Single Model Integration" loading="lazy" /></div>
+        <p><strong>Modelo único integrado</strong><br/>Federación de todos los modelos del proyecto en un solo entorno</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
         <h3>Detección de interferencias (Clash Detective)</h3>
@@ -47,32 +81,141 @@ import ProductPage from '../../../layouts/ProductPage.astro';
       </div>
       <div class="pp-feature">
         <h3>Navegación en tiempo real</h3>
-        <p>Recorrido interactivo del modelo completo del proyecto con herramientas de visualización, puntos de vista guardados y animaciones de recorrido.</p>
+        <p>Recorrido interactivo del modelo completo del proyecto con herramientas de visualización, puntos de vista guardados y animaciones.</p>
       </div>
       <div class="pp-feature">
         <h3>Revisión y anotación</h3>
         <p>Herramientas de markup, comentarios y redlines para comunicar observaciones y correcciones directamente sobre el modelo 3D federado.</p>
       </div>
-      <div class="pp-feature">
-        <h3>Propiedades y datos del modelo</h3>
-        <p>Acceso a todas las propiedades BIM de los elementos, búsqueda avanzada, selección por conjuntos y filtrado por criterios personalizados.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Exportación de reportes</h3>
-        <p>Generación de reportes de interferencias en HTML, XML y formatos tabulares para distribución y seguimiento entre los miembros del equipo.</p>
-      </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Navisworks se conecta con un ecosistema completo de soluciones Autodesk para coordinación y gestión de proyectos de construcción:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM multidisciplinario</a>
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Dibujo técnico y documentación 2D/3D</a>
+      <a href="/licencias/autodesk/civil-3d" class="pp-integration">Civil 3D — Ingeniería civil e infraestructura</a>
+      <a href="/licencias/autodesk/advance-steel" class="pp-integration">Advance Steel — Detallado de acero estructural</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <span class="pp-integration">BIM 360 — Coordinación y gestión documental</span>
+      <span class="pp-integration">Microsoft Project — Cronogramas de construcción</span>
+      <span class="pp-integration">Primavera P6 — Planificación de proyectos</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Navisworks?</h2>
+    <p>Navisworks está dirigido a profesionales de los sectores de <strong>Arquitectura, Ingeniería y Construcción</strong> que requieren coordinación y revisión de modelos multidisciplinarios:</p>
     <ul class="pp-list">
-      <li>Coordinadores BIM y gerentes de proyecto</li>
-      <li>Empresas constructoras y contratistas generales</li>
-      <li>Ingenieros de instalaciones MEP</li>
-      <li>Arquitectos e ingenieros estructurales</li>
+      <li>Arquitectos y estudios de arquitectura</li>
+      <li>Ingenieros civiles y estructurales</li>
+      <li>Gerentes de proyectos de construcción</li>
+      <li>Contratistas y constructoras generales</li>
+      <li>Coordinadores BIM y de instalaciones MEP</li>
       <li>Planificadores de construcción y supervisores de obra</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Navisworks está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/navisworks/lic-navisworks.webp" alt="Licencia Navisworks" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual Navisworks</h3>
+        <p>Licencia completa de Navisworks Manage con todas las funcionalidades de coordinación, detección de interferencias y simulación 4D/5D.</p>
+        <ul class="pp-license-features">
+          <li>Clash Detective para detección de interferencias</li>
+          <li>TimeLiner para simulación 4D</li>
+          <li>Quantification para simulación 5D</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/navisworks/lic-navisworks.webp" alt="AEC Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección AEC</h3>
+        <p>Incluye Navisworks junto con AutoCAD, Revit, Civil 3D y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>AutoCAD + Revit + Civil 3D incluidos</li>
+          <li>Advance Steel + Robot Structural + InfraWorks</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer;background:none}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

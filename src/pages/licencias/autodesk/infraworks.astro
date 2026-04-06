@@ -6,7 +6,7 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Autodesk InfraWorks"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de diseño conceptual de infraestructura con modelado contextual 3D, análisis preliminar y visualización de propuestas."
+  description="Software de diseño de infraestructura en contexto real. Planifique y diseñe proyectos de infraestructura con BIM: carreteras, puentes, drenaje y simulación de tráfico."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
   relatedProducts={[
@@ -14,63 +14,192 @@ import ProductPage from '../../../layouts/ProductPage.astro';
     { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
     { name: 'Revit', href: '/licencias/autodesk/revit' },
+    { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Autodesk InfraWorks?</h2>
-    <p>Autodesk InfraWorks es una herramienta de diseño conceptual de infraestructura que permite a ingenieros y planificadores crear modelos 3D contextualizado dentro del entorno real del proyecto. Utilizando datos GIS, modelos de terreno, imágenes satelitales y nubes de puntos, InfraWorks genera automáticamente un modelo base del sitio sobre el cual los profesionales pueden explorar alternativas de diseño de forma visual e intuitiva.</p>
-    <p>El software es ideal para las fases tempranas de un proyecto, donde se necesita evaluar rápidamente opciones de trazado vial, ubicación de puentes, diseño de drenaje y distribución de infraestructura. Las propuestas se visualizan en un entorno 3D fotorrealista que facilita la comunicación con clientes, autoridades y comunidades, mejorando la toma de decisiones.</p>
-    <p>InfraWorks se integra directamente con Civil 3D, permitiendo transferir el diseño conceptual aprobado al entorno de diseño detallado sin pérdida de información. Esta continuidad entre diseño preliminar y diseño de ingeniería elimina la duplicación de trabajo y mantiene la consistencia del proyecto.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/infraworks/logo.webp" alt="Autodesk InfraWorks" class="pp-product-logo" />
+    </div>
+    <h2>Diseño de infraestructura en contexto real</h2>
+    <p>Autodesk InfraWorks es una herramienta de diseño de infraestructura que permite a ingenieros y planificadores crear <strong>modelos 3D contextualizados dentro del entorno real</strong> del proyecto. Utilizando datos GIS, modelos de terreno, imágenes satelitales y nubes de puntos, InfraWorks genera automáticamente un modelo base del sitio sobre el cual los profesionales pueden explorar alternativas de diseño de forma visual e intuitiva.</p>
+    <p>El software es ideal para las fases tempranas de proyectos de <strong>carreteras, puentes, drenaje y simulación de tráfico</strong>, donde se necesita evaluar rápidamente opciones de trazado vial, ubicación de puentes, diseño de drenaje y distribución de infraestructura. Las propuestas se visualizan en un entorno 3D fotorrealista que facilita la comunicación con clientes, autoridades y comunidades, mejorando la toma de decisiones.</p>
+    <p>InfraWorks se integra directamente con <strong>Civil 3D</strong>, permitiendo transferir el diseño conceptual aprobado al entorno de diseño detallado sin pérdida de información. Esta continuidad entre diseño preliminar y diseño de ingeniería elimina la duplicación de trabajo y mantiene la consistencia del proyecto a lo largo de todo su ciclo de vida.</p>
   </div>
 
+  <!-- Galería e imágenes -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/infraworks/puentes.webp" alt="Diseño de puentes en InfraWorks" loading="lazy" /></div>
+        <p><strong>Diseño de Puentes</strong><br/>Diseño preliminar con múltiples tipos estructurales, pilas y estribos</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/infraworks/corredores.webp" alt="Modelado de corredores viales" loading="lazy" /></div>
+        <p><strong>Modelado de Corredores</strong><br/>Trazado vial con evaluación de pendientes, peralte y análisis de costos</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/infraworks/visualizacion.webp" alt="Visualización 4K de infraestructura" loading="lazy" /></div>
+        <p><strong>Visualización 4K</strong><br/>Renderizado fotorrealista del proyecto integrado en el entorno existente</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Model Builder automático</h3>
-        <p>Generación automática de modelos base del sitio a partir de datos GIS, OpenStreetMap, imágenes satelitales y modelos digitales de elevación.</p>
+        <h3>Contexto del Mundo Real</h3>
+        <p>Generación automática de modelos base del sitio a partir de datos GIS, OpenStreetMap, imágenes satelitales y modelos digitales de elevación para trabajar en contexto real.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño conceptual de carreteras</h3>
-        <p>Creación rápida de trazados viales con evaluación de pendientes, peralte, visibilidad y análisis de costos preliminares.</p>
+        <h3>Exploración de Diseño</h3>
+        <p>Evaluación visual y cuantitativa de múltiples propuestas de diseño con análisis de costos preliminares, impacto ambiental y viabilidad técnica.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño de puentes</h3>
-        <p>Herramientas para diseño preliminar de puentes con múltiples tipos estructurales, pilas, estribos y análisis de viabilidad.</p>
+        <h3>Diseño de Puentes</h3>
+        <p>Herramientas para diseño preliminar de puentes con múltiples tipos estructurales, pilas, estribos y análisis de viabilidad constructiva.</p>
       </div>
       <div class="pp-feature">
-        <h3>Análisis de drenaje</h3>
-        <p>Simulación de cuencas hidrográficas, análisis de escorrentía y diseño preliminar de sistemas de drenaje pluvial.</p>
+        <h3>Modelado de Corredores</h3>
+        <p>Creación rápida de trazados viales con evaluación de pendientes, peralte, visibilidad, secciones típicas y análisis de costos preliminares.</p>
       </div>
       <div class="pp-feature">
-        <h3>Visualización contextual 3D</h3>
-        <p>Renderizado en tiempo real del proyecto integrado en el entorno existente con edificios, vegetación, terreno y cuerpos de agua.</p>
+        <h3>Visualización 4K</h3>
+        <p>Renderizado en tiempo real del proyecto integrado en el entorno existente con edificios, vegetación, terreno y cuerpos de agua en alta resolución.</p>
       </div>
       <div class="pp-feature">
-        <h3>Comparación de alternativas</h3>
-        <p>Evaluación visual y cuantitativa de múltiples propuestas de diseño con análisis de costos, impacto ambiental y viabilidad técnica.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Integración con Civil 3D</h3>
-        <p>Transferencia directa del diseño conceptual a Civil 3D para desarrollo de ingeniería de detalle sin retrabajar el modelo.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Presentaciones interactivas</h3>
-        <p>Generación de recorridos virtuales, vistas panorámicas y presentaciones interactivas para comunicación con stakeholders.</p>
+        <h3>Compatibilidad con Civil 3D</h3>
+        <p>Transferencia directa del diseño conceptual a Civil 3D para desarrollo de ingeniería de detalle sin retrabajar el modelo, manteniendo consistencia total.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>InfraWorks se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las fases de su proyecto de infraestructura:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/civil-3d" class="pp-integration">Civil 3D — Diseño detallado de ingeniería civil</a>
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM de estructuras y edificaciones</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y simulación 4D</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Documentación y dibujo técnico</a>
+      <span class="pp-integration">Model Builder — Generación automática de contexto</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es InfraWorks?</h2>
+    <p>InfraWorks está dirigido a profesionales de la <strong>infraestructura civil y planificación urbana</strong> que requieren herramientas de diseño conceptual en contexto real:</p>
     <ul class="pp-list">
       <li>Ingenieros civiles y de transporte en fase de planificación</li>
       <li>Planificadores urbanos y territoriales</li>
-      <li>Consultoras de infraestructura vial y urbana</li>
-      <li>Entidades gubernamentales de transporte y obras públicas</li>
+      <li>Geógrafos y especialistas en sistemas de información geográfica</li>
+      <li>Diseñadores de infraestructura vial y urbana</li>
+      <li>Consultoras de infraestructura y obras públicas</li>
+      <li>Entidades gubernamentales de transporte</li>
       <li>Equipos de diseño que requieren presentaciones visuales de proyectos</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>InfraWorks está disponible como <strong>suscripción individual</strong> o como parte de la <strong>Colección AEC</strong> de Autodesk, en periodos de 1 o 3 años.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/infraworks/lic-infraworks.webp" alt="Licencia InfraWorks" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual InfraWorks</h3>
+        <p>Licencia directa del software InfraWorks con todas las funcionalidades para diseño conceptual de infraestructura en contexto real.</p>
+        <ul class="pp-license-features">
+          <li>Gestión sencilla sin códigos de activación</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+          <li>Model Builder para generación de contexto</li>
+          <li>Uso remoto y portabilidad de licencia</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Colección AEC</h3>
+        <p>Incluye InfraWorks junto con Civil 3D, Revit, AutoCAD, Navisworks y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>Civil 3D + Revit + AutoCAD + Navisworks incluidos</li>
+          <li>Robot Structural + Advance Steel incluidos</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

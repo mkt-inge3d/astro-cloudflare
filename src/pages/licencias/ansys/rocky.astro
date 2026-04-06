@@ -5,8 +5,8 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   title="Ansys Rocky"
   product="Ansys Rocky"
   brand="Ansys"
-  brandColor="#ffb74d"
-  description="Software líder en simulación de partículas por método de elementos discretos (DEM) para modelar flujo de materiales granulares, ruptura de partículas, desgaste y colisiones en procesos industriales."
+  brandColor="#FFB71B"
+  description="Simulación DEM (Método de Elementos Discretos) acelerada por GPU para modelar el comportamiento de materiales granulares en aplicaciones de minería, cemento, farmacéutica e industria alimentaria."
   breadcrumbBrand="Ansys"
   breadcrumbBrandHref="/licencias/ansys"
   trainingUrl="/cursos/ansys"
@@ -14,67 +14,143 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   relatedProducts={[
     { name: "Ansys Fluent", href: "/licencias/ansys/fluent" },
     { name: "Ansys Mechanical", href: "/licencias/ansys/mechanical" },
+    { name: "Ansys CFD", href: "/licencias/ansys/cfd" },
   ]}
 >
+
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Ansys Rocky?</h2>
-    <p>
-      Ansys Rocky es un software de simulación de elementos discretos (DEM) de clase mundial, diseñado para modelar el comportamiento de materiales granulares y partículas en equipos y procesos industriales. Desde el transporte de mineral en fajas transportadoras hasta el mezclado de polvos farmacéuticos, Rocky permite predecir con precisión cómo se comportan los materiales particulados bajo diferentes condiciones operativas.
-    </p>
-    <p>
-      A diferencia de otras herramientas DEM, Rocky soporta partículas de formas no esféricas reales, lo que resulta fundamental para obtener predicciones precisas en aplicaciones industriales donde la forma de las partículas influye significativamente en el comportamiento del flujo. El software modela contactos entre partículas, ruptura, adhesión, desgaste de superficies y la interacción con geometrías móviles complejas como molinos, trituradoras y equipos vibratorios.
-    </p>
-    <p>
-      Rocky se integra de forma bidireccional con Ansys Fluent para simulaciones acopladas DEM-CFD, permitiendo modelar la interacción entre partículas y fluidos en equipos como ciclones, lechos fluidizados y sistemas de transporte neumático. Además, su aceleración por GPU permite resolver modelos con millones de partículas en tiempos prácticos para la industria.
-    </p>
+    <div class="pp-product-header">
+      <img src="/licencias/ansys/logo-ansys-rocky.webp" alt="Ansys Rocky" class="pp-product-logo" />
+    </div>
+    <h2>Simulación DEM de materiales granulares acelerada por GPU</h2>
+    <p>Ansys Rocky es un software de simulación de elementos discretos (DEM) de clase mundial, diseñado para modelar el comportamiento de <strong>materiales granulares y partículas</strong> en equipos y procesos industriales. Desde el transporte de mineral en fajas transportadoras hasta el mezclado de polvos farmacéuticos, Rocky permite predecir con precisión cómo se comportan los materiales particulados bajo diferentes condiciones operativas.</p>
+    <p>A diferencia de otras herramientas DEM, Rocky soporta <strong>partículas de formas no esféricas reales</strong>, lo que resulta fundamental para obtener predicciones precisas en aplicaciones industriales donde la forma de las partículas influye significativamente en el comportamiento del flujo. El software modela contactos entre partículas, ruptura, adhesión, desgaste de superficies y la interacción con geometrías móviles complejas como molinos, trituradoras y equipos vibratorios.</p>
+    <p>Rocky se integra de forma bidireccional con <strong>Ansys Fluent</strong> para simulaciones acopladas DEM-CFD (SPH-DEM coupling), permitiendo modelar la interacción entre partículas y fluidos en equipos como ciclones, lechos fluidizados y sistemas de transporte neumático. Su <strong>aceleración multi-GPU</strong> permite resolver modelos con millones de partículas en tiempos prácticos para la industria, y su integración con <strong>Ansys Workbench</strong> facilita flujos de trabajo multidisciplinarios completos.</p>
   </div>
 
+  <!-- Características principales -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Partículas no esféricas</h3>
-        <p>Modelado de partículas con formas realistas incluyendo poliedros, fibras, conchas y formas personalizadas importadas desde archivos CAD para máxima fidelidad.</p>
+        <h3>Procesamiento multi-GPU</h3>
+        <p>Aprovechamiento de múltiples tarjetas gráficas NVIDIA para resolver modelos con millones de partículas, logrando speedups de hasta 10x respecto a soluciones basadas solo en CPU.</p>
       </div>
       <div class="pp-feature">
-        <h3>Ruptura de partículas</h3>
-        <p>Simulación de fragmentación y trituración de partículas con modelos de ruptura calibrados que predicen la distribución de tamaños resultante en equipos de conminución.</p>
+        <h3>Fractura de partículas</h3>
+        <p>Simulación de fragmentación y trituración con modelos de ruptura calibrados que predicen la distribución de tamaños resultante en equipos de conminución como molinos y trituradoras.</p>
       </div>
       <div class="pp-feature">
-        <h3>Desgaste de superficies</h3>
-        <p>Predicción del desgaste abrasivo y por impacto en chutes, tuberías y equipos de transporte, permitiendo optimizar diseños para extender la vida útil de componentes.</p>
+        <h3>Acoplamiento SPH-DEM</h3>
+        <p>Integración bidireccional con Ansys Fluent para simular la interacción entre partículas y fluidos en ciclones, lechos fluidizados, transporte neumático y secadores industriales.</p>
       </div>
       <div class="pp-feature">
-        <h3>Acoplamiento DEM-CFD</h3>
-        <p>Integración bidireccional con Ansys Fluent para simular la interacción entre partículas y fluidos en ciclones, lechos fluidizados, transporte neumático y secadores.</p>
+        <h3>Predicción de desgaste</h3>
+        <p>Predicción del desgaste abrasivo y por impacto en chutes, tuberías y equipos de transporte, permitiendo optimizar diseños para extender la vida útil de componentes costosos.</p>
       </div>
       <div class="pp-feature">
-        <h3>Aceleración por GPU</h3>
-        <p>Aprovechamiento de tarjetas gráficas NVIDIA para resolver modelos con millones de partículas, logrando speedups de hasta 10x respecto a soluciones basadas solo en CPU.</p>
+        <h3>Simulación de fajas transportadoras</h3>
+        <p>Modelado completo de sistemas de transporte incluyendo puntos de transferencia, chutes de descarga, deflectores y faldones con predicción de derrames y acumulación de material.</p>
       </div>
       <div class="pp-feature">
-        <h3>Geometrías móviles complejas</h3>
-        <p>Soporte para equipos con movimientos complejos como molinos SAG, trituradoras de cono, cribas vibratorias y mecanismos articulados con cinemática prescrita.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Adhesión y cohesión</h3>
-        <p>Modelos de fuerzas adhesivas para simular materiales húmedos, cohesivos o pegajosos que se encuentran frecuentemente en procesos mineros, alimentarios y farmacéuticos.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Post-procesamiento especializado</h3>
-        <p>Herramientas de análisis incluyendo distribución de tamaños, mapas de desgaste, trayectorias de partículas, tiempos de residencia y exportación de datos para análisis avanzado.</p>
+        <h3>Integración Ansys Workbench</h3>
+        <p>Conexión nativa con el ecosistema Ansys Workbench para flujos de trabajo multidisciplinarios que combinan DEM con análisis estructural, térmico y de fluidos en una plataforma unificada.</p>
       </div>
     </div>
   </div>
 
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Ansys Rocky?</h2>
+    <p>Ansys Rocky está dirigido a profesionales que trabajan con materiales granulares y particulados en procesos industriales:</p>
     <ul class="pp-list">
-      <li>Ingenieros de procesos mineros que diseñan y optimizan chutes de transferencia, fajas transportadoras, molinos y sistemas de clasificación de mineral.</li>
-      <li>Profesionales de la industria cementera que simulan hornos rotatorios, molinos de bolas, sistemas de transporte y equipos de dosificación.</li>
-      <li>Ingenieros farmacéuticos que analizan procesos de mezclado, recubrimiento de tabletas, granulación y transporte de polvos en ambientes GMP.</li>
-      <li>Especialistas en industria alimentaria que optimizan equipos de procesamiento, empaque, transporte y clasificación de productos granulares.</li>
-      <li>Ingenieros de diseño de equipos que necesitan predecir cargas sobre componentes mecánicos generadas por el impacto y flujo de partículas.</li>
+      <li>Ingenieros de procesos mineros que diseñan y optimizan chutes de transferencia, fajas transportadoras, molinos SAG y sistemas de clasificación de mineral.</li>
+      <li>Ingenieros de procesos en industrias cementera, farmacéutica y alimentaria que simulan hornos rotatorios, mezcladores y equipos de dosificación.</li>
+      <li>Diseñadores de equipos industriales que necesitan predecir cargas sobre componentes mecánicos generadas por el impacto y flujo de partículas.</li>
+      <li>Investigadores industriales que estudian el comportamiento de materiales granulares bajo diferentes condiciones operativas y configuraciones de equipo.</li>
     </ul>
   </div>
+
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Ansys Rocky está disponible bajo modelos de <strong>licencia perpetua</strong> (con mantenimiento anual) o <strong>licencia de alquiler</strong> (basada en tiempo). Contacte a nuestro equipo de simulación para obtener una propuesta personalizada.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Licencia perpetua</h3>
+        <p>Adquiera la licencia de forma permanente con un contrato de mantenimiento anual que incluye actualizaciones y soporte técnico del fabricante.</p>
+        <ul class="pp-license-features">
+          <li>Licencia permanente con pago único</li>
+          <li>Mantenimiento anual para actualizaciones</li>
+          <li>Acceso a nuevas versiones del software</li>
+          <li>Soporte técnico del fabricante incluido</li>
+        </ul>
+        <a href="mailto:simulacion@semco.com.pe" class="pp-license-btn">simulacion@semco.com.pe</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Licencia de alquiler (Rental)</h3>
+        <p>Modelo de licenciamiento basado en tiempo con flexibilidad para escalar según las necesidades del proyecto o equipo de simulación.</p>
+        <ul class="pp-license-features">
+          <li>Pago periódico según duración contratada</li>
+          <li>Flexibilidad para escalar licencias</li>
+          <li>Actualizaciones incluidas durante la vigencia</li>
+          <li>Soporte técnico completo incluido</li>
+          <li>Ideal para proyectos con duración definida</li>
+        </ul>
+        <a href="mailto:simulacion@semco.com.pe" class="pp-license-btn">simulacion@semco.com.pe</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Ansys que mejor se adapte a las necesidades de simulación DEM de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano de minería e industria.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo de simulación.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación especializada</h3>
+        <p>Cursos de simulación DEM con instructores certificados en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Partner Ansys con más de tres décadas formando profesionales y distribuyendo software de ingeniería en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+</style>

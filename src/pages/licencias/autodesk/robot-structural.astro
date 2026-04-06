@@ -6,72 +6,188 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Robot Structural Analysis"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de análisis y diseño estructural avanzado por el método de elementos finitos, integrado con flujos de trabajo BIM."
+  description="Software BIM de análisis y diseño estructural avanzado. Cree diseños más resistentes y construibles conectados al flujo de trabajo BIM con simulación avanzada e integración con Revit."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/robot-structural/"
+  trainingUrl="/cursos/bim-aec/robot-structural"
   trainingLabel="Ver cursos de Robot Structural"
   relatedProducts={[
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Advance Steel', href: '/licencias/autodesk/advance-steel' },
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+    { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Robot Structural Analysis?</h2>
-    <p>Autodesk Robot Structural Analysis Professional es un software de análisis y diseño estructural que utiliza el método de elementos finitos (FEA) para calcular y verificar estructuras de acero, concreto armado, madera y materiales compuestos. Permite a los ingenieros estructurales simular el comportamiento de estructuras bajo diversas condiciones de carga y verificar el cumplimiento de normativas internacionales.</p>
-    <p>El software soporta análisis estático lineal y no lineal, análisis dinámico modal y espectral, análisis sísmico según múltiples códigos de diseño (ACI, AISC, Eurocode, NTP, entre otros), y diseño automatizado de elementos de concreto armado y acero con generación de reportes de cálculo detallados.</p>
-    <p>Robot Structural se integra bidireccionalmente con Revit, permitiendo enviar modelos analíticos desde Revit, realizar el análisis y diseño en Robot, y devolver los resultados al modelo BIM. Esta interoperabilidad garantiza consistencia entre el modelo arquitectónico-estructural y los cálculos de ingeniería.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/robot/logo.webp" alt="Robot Structural Analysis" class="pp-product-logo" />
+    </div>
+    <h2>Software BIM de análisis y diseño estructural</h2>
+    <p>Autodesk Robot Structural Analysis Professional es el software de análisis estructural de Autodesk que permite a los ingenieros crear <strong>diseños más resistentes y construibles</strong> conectados al flujo de trabajo BIM. Mediante el método de elementos finitos (FEA), Robot calcula y verifica estructuras de acero, concreto armado, madera y materiales compuestos bajo diversas condiciones de carga, garantizando el cumplimiento de normativas internacionales.</p>
+    <p>El software soporta <strong>análisis estático lineal y no lineal, análisis dinámico modal y espectral, análisis sísmico</strong> según múltiples códigos de diseño (ACI, AISC, Eurocode, NTP E.030, entre otros), y diseño automatizado de elementos de concreto armado y acero con generación de reportes de cálculo detallados. Su motor FEA avanzado maneja barras, placas, láminas y sólidos con mallas adaptativas y refinamiento automático.</p>
+    <p>Robot Structural se integra <strong>bidireccionalmente con Revit</strong>, permitiendo enviar modelos analíticos desde Revit, realizar el análisis y diseño en Robot, y devolver los resultados al modelo BIM. Esta interoperabilidad garantiza consistencia total entre el modelo arquitectónico-estructural y los cálculos de ingeniería, eliminando la duplicación de trabajo y reduciendo errores de coordinación.</p>
   </div>
 
+  <!-- Galería e imágenes -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/robot/vientos.webp" alt="Análisis de cargas de viento en paneles" loading="lazy" /></div>
+        <p><strong>Análisis de Cargas de Viento</strong><br/>Cálculo automático de presión de viento sobre paneles y superficies según normativa</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/robot/interop.webp" alt="Interoperabilidad BIM con Revit" loading="lazy" /></div>
+        <p><strong>Interoperabilidad BIM con Revit</strong><br/>Intercambio bidireccional de modelos analíticos para flujo de trabajo BIM coordinado</p>
+      </button>
+      <button class="rv-gallery-item fade-up" style="cursor:pointer">
+        <div class="rv-gallery-img"><img src="/licencias/robot/cargas.webp" alt="Peso propio por etapa constructiva" loading="lazy" /></div>
+        <p><strong>Peso Propio por Etapa Constructiva</strong><br/>Análisis de cargas considerando las fases de construcción y montaje</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Análisis por elementos finitos</h3>
-        <p>Motor FEA avanzado para análisis de barras, placas, láminas y sólidos con mallas adaptativas y refinamiento automático.</p>
+        <h3>Análisis de Cargas de Viento en Paneles</h3>
+        <p>Cálculo automático de presión de viento sobre paneles y superficies de la estructura según normativas internacionales, con distribución de cargas a los elementos portantes.</p>
       </div>
       <div class="pp-feature">
-        <h3>Análisis sísmico</h3>
-        <p>Análisis modal espectral, pushover y time-history con soporte de múltiples normas sísmicas internacionales incluyendo NTP E.030.</p>
+        <h3>Interoperabilidad BIM con Revit</h3>
+        <p>Intercambio bidireccional de modelos analíticos con Revit para un flujo de trabajo BIM estructural completamente coordinado, sincronizando geometría, secciones y resultados.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño de concreto armado</h3>
-        <p>Dimensionamiento y verificación de vigas, columnas, losas y zapatas según ACI 318, Eurocode 2 y otras normativas con detallado de armaduras.</p>
+        <h3>Peso Propio por Etapa Constructiva</h3>
+        <p>Análisis de peso propio considerando las fases de construcción y montaje, evaluando el comportamiento estructural en cada etapa del proceso constructivo.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño de acero</h3>
-        <p>Verificación de perfiles metálicos según AISC 360, Eurocode 3 con análisis de pandeo, deflexión y relaciones de esfuerzo.</p>
+        <h3>Diseño Basado en Código</h3>
+        <p>Verificación automática según múltiples normativas internacionales incluyendo ACI 318, AISC 360, Eurocode 2/3 y NTP E.030 con generación de memorias de cálculo.</p>
       </div>
       <div class="pp-feature">
-        <h3>Combinaciones de carga automáticas</h3>
-        <p>Generación automática de combinaciones de carga según la normativa seleccionada con envolventes de esfuerzos y reacciones.</p>
+        <h3>Análisis No Lineal</h3>
+        <p>Análisis con grandes deformaciones, no linealidad de material, análisis P-Delta, pushover y time-history para estructuras sometidas a cargas sísmicas y dinámicas.</p>
       </div>
       <div class="pp-feature">
-        <h3>Integración bidireccional con Revit</h3>
-        <p>Intercambio directo de modelos analíticos con Revit para un flujo de trabajo BIM estructural completamente coordinado.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Reportes de cálculo</h3>
-        <p>Generación automática de memorias de cálculo con diagramas, tablas de resultados y verificaciones normativas listas para presentación.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Análisis no lineal</h3>
-        <p>Análisis con grandes deformaciones, no linealidad de material, análisis P-Delta y análisis de cables y membranas tensadas.</p>
+        <h3>Diseño de Concreto Armado</h3>
+        <p>Dimensionamiento y verificación de vigas, columnas, losas y zapatas con detallado de armaduras, envolventes de esfuerzos y reportes de cálculo normativos.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Robot Structural se conecta con un ecosistema completo de soluciones Autodesk para cubrir todas las necesidades de su proyecto estructural:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM multidisciplinario</a>
+      <a href="/licencias/autodesk/advance-steel" class="pp-integration">Advance Steel — Detallado y fabricación de acero</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y detección de interferencias</a>
+      <a href="/licencias/autodesk/civil-3d" class="pp-integration">Civil 3D — Diseño de ingeniería civil</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <span class="pp-integration">Dynamo — Automatización y diseño computacional</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Robot Structural?</h2>
+    <p>Robot Structural Analysis está dirigido a profesionales de la <strong>ingeniería estructural y construcción</strong> que requieren herramientas de análisis avanzado integradas al flujo BIM:</p>
     <ul class="pp-list">
       <li>Ingenieros estructurales y calculistas</li>
-      <li>Consultoras de ingeniería estructural</li>
       <li>Ingenieros civiles especializados en diseño sismorresistente</li>
+      <li>Consultoras de ingeniería estructural</li>
       <li>Profesionales de análisis por elementos finitos</li>
       <li>Empresas de diseño de estructuras metálicas y de concreto</li>
+      <li>Profesionales de la construcción que trabajan con BIM</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Robot Structural Analysis Professional está disponible exclusivamente a través de la <strong>Colección AEC</strong> de Autodesk, que incluye un conjunto completo de herramientas para arquitectura, ingeniería y construcción.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Colección AEC</h3>
+        <p>Incluye Robot Structural junto con Revit, AutoCAD, Civil 3D, Navisworks, Advance Steel y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Robot Structural Analysis Professional incluido</li>
+          <li>Revit + AutoCAD + Civil 3D + Navisworks</li>
+          <li>Advance Steel + InfraWorks incluidos</li>
+          <li>Flujo BIM estructural completamente integrado</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 1 o 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>

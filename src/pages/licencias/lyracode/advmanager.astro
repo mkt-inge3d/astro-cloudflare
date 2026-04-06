@@ -5,74 +5,135 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   title="ADVManager"
   product="ADVManager"
   brand="LyraCode"
-  brandColor="#7c4dff"
-  description="Plataforma de gestión de licencias de software que permite monitorear el uso, optimizar la asignación, generar reportes detallados y maximizar el retorno de inversión en herramientas tecnológicas."
+  brandColor="#6366f1"
+  description="Plataforma avanzada de gestión para la colaboración en proyectos de ingeniería. Control documental, gestión de tareas, planificación de recursos y reportes para equipos de ingeniería y construcción."
   breadcrumbBrand="LyraCode"
   breadcrumbBrandHref="/licencias/lyracode"
   relatedProducts={[
-    { name: "Task-ing", href: "/licencias/lyracode/task-ing" },
-    { name: "Plan-ing", href: "/licencias/lyracode/plan-ing" },
+    { name: "Task-Ing", href: "/licencias/lyracode/task-ing" },
+    { name: "Plan-Ing", href: "/licencias/lyracode/plan-ing" },
   ]}
 >
+
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es ADVManager?</h2>
-    <p>
-      ADVManager es una solución integral de gestión de licencias de software diseñada para organizaciones que utilizan múltiples herramientas de ingeniería y necesitan optimizar su inversión tecnológica. La plataforma proporciona visibilidad completa sobre el inventario de licencias, su utilización real, los patrones de uso por equipo y las oportunidades de optimización, permitiendo a los administradores de TI tomar decisiones basadas en datos sobre la renovación y adquisición de software.
-    </p>
-    <p>
-      En entornos de ingeniería donde las licencias de software representan una inversión significativa, ADVManager resuelve el problema común de licencias subutilizadas o insuficientes. El sistema monitorea en tiempo real qué licencias están en uso, por quién y durante cuánto tiempo, generando métricas de utilización que permiten redistribuir licencias ociosas, identificar necesidades de capacitación y justificar la adquisición de licencias adicionales con datos concretos.
-    </p>
-    <p>
-      ADVManager soporta los principales modelos de licenciamiento del mercado, incluyendo licencias flotantes, nodo-bloqueado, basadas en tokens y suscripciones en la nube. Su motor de reportes genera informes de cumplimiento, uso histórico, proyecciones de demanda y análisis de costo por usuario que resultan invaluables para auditorías de software, negociaciones con proveedores y planificación presupuestaria del departamento de TI.
-    </p>
+    <div class="pp-product-header">
+      <img src="/licencias/lyracode/logo-advmanager.webp" alt="ADVManager" class="pp-product-logo" />
+    </div>
+    <h2>Gestión avanzada para proyectos de ingeniería</h2>
+    <p>ADVManager es una plataforma avanzada de gestión diseñada para la <strong>colaboración en proyectos de ingeniería</strong>. Centraliza el control documental, la gestión de tareas, la planificación de recursos y la generación de reportes en un solo entorno, permitiendo a equipos de ingeniería y construcción trabajar de manera coordinada y eficiente en proyectos de cualquier escala.</p>
+    <p>La plataforma proporciona visibilidad completa sobre el estado de los documentos del proyecto, el avance de las tareas asignadas y la disponibilidad de recursos. Los gerentes de proyecto pueden monitorear en tiempo real el progreso de cada entregable, identificar cuellos de botella y tomar decisiones informadas para mantener el proyecto en curso. El sistema de <strong>control documental</strong> asegura que todas las versiones de documentos estén correctamente gestionadas y accesibles para los miembros autorizados del equipo.</p>
+    <p>ADVManager facilita la <strong>colaboración entre equipos multidisciplinarios</strong> mediante funcionalidades de asignación de tareas, seguimiento de avance, notificaciones automáticas y flujos de trabajo configurables. Su motor de reportes genera informes de progreso, utilización de recursos y cumplimiento de plazos que resultan esenciales para la gestión ejecutiva del proyecto y la comunicación con stakeholders.</p>
   </div>
 
+  <!-- Características principales -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Monitoreo de uso en tiempo real</h3>
-        <p>Seguimiento continuo de la utilización de licencias con dashboards que muestran licencias activas, disponibles, en cola y denegadas en cada momento del día.</p>
+        <h3>Gestión documental</h3>
+        <p>Control centralizado de documentos del proyecto con versionado automático, codificación configurable, flujos de revisión y distribución controlada a los miembros del equipo.</p>
       </div>
       <div class="pp-feature">
-        <h3>Inventario centralizado</h3>
-        <p>Registro completo de todas las licencias de software de la organización con información de proveedor, tipo de licencia, fechas de vencimiento y costos asociados.</p>
+        <h3>Seguimiento de tareas</h3>
+        <p>Asignación, seguimiento y control de tareas con niveles de prioridad, fechas límite, dependencias y indicadores visuales de progreso para cada actividad del proyecto.</p>
       </div>
       <div class="pp-feature">
-        <h3>Reportes de utilización</h3>
-        <p>Informes detallados de uso por producto, usuario, departamento y período de tiempo que revelan patrones de consumo y oportunidades de optimización de la inversión.</p>
+        <h3>Planificación de recursos</h3>
+        <p>Asignación y control de recursos humanos y materiales con detección de sobreasignaciones, histogramas de carga y optimización de la utilización del equipo de trabajo.</p>
       </div>
       <div class="pp-feature">
-        <h3>Alertas de vencimiento</h3>
-        <p>Notificaciones automáticas previas al vencimiento de licencias y contratos de mantenimiento, asegurando renovaciones oportunas y evitando interrupciones del servicio.</p>
+        <h3>Reportes y métricas</h3>
+        <p>Generación de informes de avance, utilización de recursos, cumplimiento de plazos y métricas de productividad para la gestión ejecutiva y comunicación con stakeholders.</p>
       </div>
       <div class="pp-feature">
-        <h3>Optimización de asignación</h3>
-        <p>Recomendaciones basadas en datos para redistribuir licencias subutilizadas, recuperar licencias de usuarios inactivos y equilibrar la demanda entre equipos.</p>
+        <h3>Colaboración de equipo</h3>
+        <p>Herramientas de comunicación y coordinación para equipos multidisciplinarios con notificaciones inteligentes, comentarios en contexto y seguimiento de decisiones del proyecto.</p>
       </div>
       <div class="pp-feature">
-        <h3>Soporte multi-vendor</h3>
-        <p>Compatibilidad con licencias de los principales proveedores de software de ingeniería incluyendo Ansys, Autodesk, Oracle, Bentley y otros fabricantes del mercado.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Análisis de ROI</h3>
-        <p>Cálculo del retorno de inversión por licencia basado en horas de uso efectivo, costo por hora y comparación con modelos de licenciamiento alternativos disponibles.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Cumplimiento y auditoría</h3>
-        <p>Herramientas de verificación de cumplimiento que comparan licencias adquiridas con instalaciones y uso real, preparando a la organización para auditorías de software.</p>
+        <h3>Automatización de flujos</h3>
+        <p>Flujos de trabajo configurables para procesos de revisión, aprobación y distribución de documentos que automatizan las actividades repetitivas y reducen errores humanos.</p>
       </div>
     </div>
   </div>
 
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es ADVManager?</h2>
+    <p>ADVManager está dirigido a organizaciones que necesitan una plataforma integral para gestionar la documentación, tareas y recursos de sus proyectos de ingeniería:</p>
     <ul class="pp-list">
-      <li>Administradores de TI que gestionan el inventario de licencias de software de ingeniería y necesitan optimizar costos sin afectar la productividad de los equipos técnicos.</li>
-      <li>Gerentes de ingeniería que requieren visibilidad sobre la disponibilidad y uso de herramientas de software para planificar la capacidad de sus equipos de trabajo.</li>
-      <li>Departamentos de compras que negocian renovaciones y nuevas adquisiciones de software y necesitan datos de uso real para fundamentar sus decisiones de inversión.</li>
-      <li>Oficinas de gestión de proyectos que asignan recursos de software a proyectos específicos y necesitan controlar los costos de licencias por proyecto.</li>
-      <li>Organizaciones que enfrentan auditorías de software y requieren evidencia de cumplimiento con los términos de licenciamiento de cada proveedor.</li>
+      <li>Gerentes de proyecto que necesitan visibilidad centralizada sobre documentos, tareas y recursos para mantener el control del proyecto.</li>
+      <li>Equipos de ingeniería multidisciplinarios que requieren herramientas de colaboración y coordinación para trabajar de forma eficiente.</li>
+      <li>Empresas de construcción que gestionan múltiples proyectos simultáneamente y necesitan estandarizar sus procesos de gestión documental y de tareas.</li>
     </ul>
   </div>
+
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Licenciamiento</h2>
+    <p>ADVManager se ofrece con modelos de licenciamiento flexibles adaptados a las necesidades de cada organización. Contacte a nuestro equipo comercial para obtener una propuesta personalizada.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Solicitar información</h3>
+        <p>Contacte a nuestro equipo para una demostración personalizada y reciba una propuesta adaptada a su organización.</p>
+        <ul class="pp-license-features">
+          <li>Demostración personalizada de la plataforma</li>
+          <li>Propuesta adaptada a su equipo</li>
+          <li>Configuración e implementación asistida</li>
+          <li>Capacitación para su equipo de proyecto</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la configuración ADVManager que mejor se adapte a los procesos de gestión de su organización.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano de ingeniería y construcción.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la configuración de la plataforma y capacitación para maximizar la adopción en su equipo de proyecto.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación especializada</h3>
+        <p>Cursos con instructores certificados en modalidad presencial, online en vivo e híbrida para su equipo de gestión de proyectos.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Más de tres décadas formando profesionales y distribuyendo software de ingeniería en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+</style>

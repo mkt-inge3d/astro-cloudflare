@@ -6,72 +6,185 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="Dynamo"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Plataforma de programación visual y diseño computacional para automatización de tareas y generación de geometría en Revit y otros productos Autodesk."
+  description="Herramienta de automatización BIM para modelado paramétrico y optimización de flujos de trabajo. Programación visual con integración directa en Revit."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/dynamo/"
+  trainingUrl="/cursos/bim-aec/dynamo"
   trainingLabel="Ver cursos de Dynamo"
   relatedProducts={[
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Civil 3D', href: '/licencias/autodesk/civil-3d' },
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
+    { name: 'Robot Structural', href: '/licencias/autodesk/robot-structural' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es Dynamo?</h2>
-    <p>Dynamo es una plataforma de programación visual de código abierto que extiende las capacidades de Autodesk Revit y otros productos Autodesk. Mediante una interfaz de nodos conectados por cables, los profesionales pueden crear scripts visuales que automatizan tareas repetitivas, generan geometría computacional compleja y gestionan datos BIM sin necesidad de escribir código de programación tradicional.</p>
-    <p>Integrado directamente en Revit como Dynamo for Revit, permite acceder a todos los elementos y parámetros del modelo BIM para leerlos, modificarlos o crear nuevos elementos de forma masiva. Tareas que manualmente tomarían horas — como renombrar cientos de vistas, colocar elementos según una lógica específica o extraer datos a Excel — se resuelven en segundos con un script de Dynamo.</p>
-    <p>Dynamo también se utiliza como herramienta de diseño computacional para explorar formas complejas mediante algoritmos paramétricos, optimización de patrones, panelización de fachadas y generación de geometría basada en datos. Su ecosistema incluye cientos de paquetes desarrollados por la comunidad y soporte para scripts en Python y C# para funcionalidad avanzada.</p>
+    <div class="pp-product-header">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="pp-product-logo-svg">
+        <rect width="40" height="40" rx="8" fill="#2E86C1"/>
+        <path d="M11 12h6l6 8-6 8h-6l6-8-6-8z" fill="white"/>
+        <path d="M19 12h6l-6 8 6 8h-6l-6-8 6-8z" fill="white" opacity=".6"/>
+      </svg>
+    </div>
+    <h2>Automatización BIM y programación visual</h2>
+    <p>Dynamo es una <strong>plataforma de programación visual</strong> de código abierto que extiende las capacidades de Autodesk Revit y otros productos Autodesk. Mediante una interfaz de nodos conectados por cables, los profesionales pueden crear scripts visuales que automatizan tareas repetitivas, generan geometría computacional compleja y gestionan datos BIM sin necesidad de escribir código de programación tradicional.</p>
+    <p>Integrado directamente en Revit como <strong>Dynamo for Revit</strong>, permite acceder a todos los elementos y parámetros del modelo BIM para leerlos, modificarlos o crear nuevos elementos de forma masiva. Tareas que manualmente tomarían horas -- como renombrar cientos de vistas, colocar elementos según una lógica específica o extraer datos a Excel -- se resuelven en segundos con un script de Dynamo.</p>
+    <p>Dynamo también se utiliza como herramienta de <strong>diseño computacional</strong> para explorar formas complejas mediante algoritmos paramétricos, optimización de patrones, panelización de fachadas y generación de geometría basada en datos. Su ecosistema incluye cientos de paquetes desarrollados por la comunidad y soporte para scripts en Python y C# para funcionalidad avanzada.</p>
   </div>
 
+  <!-- Características principales -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
-        <h3>Programación visual con nodos</h3>
-        <p>Interfaz intuitiva de nodos drag-and-drop conectados por cables que representan flujos de datos y operaciones lógicas sin escribir código.</p>
+        <h3>Programación Visual</h3>
+        <p>Interfaz intuitiva de nodos drag-and-drop conectados por cables que representan flujos de datos y operaciones lógicas sin necesidad de escribir código tradicional.</p>
       </div>
       <div class="pp-feature">
-        <h3>Automatización de Revit</h3>
-        <p>Acceso completo a la API de Revit para crear, modificar y eliminar elementos, gestionar parámetros, vistas, familias y documentación de forma masiva.</p>
+        <h3>Integración BIM</h3>
+        <p>Acceso completo a la API de Revit para crear, modificar y eliminar elementos, gestionar parámetros, vistas, familias y documentación de forma masiva y automatizada.</p>
       </div>
       <div class="pp-feature">
-        <h3>Diseño computacional</h3>
-        <p>Generación de geometría paramétrica, panelización, optimización de formas y exploración de alternativas de diseño basadas en algoritmos.</p>
+        <h3>Diseño Paramétrico</h3>
+        <p>Generación de geometría paramétrica, panelización de superficies, optimización de formas y exploración de alternativas de diseño basadas en algoritmos y datos.</p>
       </div>
       <div class="pp-feature">
-        <h3>Gestión de datos BIM</h3>
-        <p>Lectura y escritura de parámetros en elementos Revit, exportación a Excel y bases de datos, y sincronización de información del modelo.</p>
+        <h3>Automatización de Flujos de Trabajo</h3>
+        <p>Automatización de tareas repetitivas como renombrado de vistas, colocación de elementos, exportación de datos y generación de documentación, ahorrando horas de trabajo manual.</p>
       </div>
       <div class="pp-feature">
-        <h3>Interoperabilidad con Excel y CSV</h3>
-        <p>Importación y exportación de datos entre hojas de cálculo y el modelo BIM para actualización masiva de parámetros y generación de reportes.</p>
+        <h3>Scripts Python Integrados</h3>
+        <p>Nodos de Python para funcionalidad avanzada, acceso directo a la API de Revit y creación de lógica personalizada dentro del flujo visual de nodos.</p>
       </div>
       <div class="pp-feature">
-        <h3>Scripts Python integrados</h3>
-        <p>Nodos de Python para funcionalidad avanzada, acceso directo a la API de Revit y creación de lógica personalizada dentro del flujo visual.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Paquetes de la comunidad</h3>
+        <h3>Paquetes de la Comunidad</h3>
         <p>Ecosistema extenso de paquetes desarrollados por la comunidad (Clockwork, archi-lab, BimorphNodes, Spring Nodes) para funciones especializadas.</p>
       </div>
       <div class="pp-feature">
+        <h3>Interoperabilidad con Excel y CSV</h3>
+        <p>Importación y exportación de datos entre hojas de cálculo y el modelo BIM para actualización masiva de parámetros y generación de reportes automatizados.</p>
+      </div>
+      <div class="pp-feature">
         <h3>Dynamo Player</h3>
-        <p>Ejecución simplificada de scripts desde Revit sin abrir el entorno de Dynamo, permitiendo que usuarios no técnicos aprovechen la automatización.</p>
+        <p>Ejecución simplificada de scripts desde Revit sin abrir el entorno de Dynamo, permitiendo que usuarios no técnicos aprovechen la automatización creada por especialistas.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Dynamo se conecta con un ecosistema de soluciones Autodesk para automatizar y potenciar los flujos de trabajo BIM:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM multidisciplinario</a>
+      <a href="/licencias/autodesk/civil-3d" class="pp-integration">Civil 3D — Diseño de ingeniería civil</a>
+      <a href="/licencias/autodesk/robot-structural" class="pp-integration">Robot Structural — Análisis estructural</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y simulación 4D</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión en la nube</a>
+      <span class="pp-integration">Dynamo Sandbox — Versión independiente de código abierto</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Dynamo?</h2>
+    <p>Dynamo está dirigido a <strong>profesionales BIM, usuarios de Revit y profesionales de la construcción</strong> que buscan automatizar procesos y explorar el diseño computacional:</p>
     <ul class="pp-list">
       <li>Coordinadores y gerentes BIM que buscan automatizar procesos</li>
       <li>Arquitectos interesados en diseño computacional y paramétrico</li>
       <li>Ingenieros que necesitan gestionar datos BIM de forma masiva</li>
       <li>Modeladores Revit que desean aumentar su productividad</li>
+      <li>Profesionales de la construcción que trabajan con flujos BIM</li>
       <li>Profesionales AEC que quieren aprender programación visual</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Dynamo es <strong>gratuito con Revit</strong> (Dynamo for Revit viene integrado) y también está disponible como parte de la <strong>Colección AEC</strong> de Autodesk. Dynamo Sandbox es una versión independiente de código abierto.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <h3>Gratuito con Revit</h3>
+        <p>Dynamo for Revit viene integrado directamente en Autodesk Revit sin costo adicional, listo para usar desde la instalación.</p>
+        <ul class="pp-license-features">
+          <li>Incluido en cualquier suscripción de Revit</li>
+          <li>Acceso completo a la API de Revit</li>
+          <li>Dynamo Player para ejecución simplificada</li>
+          <li>Acceso a paquetes de la comunidad</li>
+          <li>Soporte para scripts Python y C#</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización de Revit</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <h3>Colección AEC</h3>
+        <p>Incluye Revit con Dynamo junto con AutoCAD, Civil 3D, Navisworks y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Revit con Dynamo integrado</li>
+          <li>AutoCAD + Civil 3D + Navisworks incluidos</li>
+          <li>Advance Steel + Robot Structural + InfraWorks</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+  .pp-product-logo-svg{height:40px;width:auto}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+</style>

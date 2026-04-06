@@ -6,28 +6,50 @@ import ProductPage from '../../../layouts/ProductPage.astro';
   product="AutoCAD Civil 3D"
   brand="Autodesk"
   brandColor="#00aae0"
-  description="Software de diseño y documentación de ingeniería civil e infraestructura con herramientas BIM para proyectos de transporte, urbanismo y recursos hídricos."
+  description="Software de ingeniería civil para flujos de trabajo BIM. Diseño de aeropuertos, carreteras, lotificaciones, drenaje, ferrocarriles y automatización de diseño mediante Dynamo."
   breadcrumbBrand="Autodesk"
   breadcrumbBrandHref="/licencias/autodesk"
-  trainingUrl="https://www.semco.com.pe/civil-3d/"
+  trainingUrl="/cursos/bim-aec/civil-3d"
   trainingLabel="Ver cursos de Civil 3D"
   relatedProducts={[
     { name: 'AutoCAD', href: '/licencias/autodesk/autocad' },
     { name: 'InfraWorks', href: '/licencias/autodesk/infraworks' },
     { name: 'Revit', href: '/licencias/autodesk/revit' },
     { name: 'Navisworks', href: '/licencias/autodesk/navisworks' },
+    { name: 'Construction Cloud', href: '/licencias/autodesk/construction-cloud' },
   ]}
 >
 
+  <!-- Logo y descripción principal -->
   <div class="pp-section fade-up" id="caracteristicas">
-    <h2>¿Qué es AutoCAD Civil 3D?</h2>
-    <p>AutoCAD Civil 3D es la solución de Autodesk para el diseño y documentación de proyectos de ingeniería civil e infraestructura. Construido sobre la plataforma de AutoCAD, extiende sus capacidades con herramientas especializadas para diseño vial, movimiento de tierras, redes de tuberías, diseño de parcelas y gestión de superficies topográficas.</p>
-    <p>El software trabaja con un modelo dinámico donde los cambios se propagan automáticamente a través de todo el proyecto: al modificar una alineación, los perfiles, secciones transversales, volúmenes de corte y relleno, y la documentación de planos se actualizan de forma coordinada. Esta metodología BIM para infraestructura reduce drásticamente los errores y el tiempo de producción de documentación.</p>
-    <p>Civil 3D incluye herramientas de análisis hidrológico e hidráulico, diseño de intersecciones y rotondas, gestión de puntos topográficos COGO, y conectividad directa con InfraWorks para flujos de trabajo de diseño conceptual a detallado.</p>
+    <div class="pp-product-header">
+      <img src="/licencias/civil3d/logo.webp" alt="AutoCAD Civil 3D" class="pp-product-logo" />
+    </div>
+    <h2>Diseño de ingeniería civil con flujos de trabajo BIM</h2>
+    <p>AutoCAD Civil 3D es la solución integral de Autodesk para el <strong>diseño, análisis y documentación</strong> de proyectos de ingeniería civil e infraestructura. Construido sobre la plataforma AutoCAD, extiende sus capacidades con herramientas especializadas para diseño vial, movimiento de tierras, redes de tuberías, diseño de parcelas y gestión de superficies topográficas, todo bajo una metodología BIM que mantiene la información del proyecto coordinada y actualizada.</p>
+    <p>El software trabaja con un <strong>modelo dinámico</strong> donde los cambios se propagan automáticamente a través de todo el proyecto: al modificar una alineación, los perfiles, secciones transversales, volúmenes de corte y relleno, y la documentación de planos se actualizan de forma coordinada. Civil 3D maneja proyectos de aeropuertos, carreteras, lotificaciones urbanas, sistemas de drenaje pluvial y sanitario, líneas ferroviarias y obras de infraestructura de gran escala con precisión topográfica.</p>
+    <p>La integración con <strong>Dynamo para Civil 3D</strong> permite automatizar tareas repetitivas de diseño mediante programación visual, acelerando flujos de trabajo complejos sin necesidad de escribir código. Además, Civil 3D se conecta con InfraWorks para diseño conceptual, con Navisworks para coordinación de modelos y con <strong>Autodesk Construction Cloud</strong> para colaboración en la nube entre equipos multidisciplinarios.</p>
   </div>
 
+  <!-- Características principales con galería -->
   <div class="pp-section fade-up">
     <h2>Características principales</h2>
+
+    <div class="rv-gallery">
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/civil3d/puentes.webp" alt="Bridge Design Interoperability" loading="lazy" /></div>
+        <p><strong>Interoperabilidad para puentes</strong><br/>Flujo de trabajo integrado para diseño de puentes e infraestructura vial</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/civil3d/presion.webp" alt="Pressure Networks" loading="lazy" /></div>
+        <p><strong>Redes a presión</strong><br/>Diseño de redes de distribución de agua potable y riego</p>
+      </button>
+      <button class="rv-gallery-item fade-up">
+        <div class="rv-gallery-img"><img src="/licencias/civil3d/dynamo.webp" alt="Dynamo Player" loading="lazy" /></div>
+        <p><strong>Dynamo Player</strong><br/>Automatización de diseño con programación visual integrada</p>
+      </button>
+    </div>
+
     <div class="pp-feature-grid">
       <div class="pp-feature">
         <h3>Diseño de alineamientos y rasantes</h3>
@@ -38,42 +60,150 @@ import ProductPage from '../../../layouts/ProductPage.astro';
         <p>Ensamblajes paramétricos y corredores 3D que generan automáticamente la geometría completa de la vía con todos sus elementos constructivos.</p>
       </div>
       <div class="pp-feature">
-        <h3>Superficies y grading</h3>
-        <p>Creación y análisis de superficies topográficas, diseño de explanaciones con taludes, bermas y plataformas, y cálculo de volúmenes de movimiento de tierras.</p>
+        <h3>Análisis de superficies</h3>
+        <p>Creación y análisis de superficies topográficas con diseño de explanaciones, taludes, bermas, plataformas y cálculo de volúmenes de movimiento de tierras.</p>
       </div>
       <div class="pp-feature">
         <h3>Redes de tuberías</h3>
-        <p>Diseño de redes de alcantarillado, drenaje y agua potable con catálogos de piezas, análisis de capacidad y perfiles de redes completos.</p>
+        <p>Diseño de redes de alcantarillado, drenaje, agua potable y redes a presión con catálogos de piezas y análisis de capacidad hidráulica.</p>
       </div>
       <div class="pp-feature">
-        <h3>Secciones transversales</h3>
-        <p>Generación automática de secciones transversales con líneas de muestreo, tablas de volúmenes y diagrama de masas para control de movimiento de tierras.</p>
+        <h3>Redes a presión</h3>
+        <p>Herramientas especializadas para redes de distribución de agua y riego con válvulas, hidrantes, accesorios y análisis de caudal y presión.</p>
       </div>
       <div class="pp-feature">
-        <h3>Gestión de puntos topográficos</h3>
-        <p>Importación, gestión y análisis de puntos COGO con grupos de puntos, estilos de visualización y conexión con equipos topográficos.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Diseño de intersecciones</h3>
-        <p>Herramientas especializadas para diseño de intersecciones viales y rotondas con análisis de trayectorias y visibilidad según normativa.</p>
-      </div>
-      <div class="pp-feature">
-        <h3>Producción de planos automática</h3>
-        <p>Plan Production para generar automáticamente juegos de planos con plantas, perfiles y secciones listas para impresión y entrega.</p>
+        <h3>Dynamo Player</h3>
+        <p>Automatización de tareas repetitivas mediante programación visual con Dynamo, acelerando flujos de trabajo sin necesidad de escribir código.</p>
       </div>
     </div>
   </div>
 
+  <!-- Integración -->
+  <div class="pp-section fade-up">
+    <h2>Ecosistema de integración</h2>
+    <p>Civil 3D se conecta con un ecosistema de soluciones Autodesk para cubrir todas las necesidades de proyectos de infraestructura:</p>
+    <div class="pp-integration-grid">
+      <a href="/licencias/autodesk/autocad" class="pp-integration">AutoCAD — Dibujo técnico y documentación 2D/3D</a>
+      <a href="/licencias/autodesk/infraworks" class="pp-integration">InfraWorks — Diseño conceptual de infraestructura</a>
+      <a href="/licencias/autodesk/revit" class="pp-integration">Revit — Modelado BIM de edificaciones</a>
+      <a href="/licencias/autodesk/navisworks" class="pp-integration">Navisworks — Coordinación y simulación 4D</a>
+      <a href="/licencias/autodesk/construction-cloud" class="pp-integration">Construction Cloud — Gestión de construcción en nube</a>
+      <span class="pp-integration">Dynamo — Diseño computacional y automatización</span>
+      <span class="pp-integration">Subassembly Composer — Ensamblajes personalizados</span>
+      <span class="pp-integration">Storm & Sanitary Analysis — Análisis hidrológico</span>
+    </div>
+  </div>
+
+  <!-- Para quién -->
   <div class="pp-section fade-up">
     <h2>¿Para quién es Civil 3D?</h2>
+    <p>Civil 3D está dirigido a profesionales del sector de <strong>ingeniería civil e infraestructura</strong> que requieren herramientas especializadas de diseño y documentación:</p>
     <ul class="pp-list">
       <li>Ingenieros civiles y de transporte</li>
-      <li>Diseñadores de carreteras y autopistas</li>
+      <li>Dibujantes técnicos de ingeniería civil</li>
+      <li>Planificadores urbanos y de lotificación</li>
+      <li>Geógrafos y topógrafos</li>
       <li>Ingenieros hidráulicos y sanitarios</li>
-      <li>Topógrafos y geodestas</li>
-      <li>Urbanistas y planificadores de infraestructura</li>
-      <li>Empresas consultoras de ingeniería civil</li>
+      <li>Empresas consultoras de infraestructura</li>
     </ul>
   </div>
 
+  <!-- Licencias -->
+  <div class="pp-section fade-up">
+    <h2>Tipos de licencia</h2>
+    <p>Civil 3D está disponible exclusivamente bajo el modelo de <strong>suscripción</strong>, en periodos de 1 o 3 años con opción de renovación gratuita al vencimiento.</p>
+
+    <div class="pp-license-cards">
+      <div class="pp-license-card">
+        <img src="/licencias/civil3d/lic-civil3d.webp" alt="Licencia Civil 3D" class="pp-license-logo" loading="lazy" />
+        <h3>Suscripción Individual Civil 3D</h3>
+        <p>Licencia completa del software Civil 3D con todas las funcionalidades para diseño de ingeniería civil e infraestructura BIM.</p>
+        <ul class="pp-license-features">
+          <li>Incluye AutoCAD completo como plataforma base</li>
+          <li>Actualizaciones automáticas incluidas</li>
+          <li>Dynamo Player para automatización</li>
+          <li>25 GB de almacenamiento en la nube</li>
+          <li>Acceso a 3 versiones anteriores del software</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+
+      <div class="pp-license-card pp-license-card--featured">
+        <img src="/licencias/civil3d/lic-civil3d.webp" alt="AEC Collection" class="pp-license-logo" loading="lazy" />
+        <h3>Colección AEC</h3>
+        <p>Incluye Civil 3D junto con AutoCAD, Revit, Navisworks, InfraWorks y más herramientas para un flujo de trabajo AEC completo.</p>
+        <ul class="pp-license-features">
+          <li>Todo lo de la suscripción individual</li>
+          <li>AutoCAD + Revit + Navisworks incluidos</li>
+          <li>InfraWorks + Advance Steel + Robot Structural</li>
+          <li>Mejor relación costo-beneficio para equipos AEC</li>
+          <li>Plan de 3 años con precio fijo garantizado</li>
+        </ul>
+        <a href="/contacto" class="pp-license-btn">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valor agregado SemcoCAD -->
+  <div class="pp-section fade-up">
+    <h2>Beneficios de adquirir con SemcoCAD</h2>
+    <div class="pp-feature-grid">
+      <div class="pp-feature">
+        <h3>Consultoría gratuita</h3>
+        <p>Asesoría personalizada para identificar la solución Autodesk que mejor se adapte a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Soporte técnico local</h3>
+        <p>Atención directa en español con tiempos de respuesta rápidos y conocimiento del mercado peruano.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Implementación y adopción</h3>
+        <p>Acompañamiento en la implementación del software y capacitación para maximizar la adopción en su equipo.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Capacitación certificada</h3>
+        <p>Cursos con certificación internacional Autodesk en modalidad presencial, online en vivo e híbrida.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>Facturación local</h3>
+        <p>Facturación en soles con beneficios fiscales locales para su empresa.</p>
+      </div>
+      <div class="pp-feature">
+        <h3>38 años de experiencia</h3>
+        <p>Gold Partner Autodesk con más de tres décadas formando profesionales y distribuyendo software en Perú.</p>
+      </div>
+    </div>
+  </div>
+
 </ProductPage>
+
+<style>
+  .pp-product-header{margin-bottom:1.5rem}
+  .pp-product-logo{height:40px;width:auto}
+
+  /* Gallery grid */
+  .rv-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+  .rv-gallery-item{text-decoration:none;color:inherit;border-radius:10px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;display:flex;flex-direction:column;cursor:pointer;background:none}
+  .rv-gallery-item:hover{box-shadow:0 8px 25px rgba(0,0,0,.1);border-color:rgba(255,107,53,.3);transform:translateY(-3px)}
+  .rv-gallery-img{position:relative;overflow:hidden}
+  .rv-gallery-img img{width:100%;height:auto;display:block;transition:transform .4s}
+  .rv-gallery-item:hover .rv-gallery-img img{transform:scale(1.05)}
+  .rv-gallery-item p{padding:.7rem .8rem;font-size:.82rem;color:var(--gray-600);line-height:1.4;flex:1;background:var(--gray-50)}
+  .rv-gallery-item p strong{color:var(--navy);font-size:.85rem;display:block;margin-bottom:.15rem}
+
+  .pp-license-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+  .pp-license-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
+  .pp-license-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06);border-color:rgba(255,107,53,.2)}
+  .pp-license-card--featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .pp-license-logo{height:32px;width:auto;margin-bottom:1rem}
+  .pp-license-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+  .pp-license-card>p{font-size:.88rem;color:var(--gray-600);line-height:1.6;margin-bottom:1rem}
+  .pp-license-features{list-style:none;padding:0;display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.2rem}
+  .pp-license-features li{font-size:.84rem;color:var(--gray-600);padding-left:1.3rem;position:relative;line-height:1.5}
+  .pp-license-features li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+  .pp-license-btn{display:block;text-align:center;background:var(--orange);color:#fff;padding:.65rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;text-decoration:none}
+  .pp-license-btn:hover{background:var(--orange-hover);transform:translateY(-1px)}
+  @media(max-width:900px){.rv-gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.pp-license-cards{grid-template-columns:1fr}}
+  @media(max-width:500px){.rv-gallery{grid-template-columns:1fr}}
+</style>
