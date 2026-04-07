@@ -85,10 +85,20 @@ const brands = [
 
 <style>
   .hero {
-    background: var(--navy);
+    background: linear-gradient(135deg, #0f1923, #1a2332 50%, #1e3a5f);
     color: var(--white);
     padding: 3rem 1.5rem 2.5rem;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 60px 60px, 60px 60px, 15px 15px, 15px 15px;
+    pointer-events: none;
   }
 
   .breadcrumb {

@@ -55,13 +55,36 @@ const {
     </div>
 
     <aside class="cp-sidebar">
-      <div class="cp-sidebar-card cp-sidebar-enroll fade-up">
-        <h3>Inscríbete ahora</h3>
-        <div class="cp-info-row"><span class="cp-label">Modalidad</span><span class="cp-value">{modality}</span></div>
-        <div class="cp-info-row"><span class="cp-label">Duración</span><span class="cp-value">{duration}</span></div>
-        <div class="cp-info-row"><span class="cp-label">Certificación</span><span class="cp-value">Certificado SemcoCAD - Autodesk Training Center</span></div>
-        <a href="/contacto" class="cp-enroll-btn">Solicitar información</a>
-        {semcoUrl && <a href={semcoUrl} target="_blank" rel="noopener" class="cp-semco-link">Ver en semco.com.pe</a>}
+      <div class="cp-form-wrap fade-up">
+        <div class="cp-form-card">
+          <div class="cp-form-top">
+            <span class="cp-form-badge">{modality} · {duration}</span>
+            <h3>Inscríbete ahora</h3>
+            <p>Completa el formulario y un asesor se pondrá en contacto contigo.</p>
+          </div>
+          <form action="/contacto" method="get">
+            <input type="hidden" name="curso" value={course} />
+            <div class="cp-ff"><input type="text" name="nombre" required placeholder="Nombre completo *" /></div>
+            <div class="cp-ff"><input type="email" name="email" required placeholder="Correo electrónico *" /></div>
+            <div class="cp-ff2">
+              <div class="cp-ff"><input type="text" name="empresa" placeholder="Empresa" /></div>
+              <div class="cp-ff"><input type="tel" name="telefono" placeholder="Teléfono" /></div>
+            </div>
+            <div class="cp-ff">
+              <select name="modalidad">
+                <option value="">Modalidad preferida</option>
+                <option value="presencial">Presencial</option>
+                <option value="online">Online en vivo</option>
+                <option value="hibrido">Híbrido</option>
+              </select>
+            </div>
+            <button type="submit" class="cp-form-btn">SOLICITAR INFORMACIÓN</button>
+          </form>
+          <p class="cp-form-trust">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            No compartimos tus datos. Política de privacidad.
+          </p>
+        </div>
       </div>
 
       {licenseUrl && (
@@ -98,7 +121,7 @@ const {
 <style is:global>
   .cp-hero{position:relative;min-height:320px;display:flex;align-items:flex-end;overflow:hidden}
   .cp-hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0f1923,#1a2332 50%,#1e3a5f);z-index:0}
-  .cp-hero-bg::before{content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,53,.08) 0%,transparent 70%);border-radius:50%}
+  .cp-hero-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px,60px 60px,15px 15px,15px 15px}
   .cp-hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,107,53,.3),transparent)}
   .cp-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:7rem 2rem 3rem;width:100%}
   .cp-breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:rgba(176,190,197,.7);margin-bottom:1.5rem;flex-wrap:wrap}
@@ -166,7 +189,24 @@ const {
   .cp-sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:1.2rem}
   .cp-sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;transition:all .3s}
   .cp-sidebar-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.06)}
-  .cp-sidebar-enroll{border-color:rgba(255,107,53,.2);background:linear-gradient(135deg,rgba(255,107,53,.03),transparent)}
+  .cp-form-wrap{position:relative;isolation:isolate}
+  .cp-form-wrap::before{content:'';position:absolute;inset:-3px;border-radius:15px;background:conic-gradient(from var(--angle,0deg),transparent 40%,rgba(255,107,53,.8) 50%,rgba(255,140,80,.5) 55%,transparent 65%);animation:cp-spin 3s linear infinite;z-index:0}
+  .cp-form-wrap::after{content:'';position:absolute;inset:-3px;border-radius:15px;background:conic-gradient(from var(--angle,0deg),transparent 40%,rgba(255,107,53,.4) 50%,rgba(255,140,80,.2) 55%,transparent 65%);filter:blur(15px);z-index:0}
+  @property --angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+  @keyframes cp-spin{to{--angle:360deg}}
+  .cp-form-card{background:#fff;border-radius:12px;padding:1.5rem;position:relative;z-index:1;box-shadow:0 8px 30px rgba(0,0,0,.1)}
+  .cp-form-top{text-align:center;margin-bottom:1rem}
+  .cp-form-badge{display:inline-block;background:rgba(255,107,53,.1);color:var(--orange);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:.2rem .6rem;border-radius:4px;margin-bottom:.4rem}
+  .cp-form-card h3{font-size:1.15rem;font-weight:800;color:var(--navy);margin-bottom:.25rem}
+  .cp-form-top p{font-size:.82rem;color:var(--gray-600);line-height:1.4}
+  .cp-ff{margin-bottom:.5rem}
+  .cp-ff input,.cp-ff select{width:100%;padding:.6rem .8rem;border:1px solid var(--gray-200);border-radius:8px;font-size:.85rem;transition:all .3s;background:var(--gray-50);font-family:inherit}
+  .cp-ff input:focus,.cp-ff select:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px rgba(255,107,53,.1);background:#fff}
+  .cp-ff2{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+  .cp-form-btn{width:100%;padding:.8rem;background:var(--orange);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer;transition:all .3s;letter-spacing:.5px;margin-top:.2rem}
+  .cp-form-btn:hover{background:var(--orange-hover);transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,107,53,.3)}
+  .cp-form-trust{display:flex;align-items:center;justify-content:center;gap:.35rem;font-size:.7rem;color:var(--gray-600);margin-top:.5rem}
+  .cp-form-trust svg{color:var(--gray-400)}
   .cp-sidebar-icon{width:32px;height:32px;color:var(--orange);margin-bottom:.6rem}
   .cp-sidebar-icon svg{width:100%;height:100%}
   .cp-sidebar-card h3{font-size:1rem;font-weight:700;margin-bottom:.75rem}

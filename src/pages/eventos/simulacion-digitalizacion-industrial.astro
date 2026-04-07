@@ -121,7 +121,7 @@ import Layout from '../../layouts/Layout.astro';
   .lp-trust svg{color:var(--gray-400)}
   .lp-hero{position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden}
   .lp-hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0a0f1a 0%,#12203a 50%,#1a3050 100%)}
-  .lp-hero-bg::before{content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,53,.06) 0%,transparent 70%);border-radius:50%}
+  .lp-hero-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px,60px 60px,15px 15px,15px 15px}
   .lp-hero-inner{position:relative;z-index:1;width:100%;padding:0 2rem;max-width:600px;margin-left:calc(max(2rem, (100vw - 1200px)/2))}
   .lp-badges{display:flex;align-items:center;gap:.6rem;margin-bottom:1.5rem}
   .lp-badge{background:rgba(255,107,53,.12);color:var(--orange);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,107,53,.2)}
